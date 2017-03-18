@@ -3,12 +3,15 @@ import json
 import os
 from PIL import Image
 
-palette = [(0,0,0), (0,0, 160), (0, 255, 80), (0, 160, 160), (160, 0, 0), (128, 0, 160), (160, 80, 0), (160, 160, 160), (80, 80, 80), (80, 80, 255), (0, 255, 80), (80,255, 255), (255, 80, 80), (255, 80, 255), (255, 255, 80), (255, 255, 255)]
+palette = [(0, 0, 0), (0, 0, 160), (0, 255, 80), (0, 160, 160),
+           (160, 0, 0), (128, 0, 160), (160, 80, 0), (160, 160, 160),
+           (80, 80, 80), (80, 80, 255), (0, 255, 80), (80, 255, 255),
+           (255, 80, 80), (255, 80, 255), (255, 255, 80), (255, 255, 255)]
 game = 'MG'
 
 views = {}
 
-with open('Exports\\' + game + '\\'+ game + '_dir.json') as dir_file:    
+with open('Exports\\' + game + '\\' + game + '_dir.json') as dir_file:
     view_dir = json.load(dir_file)
 
     for view_index in view_dir['VIEW']:
@@ -20,47 +23,53 @@ with open('Exports\\' + game + '\\'+ game + '_dir.json') as dir_file:
         with open(filename, 'rb') as v:
             v.seek(view_offset, 0)
 
-            signature = struct.unpack('>H', v.read(2))[0]       # signature should be 0x1234
+            # signature should be 0x1234
+            signature = struct.unpack('>H', v.read(2))[0]
 
             if signature == int('0x1234', 16):
 
-                views[view_index] = {}                          # Empty dictionary for view
-                
-                vol = struct.unpack('B', v.read(1))[0]          # Vol no, not sure why we need this
-                reslen = struct.unpack('<H', v.read(2))[0]      # resource lenght, LO-HI
+                # Empty dictionary for view
+                views[view_index] = {}
+                # Vol no, not sure why we need this
+                vol = struct.unpack('B', v.read(1))[0]
+                # resource lenght, LO-HI
+                reslen = struct.unpack('<H', v.read(2))[0]
 
                 v.seek(2, 1)
-                no_of_loops = struct.unpack('B', v.read(1))[0]  # Number of loops in view
-                desc_pos = struct.unpack('<H', v.read(2))[0]    # Position of description    
-
+                # Number of loops in view
+                no_of_loops = struct.unpack('B', v.read(1))[0]
+                # Position of description
+                desc_pos = struct.unpack('<H', v.read(2))[0]
 
                 views[view_index]['no_of_loops'] = no_of_loops
                 views[view_index]['size'] = reslen
                 views[view_index]['vol'] = vol
                 views[view_index]['loops'] = {}
-            
-                for i in range(0, no_of_loops):                 # Get loop positions
-                    loop_pos = struct.unpack('<H', v.read(2))[0] + view_offset + 5 # 5 = length of view header
+
+                # Get loop positions
+                for i in range(0, no_of_loops):
+                    # 5 = length of view header
+                    loop_pos = struct.unpack('<H', v.read(2))[0] \
+                               + view_offset + 5
                     views[view_index]['loops'][i] = {}
                     views[view_index]['loops'][i]['pos'] = loop_pos
-                    
 
-
-                for loop in views[view_index]['loops']:         # Get cells for each loop
-                    loop_offset = views[view_index]['loops'][loop]['pos'] 
+                # Get cells for each loop
+                for loop in views[view_index]['loops']:
+                    loop_offset = views[view_index]['loops'][loop]['pos']
                     v.seek(loop_offset, 0)
-                    
+
                     no_of_cells = struct.unpack('B', v.read(1))[0]
                     views[view_index]['loops'][loop]['no_of_cells'] = no_of_cells
                     views[view_index]['loops'][loop]['cells'] = {}
 
                     for i in range(0, no_of_cells):
 
-                        loop_pos = struct.unpack('<H', v.read(2))[0] + loop_offset
-                        
+                        loop_pos = struct.unpack('<H', v.read(2))[0] \
+                                   + loop_offset
+
                         views[view_index]['loops'][loop]['cells'][i] = {}
                         views[view_index]['loops'][loop]['cells'][i]['pos'] = loop_pos
-
 
                     for cell in views[view_index]['loops'][loop]['cells']:
                         cell_offset = views[view_index]['loops'][loop]['cells'][cell]['pos']
@@ -78,13 +87,14 @@ with open('Exports\\' + game + '\\'+ game + '_dir.json') as dir_file:
                         views[view_index]['loops'][loop]['cells'][cell]['mirroring'] = cell_mirroring
                         views[view_index]['loops'][loop]['cells'][cell]['transparency'] = cell_transparency
 
-                        cell_transparent_rgb = palette[cell_transparency] + (0,) # Add transparency
-                        cell_image = [cell_transparent_rgb for x in range(2 * cell_width * cell_height)] # Double cell width, because 1 horizontal pixel should be rendered as 2
-                        
+                        # Add transparency
+                        cell_transparent_rgb = palette[cell_transparency] + (0,)
+                        # Double cell width, because 1 horizontal pixel should be rendered as 2
+                        cell_image = [cell_transparent_rgb for x in range(2 * cell_width * cell_height)]
 
                         row = 0
                         col = 0
-                        
+
                         while True:
 
                             byte = struct.unpack('B', v.read(1))[0]
@@ -97,7 +107,9 @@ with open('Exports\\' + game + '\\'+ game + '_dir.json') as dir_file:
                                     break
 
                             color = byte >> 4
-                            if color == cell_transparency: # Assign transparent pallette color if matches cell transparency.
+                            # Assign transparent pallette color
+                            # if matches cell transparency.
+                            if color == cell_transparency:
                                 color_rgb = cell_transparent_rgb
                             else:
                                 color_rgb = palette[color]
@@ -117,29 +129,5 @@ with open('Exports\\' + game + '\\'+ game + '_dir.json') as dir_file:
                         views[view_index]['loops'][loop]['cells'][cell]['filename'] = cell_filename
 
 
-with open("Exports\\" + game + '\\'+ game + '_VIEW.json', 'w') as outfile:
+with open("Exports\\" + game + '\\' + game + '_VIEW.json', 'w') as outfile:
     json.dump(views, outfile)
-
-                 
-
-
-
-                    
-
-                
-                
-                
-                
-                
-
-            
-
-            
-
-
-            
-            
-
-        
-
-

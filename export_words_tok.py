@@ -6,7 +6,7 @@ game = 'DEMO'
 words = {}
 
 with open("Original\\" + game + "\WORDS.TOK", "rb") as w:
-    
+
     w.seek(52, 0)
 
     PreviousWord = ''
@@ -28,18 +28,18 @@ with open("Original\\" + game + "\WORDS.TOK", "rb") as w:
         CurrentWord = PreviousWord[0:byte]
 
         # Get characters
-        while True: 
+        while True:
             b = w.read(1)
 
             if not b:
                 break
-            
+
             byte = struct.unpack('B', b)[0]
 
             if byte < 32:
                 CurrentWord = CurrentWord + chr(byte ^ 127)
             elif byte > 127:
-                CurrentWord = CurrentWord + chr((byte - 128) ^127)
+                CurrentWord = CurrentWord + chr((byte - 128) ^ 127)
                 break
             elif byte == 95:
                 CurrentWord = CurrentWord + ' '
