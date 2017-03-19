@@ -1,11 +1,14 @@
 import struct
 import json
 
-game = 'DEMO'
+
+# Load configuration
+with open("config.json", "r") as infile:
+    config = json.load(infile)
 
 words = {}
 
-with open("Original\\" + game + "\WORDS.TOK", "rb") as w:
+with open(config["sourceDir"] + "WORDS.TOK", "rb") as w:
 
     w.seek(52, 0)
 
@@ -57,5 +60,5 @@ with open("Original\\" + game + "\WORDS.TOK", "rb") as w:
             words[wordno].append(CurrentWord)
 
 
-with open("exports\\" + game + '\\' + game + '_words.json', 'w') as outfile:
+with open(config["exportDir"]["main"] + 'words.json', 'w') as outfile:
     json.dump(words, outfile)

@@ -2,14 +2,17 @@ import struct
 import json
 import os
 
-game = 'KQ4'
+# Load configuration
+with open("config.json", "r") as infile:
+    config = json.load(infile)
+
 key = [65, 118, 105, 115, 32, 68, 117, 114, 103, 97, 110]  # Avis Durgan
 key_index = 0
 
 objects = {}
 
-with open("Original\\" + game + "\OBJECT", "rb") as w:
-    with open("Temp\\" + game + "_OBJECT_DECRYPT", "wb") as d:
+with open(config["sourceDir"] + "OBJECT", "rb") as w:
+    with open("temp/OBJECT_DECRYPT", "wb") as d:
 
         while True:
 
@@ -26,7 +29,7 @@ with open("Original\\" + game + "\OBJECT", "rb") as w:
             d.write(struct.pack('B', byte))
 
 
-with open("Temp\\" + game + "_OBJECT_DECRYPT", "rb") as w:
+with open("Temp/OBJECT_DECRYPT", "rb") as w:
 
     b = w.read(2)
     # Offset of start of inventory names
@@ -69,6 +72,6 @@ with open("Temp\\" + game + "_OBJECT_DECRYPT", "rb") as w:
         objects[object_id]['name'] = object_name
 
 
-with open("Exports\\" + game + '\\' + game + '_objects.json', 'w') as outfile:
+with open(config["exportDir"]["main"] + 'objects.json', 'w') as outfile:
     json.dump(objects, outfile)
-    os.remove("Temp\\" + game + "_OBJECT_DECRYPT")
+    os.remove("Temp/OBJECT_DECRYPT")

@@ -1,9 +1,11 @@
 {
   "game": "KQ3",
-  "sourceDir": "original/kq3",
+  "gameLong": "King's Quest III: To Heir is Human",
+  "sourceDir": "original/kq3/",
   "exportDir": {
-    "main": "exports/test",
-    "view": "view",
-    "pic": "pic"
-  }
+    "main": "exports/kq3/",
+    "view": "exports/kq3/view/",
+    "pic": "exports/kq3/pic/"
+  },
+  "imageScale": 4
 }

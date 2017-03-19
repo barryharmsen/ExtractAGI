@@ -3,22 +3,25 @@ import json
 import os
 from PIL import Image
 
+# Load configuration
+with open("config.json", "r") as infile:
+    config = json.load(infile)
+
 palette = [(0, 0, 0), (0, 0, 160), (0, 255, 80), (0, 160, 160),
            (160, 0, 0), (128, 0, 160), (160, 80, 0), (160, 160, 160),
            (80, 80, 80), (80, 80, 255), (0, 255, 80), (80, 255, 255),
            (255, 80, 80), (255, 80, 255), (255, 255, 80), (255, 255, 255)]
-game = 'MG'
 
 views = {}
 
-with open('Exports\\' + game + '\\' + game + '_dir.json') as dir_file:
+with open(config["exportDir"]["main"] + 'dir.json') as dir_file:
     view_dir = json.load(dir_file)
 
     for view_index in view_dir['VIEW']:
         view_offset = view_dir['VIEW'][view_index]['offset']
         view_vol = view_dir['VIEW'][view_index]['vol']
 
-        filename = "Original\%s\VOL.%s" % (game, view_vol)
+        filename = config["sourceDir"] + "VOL.%s" % (view_vol)
 
         with open(filename, 'rb') as v:
             v.seek(view_offset, 0)
@@ -124,10 +127,12 @@ with open('Exports\\' + game + '\\' + game + '_dir.json') as dir_file:
                         cell_filename = "%s_%s_%s.png" % (view_index, loop, cell)
                         img = Image.new('RGBA', ((cell_width * 2), cell_height))
                         img.putdata(cell_image)
-                        img.save("Exports\\" + game + "\\VIEW\\" + cell_filename, "PNG")
+                        img = img.resize((cell_width * 2 * config["imageScale"],
+                                          cell_height * config["imageScale"]))
+                        img.save(config["exportDir"]["view"] + cell_filename, "PNG")
 
                         views[view_index]['loops'][loop]['cells'][cell]['filename'] = cell_filename
 
 
-with open("Exports\\" + game + '\\' + game + '_VIEW.json', 'w') as outfile:
+with open(config["exportDir"]["main"] + 'view.json', 'w') as outfile:
     json.dump(views, outfile)

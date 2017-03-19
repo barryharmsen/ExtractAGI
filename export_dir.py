@@ -2,7 +2,11 @@ import struct
 import json
 import os
 
-game = 'MH2'
+
+# Load configuration
+with open("config.json", "r") as infile:
+    config = json.load(infile)
+
 
 dir_list = ['VIEW', 'PIC', 'LOG', 'SND']
 dirs = {}
@@ -11,7 +15,7 @@ dirs = {}
 for dir in dir_list:
 
     dirs[dir] = {}
-    dir_filename = "Original\\" + game + "\\" + dir + "DIR"
+    dir_filename = config["sourceDir"] + dir + "DIR"
     dir_entries = os.path.getsize(dir_filename) / 3
 
     with open(dir_filename, 'rb') as d:
@@ -36,5 +40,5 @@ for dir in dir_list:
                 # dirs[dir][i]['byte3'] = byte3
 
 
-with open("Exports\\" + game + '\\' + game + '_dir.json', 'w') as outfile:
+with open(config["exportDir"]["main"] + 'dir.json', 'w') as outfile:
     json.dump(dirs, outfile)

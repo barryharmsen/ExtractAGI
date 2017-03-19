@@ -4,6 +4,10 @@ import os
 from PIL import Image
 
 
+# Load configuration
+with open("config.json", "r") as infile:
+    config = json.load(infile)
+
 palette = [(0, 0, 0), (0, 0, 160), (0, 128, 0), (0, 160, 160),
            (160, 0, 0), (128, 0, 160), (160, 80, 0), (160, 160, 160),
            (80, 80, 80), (80, 80, 255), (0, 255, 80), (80, 255, 255),
@@ -26,7 +30,6 @@ actions = {240: 'Change picture colour and enable picture draw.',
            254: 'Unknown',
            255: 'Unknown'}
 
-game = 'PQ1'
 pics = {}
 
 intermediate_save = False
@@ -126,11 +129,12 @@ def flood_fill(x, y, picture, color):
 def save_image(img_array, filename, width, height):
     img = Image.new('RGBA', (width, height))
     img.putdata(img_array)
-    img = img.resize((640, 336))
+    img = img.resize((width * 2 * config["imageScale"],
+                      height * config["imageScale"]))
     img.save(filename, "PNG")
 
 
-with open('Exports\\' + game + '\\' + game + '_dir.json') as dir_file:
+with open(config["exportDir"]["main"] + 'dir.json') as dir_file:
     pic_dir = json.load(dir_file)
 
     for pic_index in pic_dir['PIC']:
@@ -142,7 +146,7 @@ with open('Exports\\' + game + '\\' + game + '_dir.json') as dir_file:
                                                   pic_offset,
                                                   pic_vol)
 
-        filename = "Original\%s\VOL.%s" % (game, pic_vol)
+        filename = config["sourceDir"] + "VOL.%s" % (pic_vol)
 
         with open(filename, 'rb') as v:
             v.seek(pic_offset, 0)
@@ -174,7 +178,7 @@ with open('Exports\\' + game + '\\' + game + '_dir.json') as dir_file:
                         # print "%s: %s" % (i, actions[selected_action])
 
                         if intermediate_save:
-                            fname = "Exports\\" + game + "\\PIC\\%s_%s.png" \
+                            fname = config["exportDir"]["pic"] + "%s_%s.png" \
                                     % (pic_index, i)
                             save_image(picture, fname, 160, 168)
 
@@ -336,5 +340,5 @@ with open('Exports\\' + game + '\\' + game + '_dir.json') as dir_file:
                                     from_x = -1
                                     from_y = -1
 
-                fname = "Exports\\" + game + "\\PIC\\%s.png" % (pic_index)
+                fname = config["exportDir"]["pic"] + "%s_pic.png" % (pic_index)
                 save_image(picture, fname, 160, 168)
