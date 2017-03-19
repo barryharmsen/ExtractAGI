@@ -1,0 +1,9 @@
+{
+  "game": "KQ3",
+  "sourceDir": "original/kq3",
+  "exportDir": {
+    "main": "exports/test",
+    "view": "view",
+    "pic": "pic"
+  }
+}
