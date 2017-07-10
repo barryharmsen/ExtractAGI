@@ -88,8 +88,8 @@ with open(config["exportDir"]["main"] + 'dir.json') as dir_file:
                         cell_mirrored_loop = (cell_settings >> 4) & 0b00000111
                         cell_transparency = cell_settings & 0b00001111
 
-                        views["views"][view_index]['loops'][loop]['cells'][cell]['width'] = cell_width
-                        views["views"][view_index]['loops'][loop]['cells'][cell]['height'] = cell_height
+                        views["views"][view_index]['loops'][loop]['cells'][cell]['width'] = cell_width * 2 * config["imageScale"]
+                        views["views"][view_index]['loops'][loop]['cells'][cell]['height'] = cell_height * config["imageScale"]
                         views["views"][view_index]['loops'][loop]['cells'][cell]['transparency'] = cell_transparency
                         views["views"][view_index]['loops'][loop]['cells'][cell]['mirrored'] = cell_mirrored
                         if cell_mirrored and loop != cell_mirrored_loop:
@@ -128,7 +128,7 @@ with open(config["exportDir"]["main"] + 'dir.json') as dir_file:
 
                             col += (pixels * 2)
 
-                        cell_filename = "%s_%s_%s.png" % (view_index, loop, cell)
+                        cell_filename = "%s_VIEW_%s_%s_%s.png" % (config['game'], view_index, loop, cell)
                         img = Image.new('RGBA', ((cell_width * 2), cell_height))
                         img.putdata(cell_image)
                         img = img.resize((cell_width * 2 * config["imageScale"],
