@@ -178,6 +178,8 @@ def flood_fill(x, y, picture, color):
 
     if color != palette[15]:  # Why would they use this fill command? CHECK!
 
+        #print "Flood fill: X: %s, Y: %s, Color: %s" % (x, y, color)
+
         stack = [(x, y)]
 
         while len(stack) > 0:
@@ -268,7 +270,7 @@ with open(config["exportDir"]["main"] + 'dir.json') as dir_file:
 
                     if selected_action >= 240:
 
-                        print "%s" % (actions[selected_action])
+                        print "%s: %s" % (v.get_position(), actions[selected_action])
 
                         # Enable picture draw
                         if selected_action == 240:
@@ -302,22 +304,32 @@ with open(config["exportDir"]["main"] + 'dir.json') as dir_file:
                             else:
                                 line_direction = 'x'
 
+                            #print "Draw %s corner, from (%s, %s)" % (line_direction, from_x, from_y)
+
                             byte = v.get_bytes(1)
 
                             while byte < 240:
                                 if line_direction == 'y':
                                     to_x = from_x
                                     to_y = byte
+                                    #print "From X: %s" % from_x
                                     line_direction = 'x'
                                 else:
                                     to_x = byte
                                     to_y = from_y
+                                    #print "From Y: %s" % from_y
                                     line_direction = 'y'
 
                                 if picture_draw_enabled:
+
+                                    #print "Draw line, (%s, %s) to (%s, %s) in color %s" % (from_x, from_y, to_x, to_y, picture_color)
+
                                     draw_line(from_x, from_y,
                                               to_x, to_y,
                                               picture, picture_color)
+
+                                    from_x = to_x
+                                    from_y = to_y
 
                                 byte = v.get_bytes(1)
 
@@ -485,7 +497,8 @@ with open(config["exportDir"]["main"] + 'dir.json') as dir_file:
                     output = '%s%s_VIEWDRAW_%s.gif' % (config["exportDir"]["pic"],
                                                        config["game"],
                                                        pic_index.zfill(3))
-                    imagick = 'convert -distort Barrel "0.0 0.0 0.04 0.96" -delay 10 -loop 1 -layers OptimizePlus %s -scale %s %s' % (mask, scale, output)
+                    #imagick = 'convert -distort Barrel "0.0 0.0 0.04 0.96" -delay 10 -loop 1 -layers OptimizePlus %s -scale %s %s' % (mask, scale, output)
+                    imagick = 'convert -delay 10 -loop 1 -layers OptimizePlus %s -scale %s %s' % (mask, scale, output)
                     os.system(imagick)
                     for filename in glob.glob(mask):
                         os.remove(filename)

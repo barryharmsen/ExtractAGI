@@ -1,11 +1,11 @@
 {
-  "game": "MH",
+  "game": "SQ1",
   "gameLong": "King's Quest III: To Heir is Human",
-  "sourceDir": "original/MH/",
+  "sourceDir": "original/SQ1/",
   "exportDir": {
-    "main": "exports/MH/",
-    "view": "exports/MH/view/",
-    "pic": "exports/MH/pic/"
+    "main": "exports/SQ1/",
+    "view": "exports/SQ1/view/",
+    "pic": "exports/SQ1/pic/"
   },
   "imageScale": 4
 }

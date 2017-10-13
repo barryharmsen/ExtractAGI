@@ -57,13 +57,14 @@ for view in views['views']:
 
             if cell_count > 1:
                 # Create animated gif (shitty implementation, but works for now)
-                #image_frame = Image.new('RGB', (max_width + 20, max_height + 20), (220, 220, 220))
-                image_frame = Image.new('RGB', (gif_width, gif_height), (240, 240, 240))
+                image_frame = Image.new('RGB', (max_width + 20, max_height + 20), (220, 220, 220))
+                #image_frame = Image.new('RGB', (gif_width, gif_height), (240, 240, 240))
                 paste_left = int((gif_width - max_width) / 2)
                 paste_top = int((gif_height - max_height) / 2) + top
-                #image_frame.paste(im=image, box=(10, top + 10), mask=image)
-                image_frame.paste(im=image, box=(paste_left, paste_top), mask=image)
-                image_frame.paste(im=overlay, box=(0,0), mask=overlay)
+
+                image_frame.paste(im=image, box=(10, top + 10), mask=image)
+                #image_frame.paste(im=image, box=(paste_left, paste_top), mask=image)
+                #image_frame.paste(im=overlay, box=(0,0), mask=overlay)
                 image_frame_filename = '%s_%s.png' % (image_gif_frame_root, cell.zfill(3))
                 image_frame.save(image_frame_filename, 'PNG')
 
