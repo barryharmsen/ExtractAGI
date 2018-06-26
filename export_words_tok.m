@@ -5,6 +5,9 @@
  * 	Author: Chad Armstrong
  *	Date: 25 June 2018
  *	To compile: gcc -w -framework Foundation export_words_tok.m -o export_words
+ *
+ *	Resources:
+ *	WORDS.TOK specs: http://www.agidev.com/articles/agispec/agispecs-10.html#ss10.2
  */
 
 #import <Foundation/Foundation.h>
