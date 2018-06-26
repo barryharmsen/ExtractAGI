@@ -36,7 +36,8 @@ with open(config["sourceDir"] + "WORDS.TOK", "rb") as w:
 
             if not b:
                 break
-
+                
+			# Reference: https://docs.python.org/2/library/struct.html
             byte = struct.unpack('B', b)[0]
 
             if byte < 32:
