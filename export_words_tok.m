@@ -37,16 +37,43 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	
-	fseek(fp, 52, SEEK_SET); // jump to position 52 in the file
+	// At the start of the file is a section that is always 26x2 bytes long. 
+	// This section contains a two byte entry for every letter of the alphabet. 
+	// It is essentially an index which gives the starting location of the words 
+	// beginning with the corresponding letter.
+	//fseek(fp, 52, SEEK_SET); // jump to position 52 in the file
 	
 	int data = -1;
 	
-	data = getc(fp);
+	// Get the indexes of the words, which are stored in the first 52 bytes
+	
+	printf("Storage size for int is %d and short is %d \n", sizeof(int), sizeof(short));
+	
+	short buffer[2];
+	short short_data = -1;
+	short buf[2];
+	
+	// https://cboard.cprogramming.com/c-programming/84251-read-2-bytes-file.html
+	for (int i = 0; i < 26; i++) {
+		if (fread(buf, sizeof(short), 1, fp) == 1)
+   		{
+      		// printf("%02x %02x\n", (int) buf[0], (int) buf[1]);
+      		printf("%02x (%d)\n", buf[0], buf[0]);
+   		}
+	
+//  		fread((void *)buffer, sizeof(short), 1, fp);
+//  		printf("%d:: buffer: %s (%x)\n", i, buffer, buffer);
+ 		
+//		short_data = getc(fp);
+//		printf("%d) %d (%x)\n", i, short_data, short_data);
+	}
+	
+	// data = getc(fp);
 	
 	// For position 54, the number 49 was returned, when printed as a character is
 	// the number 1 in decimal.
 	// If the number is 0, that is a nul, which might represent the nul character, as well
-	printf("data:: %d %c\n", data, data); 
+	// printf("data:: %d %c\n", data, data); 
 	
 	
 	while (( data = getc(fp)) != EOF) {
@@ -55,16 +82,21 @@ int main(int argc, char *argv[])
 		
 		if (data < 32) {
 			int new_data = data ^ 127;
-			printf("new_data:: %d %c\n", new_data, new_data);
+			// printf("new_data:: %d %c\n", new_data, new_data);
+			printf("%c ", new_data);
 		} else if (data > 127) {
 			int new_data = (data - 128) ^ 127;
-			printf("new_data:: %d %c\n", new_data, new_data);
+			// printf("new_data:: %d %c\n", new_data, new_data);
+			printf("%c ", new_data);
 		} else if (data == 95) {
-			printf("   _data:: %d  %c\n", data, data);
+			// printf("   _data:: %d  %c\n", data, data);
+			printf("%c ", data);
 		} else {
-			printf("    data:: %d %c\n", data, data);
+			//printf("    data:: %d %c\n", data, data);
+			printf("%c ", data);
 		}
 	}
+	
 	
 	fclose(fp);
 	
