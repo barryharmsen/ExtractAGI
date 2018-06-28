@@ -19,6 +19,7 @@
 #include <sys/mount.h>
 */
 #include <stdio.h>
+#include <string.h>
 
 int main(int argc, char *argv[]) 
 {
@@ -37,13 +38,24 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	
+	int data = -1;
+	int msbyte = -1;
+	int lsbyte = -1;
+	int initPos = -1;
+	
+	fseek(fp, 1, SEEK_SET);
+	initPos = getc(fp);
+	printf("Data at position 1: %x %d", initPos, initPos);
+	
+	// exit(0); // temp code
+	
 	// At the start of the file is a section that is always 26x2 bytes long. 
 	// This section contains a two byte entry for every letter of the alphabet. 
 	// It is essentially an index which gives the starting location of the words 
 	// beginning with the corresponding letter.
-	//fseek(fp, 52, SEEK_SET); // jump to position 52 in the file
+	// fseek(fp, 52, SEEK_SET); // jump to position 52 in the file
 	
-	int data = -1;
+	fseek(fp, initPos, SEEK_SET);
 	
 	// Get the indexes of the words, which are stored in the first 52 bytes
 	
@@ -53,6 +65,7 @@ int main(int argc, char *argv[])
 	short short_data = -1;
 	short buf[2];
 	
+	/*
 	// https://cboard.cprogramming.com/c-programming/84251-read-2-bytes-file.html
 	for (int i = 0; i < 26; i++) {
 		if (fread(buf, sizeof(short), 1, fp) == 1)
@@ -68,6 +81,8 @@ int main(int argc, char *argv[])
 //		printf("%d) %d (%x)\n", i, short_data, short_data);
 	}
 	
+	*/
+	
 	// data = getc(fp);
 	
 	// For position 54, the number 49 was returned, when printed as a character is
@@ -75,26 +90,94 @@ int main(int argc, char *argv[])
 	// If the number is 0, that is a nul, which might represent the nul character, as well
 	// printf("data:: %d %c\n", data, data); 
 	
+	printf("\n-------------------------------------\n");
 	
-	while (( data = getc(fp)) != EOF) {
+	// char new_word[80]; //  = "";
+	NSMutableString *currentWord  = [[NSMutableString alloc] init];
+	NSMutableString *previousWord = [[NSMutableString alloc] init];
 	
+	bool outer_loop = true;
+	
+	int loop_counter = 0;
+	
+	// while (( data = getc(fp)) != EOF) {
+	while (true) {
+	
+//		NSLog(@"1. --- Prev: %@ | Curr: %@ ---", previousWord, currentWord);
+		[previousWord setString: currentWord];
+//		NSLog(@"2. --- Prev: %@ | Curr: %@ ---", previousWord, currentWord);
+		[currentWord setString: @""];
+//		NSLog(@"3. --- Prev: %@ | Curr: %@ ---", previousWord, currentWord);
+	
+		if (( data = getc(fp)) == EOF) {
+			// break out of the outer loop
+			break;
+		}
+	
+		// Need to copy some portion of the previous word to the current word
+		// printf("string length: %d %c\n", data, data);
+		if (data <= [previousWord length]) {
+			[currentWord setString: [previousWord substringToIndex: data]];
+			// NSLog(@"previousWord substring
+		}
+		NSLog(@"currentWord after copying substring %@ of length %d", currentWord, data);
 //	data = getc(fp);
 		
-		if (data < 32) {
-			int new_data = data ^ 127;
-			// printf("new_data:: %d %c\n", new_data, new_data);
-			printf("%c ", new_data);
-		} else if (data > 127) {
-			int new_data = (data - 128) ^ 127;
-			// printf("new_data:: %d %c\n", new_data, new_data);
-			printf("%c ", new_data);
-		} else if (data == 95) {
-			// printf("   _data:: %d  %c\n", data, data);
-			printf("%c ", data);
-		} else {
-			//printf("    data:: %d %c\n", data, data);
-			printf("%c ", data);
+		while (true) {
+		
+			if (( data = getc(fp)) == EOF) {
+				break;
+			}
+		
+			if (data < 32) {
+				int new_data = data ^ 127;
+				// printf("new_data:: %d %c\n", new_data, new_data);
+				// printf("%c ", new_data); // Useful for seeing what letter is being added
+				
+// 				if (new_data == '~') {
+// 					printf("new_data is now ~ (%d)", data);
+// 				}
+				[currentWord appendFormat:@"%c", new_data];
+				// strcpy(new_word, (char)new_data);
+			} else if (data > 127) {
+				int new_data = (data - 128) ^ 127;
+				int other_data = data - 128; // data - 0x80
+				// printf("new_data:: %d %c\n", new_data, new_data);
+				// printf("%c [%c]", new_data, other_data);
+				// strcpy(new_word, (char)new_data);
+				// printf("new_word: %s", new_word);
+				[currentWord appendFormat:@"%c", new_data];
+				NSLog(@"currentWord: %@", currentWord);
+				// [currentWord setString: @""];
+				// memset(new_word, 0, strlen(new_word));
+				break;
+			} else if (data == 95) {
+				// printf("   _data:: %d  %c\n", data, data);
+				printf("%c ", data);
+				[currentWord appendString: @" "];
+			} else {
+				//printf("    data:: %d %c\n", data, data);
+				printf("**%c** ", data);
+			}
 		}
+		
+		// Get two more bytes of data
+		msbyte = getc(fp);
+		lsbyte = getc(fp);
+		
+		int word_block_num = msbyte*256 + lsbyte;
+		
+		printf("msbyte: %d lsbyte: %d -> %d ---------\n", msbyte, lsbyte, word_block_num);
+		
+		// Test code to limit the number of loops
+// 		loop_counter++;
+// 		if (loop_counter > 3) {
+// 			break;
+// 		}
+		
+// 		read(wordstok,msbyte); { read a byte value }
+//     	read(wordstok,lsbyte); { read another byte value }
+//     	wordblocknum := msbyte*256 + lsbyte;
 	}
 	
 	

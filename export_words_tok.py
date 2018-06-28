@@ -44,19 +44,22 @@ with open(config["sourceDir"] + "WORDS.TOK", "rb") as w:
                 CurrentWord = CurrentWord + chr(byte ^ 127)
             elif byte > 127:
                 CurrentWord = CurrentWord + chr((byte - 128) ^ 127)
-                break
+                break # break out of this loop if the value is 128 or larger (0x80)
             elif byte == 95:
                 CurrentWord = CurrentWord + ' '
 
         # Get word number
         b = w.read(2)
         if not b:
-            break
+            break # if nothing else to read, break out of the outer loop
+            
+        # get the two bytes, but this is in big endian
         wordno = struct.unpack('>H', b)[0]
 
+		# if the word number is already present, append the new word
         if wordno in words:
             words[wordno].append(CurrentWord)
-        else:
+        else: # otherwise, add the new entry
             words[wordno] = []
             words[wordno].append(CurrentWord)
 

@@ -72,11 +72,11 @@ begin
 
   assign(wordstok,'WORDS.TOK');
   reset(wordstok);
-  seek(wordstok,1);
-  read(wordstok,lsbyte);
+  seek(wordstok,1); { seek to position 1 }
+  read(wordstok,lsbyte); { read a byte, which should indicate the position to jump to }
   DataStart := lsbyte;
 
-  seek(wordstok,DataStart);
+  seek(wordstok,DataStart); { jump to the beginning of the words }
   CurrentWord := '';
   write('Reading words');
   repeat
@@ -86,19 +86,26 @@ begin
     read(wordstok,curbyte);
 
     CurrentWord := copy(PreviousWord,1,curbyte);
-    repeat
+    repeat { loop until the value is 128 or higher }
     begin
       read(wordstok,curbyte);
-      if (curbyte<$20) then
+      if (curbyte<$20) then { $20 is hexadecimal for 32 in decimal }
         begin
+        { 63 + 32 = 95 
+          32 is $20, which is a space in the ASCII table
+          Append the "letter" which is 95 - curbyte, so the letter will be
+          somewhere between the ASCII characters 63 through 95, which represents
+          the capital letters of the alphabet and a handful of other characters
+          }
           CurrentWord := CurrentWord + chr(63 + 32 - curbyte);
         end
       else if curbyte=95 then
        begin
+       { If curbyte is 95, that represents a space by this set of odd rules }
          CurrentWord := CurrentWord + ' ';
        end;
-    end until curbyte >= $80;
-    curbyte := curbyte - $80;
+    end until curbyte >= $80; { $80 is hexadecimal for 128 in decimal}
+    curbyte := curbyte - $80; { Get the actual letter by subtracting 128 from it }
     CurrentWord := CurrentWord + chr(63 + 32 - curbyte);
 
     read(wordstok,msbyte);
