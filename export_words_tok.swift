@@ -19,25 +19,41 @@ if argCount < 2 {
 	print("hello world! \(filePath)")
 	if let fileHandle = FileHandle(forReadingAtPath: filePath) {
 	
-		print("Offset = \(fileHandle.offsetInFile)")
-		fileHandle.seekToEndOfFile()
-		print("Offset = \(fileHandle.offsetInFile)")
-		fileHandle.seek(toFileOffset: 52)
-		print("Offset = \(fileHandle.offsetInFile)")
-	
-		//var previousWord = ""
-		//var currentWord = ""
+		//print("Offset = \(fileHandle.offsetInFile)")
+		//fileHandle.seekToEndOfFile()
+		//print("Offset = \(fileHandle.offsetInFile)")
 		
-		let buffer = fileHandle.readData(ofLength: 1) 
-		print("buffer: \(buffer)")
+		fileHandle.seek(toFileOffset: 1)
+		print("Offset = \(fileHandle.offsetInFile)")
 	
-		// This isn't getting called...need further testing...
-		if buffer.count == 0 {
-			print("Buffer is empty.  EOF")
+		let wordsOffset = fileHandle.readData(ofLength: 1)
+		fileHandle.seek(toFileOffset: wordsOffset)
+		
+		var previousWord = ""
+		var currentWord = ""
+		
+		while true {
+		
+			previousWord = currentWord
+			currentWord = ""
+			
+			// Can a guard statement be used here?
+			let buffer = fileHandle.readData(ofLength: 1) 
+			print("buffer: \(buffer)")
+			
+//			guard !chunk.isEmpty else {
+//            	break
+//        	}
+	
+			// This isn't getting called...need further testing...
+			if buffer.count == 0 {
+				print("Buffer is empty.  EOF")
+				break
+			}
+	
+			var dataString = String(data: buffer, encoding: .utf8)
+			print("dataString: \(dataString)")
 		}
-	
-		var dataString = String(data: buffer, encoding: .utf8)
-		print("dataString: \(dataString)")
 
 		print("Closing file")
 		fileHandle.closeFile()
