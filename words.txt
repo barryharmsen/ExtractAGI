@@ -1,0 +1,495 @@
+a
+abracadabra
+acquire
+across
+aid
+all
+alligator
+alligators
+an
+another
+antique
+anyword
+armor
+around
+assist
+at
+attack
+ax
+axe
+back
+bag
+bag of jewels
+banner
+banners
+beach
+bean
+beans
+beanstalk
+beaver
+beavers
+bed
+bedroom
+beg
+big bird
+bird
+bird nest
+birds nest
+blossom
+blossoms
+blow out
+both
+bottle
+bottles
+bottom
+boulder
+boulders
+bow
+bowl
+branch
+branches
+break
+bridge
+broth
+bucket
+building
+bureau
+bury
+bush
+bushes
+buy
+cabinet
+cabinets
+cage
+call
+can
+candle
+candy
+cans
+cap
+capture
+care
+carrot
+carrot patch
+carrots
+cast
+castle
+catch
+cattails
+cave
+cavern
+chair
+chairs
+chamber
+chandelier
+chasm
+check
+cheese
+chest
+chicken broth
+chicken soup
+climb
+close
+clouds
+clover
+coin
+coins
+condor
+consume
+cottage
+count
+crack
+cupboard
+curtain
+curtains
+cut
+dagger
+diamond
+diamonds
+disk
+dive
+door
+doors
+doorway
+douse
+down
+dragon
+drawer
+dresser
+drink
+drop
+duck
+dwarf
+eagle
+eat
+egg
+elf
+enchanter
+enter
+every
+examine
+exit
+fairy
+fairy godmother
+fast
+feed
+feed broth
+feed soup
+feed the soup
+feel
+fence
+fiddle
+fight
+fill
+find
+finger
+fingers
+fire
+fireplace
+first
+fishing
+flag
+flags
+floor
+flower
+flowers
+fly
+fly away
+follow
+for
+format
+fort
+four leaf clover
+fourleaf clover
+fourleaf clover
+from
+game
+garden
+gate
+get
+get in
+get into
+get off
+get on
+get out
+giant
+gingerbread
+girl
+give
+gnome
+go
+go down
+goat
+goat pen
+godmother
+gold
+gold egg
+gold key
+gold nut
+gold walnut
+golden
+golden egg
+golden walnut
+graham
+grahams
+grass
+ground
+guess
+guitar
+hall
+hat
+hatchet
+hats
+hello
+help
+hi
+hit
+hole
+holes
+hollow
+home
+house
+hug
+hush
+i
+ifnkovhgroghprm
+in
+init
+initialize
+into
+is
+island
+jewelry
+jump
+key
+key hole
+keyhole
+kill
+king
+king edward
+kinghts
+kiss
+kitchen
+kneel
+knife
+knight
+knob
+knock
+ladder
+lady
+lake
+lamp
+last name
+leanto
+leap
+leave
+leprechaun
+leprechauns
+leps
+let
+lid
+lift
+light
+lion
+lions
+little
+locate
+lock
+log
+logs
+look
+look around
+look down
+look for
+look in
+look inside
+look into
+look under
+look up
+love
+lower
+magic beans
+man
+me
+message
+mikel
+mikel knight
+mirror
+moat
+mountain
+mountains
+mouse
+move
+murder
+mushroom
+mushrooms
+my name
+name
+nap
+nest
+nikstlitselpmur
+no
+normal
+note
+now
+nut
+nuts
+oak
+object
+of
+off
+offer
+ogre
+old
+on
+one
+open
+opening
+out
+oven
+over
+pail
+palace
+path
+pebbles
+pen
+people
+pet
+pew
+pick
+pine tree
+plant
+plants
+play
+please
+pluck
+pocket
+point
+pond
+pos
+position
+pouch
+pouch of diamonds
+pound
+present
+priority
+programmed
+pry
+pull
+pump
+purchase
+push
+put
+put on
+quiet
+quit
+raise
+ramp
+rat
+reach
+read
+remove
+reset
+restart
+restore
+ride
+ring
+river
+rob
+rock
+rock wall
+rocks
+roof
+room
+rope
+rub
+rumpelstiltskin
+rumplestiltskin
+save
+say
+scale
+sceptre
+second
+see
+sesame
+set
+shelf
+shield
+shove
+show
+shrub
+shrubs
+shut
+sign
+silence
+silver
+sir
+sit
+sit down
+sky
+sleep
+slide
+sling
+slingshot
+slow
+smash
+smell
+sniff
+some
+sorcerer
+soup
+sp
+speak
+squat
+stairs
+stairway
+stalactite
+stalactites
+stalagmite
+stalagmites
+stalk
+stand
+stand up
+steal
+steps
+stew
+stove
+stream
+stump
+stumps
+swim
+swimming
+swipe
+swiss cheese
+table
+take
+take off
+talk
+taste
+thank
+thank you
+that
+the
+them
+these
+third
+this
+thorns
+those
+throne
+through
+throw
+to
+toadstool
+toadstools
+torch
+torches
+toss
+tower
+tp
+treasure
+tree
+trees
+troll
+turn
+under
+unlock
+untie
+up
+use
+var
+view
+violin
+wade
+wading
+wake
+wall
+walnut
+walnut tree
+walnuts
+water
+water pump
+waterfall
+wear
+well
+what is
+whats
+who
+wife
+will
+window
+witch
+with
+wolf
+woman
+wood
+woodcutter
+woodcutters
+woodcutters wife
+woodstove
+word
+wrote
+yell
+yes
+you
+your
