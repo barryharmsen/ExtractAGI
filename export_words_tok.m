@@ -2,12 +2,18 @@
  *	export_words_tok.m
  *
  *	Description: Reverse engineer the WORDS.TOK file from an AGI Sierra game.
- * 	Author: Chad Armstrong
- *	Date: 25 June 2018
+ *	             The results are saved into two files: words.txt and words.json
+ * 	Author: Chad Armstrong (chad@edenwaith.com)
+ *	Date: 25-28 June 2018
  *	To compile: gcc -w -framework Foundation export_words_tok.m -o export_words
  *
  *	Resources:
- *	WORDS.TOK specs: http://www.agidev.com/articles/agispec/agispecs-10.html#ss10.2
+ *	- WORDS.TOK specs: http://www.agidev.com/articles/agispec/agispecs-10.html#ss10.2
+ *  - Reverse Engineering 80s Sierra AGI Games: https://www.youtube.com/watch?v=XWiR1qP8wp8
+ *  
+ *  Based off of code from:
+ *  - https://github.com/barryharmsen/ExtractAGI/blob/master/export_words_tok.py
+ *  - http://www.agidev.com/articles/agispec/examples/otherdata/words.pas
  */
 
 #import <Foundation/Foundation.h>
@@ -19,7 +25,6 @@ int main(int argc, char *argv[])
 {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	
-	NSFileManager *fm = [NSFileManager defaultManager];
 	NSMutableString *currentWord  = [[NSMutableString alloc] init];
 	NSMutableString *previousWord = [[NSMutableString alloc] init];
 	NSMutableDictionary *wordsDictionary = [[NSMutableDictionary alloc] init];
@@ -30,6 +35,7 @@ int main(int argc, char *argv[])
 	int ls_byte = -1;
 	int initPos = -1;
 	
+	// Specify the path to the WORDS.TOK file
 	if (argc < 2) {
 		printf("usage: %s path/to/WORDS.TOK\n", argv[0]);
 		exit(EXIT_FAILURE);
@@ -55,14 +61,12 @@ int main(int argc, char *argv[])
 	// the hexadecimal value for 62.
 	fseek(fp, 1, SEEK_SET);
 	initPos = getc(fp);
-	printf("Data at position 1: %x (%d)", initPos, initPos);
 
 	// Jump to the offset for the first word.  Other examples might show jumping to offset
 	// 52, but that may cause other errors, so refer to the offset value read from byte 1.
 	fseek(fp, initPos, SEEK_SET);
-		
-
 	
+	// Loop through the words section of the WORDS.TOK file
 	while (true) { // outer loop
 	
 		[previousWord setString: currentWord];
@@ -89,8 +93,8 @@ int main(int argc, char *argv[])
 			// Ignore any values from 32 through 127.
 			if (data < 32) {
 				// A letter of the current word.
-				int new_data = data ^ 127;
-				[currentWord appendFormat:@"%c", new_data];
+				int new_data = data ^ 127; // XOR by 127 (0x7F) to reveal the actual letter
+				[currentWord appendFormat:@"%c", new_data]; // append the new letter to the current word
 
 			} else if (data == 95) {
 				// A space character
@@ -98,12 +102,12 @@ int main(int argc, char *argv[])
 				
 			} else if (data > 127) {
 			
-				int new_data = (data - 128) ^ 127;
+				int new_data = (data - 128) ^ 127; // Subtract 128 (0x80) then XOR by 127 (0x7F)
 				[currentWord appendFormat:@"%c", new_data];
-				NSLog(@"currentWord: %@", currentWord);
 				NSString *stringToWrite = [NSString stringWithFormat: @"%@\n", currentWord];
 				fputs([stringToWrite cStringUsingEncoding: NSASCIIStringEncoding], fpout);
-
+				// NSLog(@"currentWord: %@", currentWord); // uncomment to see the output
+				
 				break; // break out of the inner loop 
 				
 			}
@@ -115,14 +119,11 @@ int main(int argc, char *argv[])
 		
 		// Determine the word group index
 		int word_block_num = ms_byte*256 + ls_byte;
-		
-		
-		// printf("ms_byte: %d ls_byte: %d -> %d ---------\n", ms_byte, ls_byte, word_block_num);
-		
+	
 		if (word_block_num >= 0) {
 		
 			NSString *key = [NSString stringWithFormat:@"%d", word_block_num]; // NSDictionary keys must be objects not value types
-			NSString *newWord = [currentWord copy]; // Copy the current word to a new string
+			NSString *newWord = [currentWord copy]; // Copy the current word to a new string to insert into the dictionary
 			
 			// Add word to dictionary
 			if ([wordsDictionary objectForKey: key]) {
@@ -154,7 +155,6 @@ int main(int argc, char *argv[])
 			NSLog(@"Error saving file 'words.json': %@", [error localizedDescription]);
 		}
     }
-
 	
 	fclose(fp);
 	fclose(fpout);
