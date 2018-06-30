@@ -9,17 +9,14 @@
  *
  *	Resources:
  *	- WORDS.TOK specs: http://www.agidev.com/articles/agispec/agispecs-10.html#ss10.2
- *  - Reverse Engineering 80s Sierra AGI Games: https://www.youtube.com/watch?v=XWiR1qP8wp8
+ *	- Reverse Engineering 80s Sierra AGI Games: https://www.youtube.com/watch?v=XWiR1qP8wp8
  *  
- *  Based off of code from:
- *  - https://github.com/barryharmsen/ExtractAGI/blob/master/export_words_tok.py
- *  - http://www.agidev.com/articles/agispec/examples/otherdata/words.pas
+ *	Based off of code from:
+ *	- https://github.com/barryharmsen/ExtractAGI/blob/master/export_words_tok.py
+ *	- http://www.agidev.com/articles/agispec/examples/otherdata/words.pas
  */
 
 #import <Foundation/Foundation.h>
-
-#include <stdio.h>
-
 
 int main(int argc, char *argv[]) 
 {
@@ -145,16 +142,16 @@ int main(int argc, char *argv[])
                                                    options:NSJSONWritingPrettyPrinted | NSJSONWritingSortedKeys 
                                                      error:&error];
                                                      
-    if (error != nil) {
-    	NSLog(@"Error creating JSON data: %@", [error localizedDescription]);
-    } else {
-    	NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+	if (error != nil) {
+		NSLog(@"Error creating JSON data: %@", [error localizedDescription]);
+	} else {
+		NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 
 		BOOL succeed = [jsonString writeToFile:@"words.json" atomically:YES encoding:NSUTF8StringEncoding error:&error];
 		if (succeed == NO) {
 			NSLog(@"Error saving file 'words.json': %@", [error localizedDescription]);
 		}
-    }
+	}
 	
 	fclose(fp);
 	fclose(fpout);
