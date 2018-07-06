@@ -1,0 +1,11 @@
+{
+  "game": "KQ1",
+  "gameLong": "King's Quest I: Quest For The Crown",
+  "sourceDir": "./",
+  "exportDir": {
+    "main": "exports/kq1/",
+    "view": "exports/kq1/view/",
+    "pic": "exports/kq1/pic/"
+  },
+  "imageScale": 4
+}
