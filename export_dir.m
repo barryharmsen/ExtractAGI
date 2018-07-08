@@ -4,16 +4,16 @@
  *	Description: Reverse engineer the WORDS.TOK file from an AGI Sierra game.
  *	             The results are saved into two files: words.txt and words.json
  * 	Author: Chad Armstrong (chad@edenwaith.com)
- *	Date: 5 July 2018
+ *	Date: 5-6 July 2018
  *	To compile: gcc -w -framework Foundation export_dir.m -o export_dir
  *
  *	Resources:
- *	- WORDS.TOK specs: http://www.agidev.com/articles/agispec/agispecs-10.html#ss10.2
+ *	- DIR specs: http://www.agidev.com/articles/agispec/agispecs-5.html#ss5.1
  *	- Reverse Engineering 80s Sierra AGI Games: https://www.youtube.com/watch?v=XWiR1qP8wp8
  *  
  *	Based off of code from:
  *	- https://github.com/barryharmsen/ExtractAGI/blob/master/export_dir.py
- *	- http://www.agidev.com/articles/agispec/examples/otherdata/words.pas
+ *	- http://www.agidev.com/articles/agispec/examples/files/agifiles.c
  */
 
 #import <Foundation/Foundation.h>
@@ -61,6 +61,7 @@ int main(int argc, char *argv[])
 				}
 				
 				for (int i = 0; i < numDirEntries; i++) {
+				
 					int byte1 = getc(fp);
 					int byte2 = getc(fp);
 					int byte3 = getc(fp);
