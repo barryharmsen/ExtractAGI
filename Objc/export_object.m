@@ -27,6 +27,22 @@ int main(int argc, char *argv[])
 {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 
+	const int encryption_key_length = 11;
+	char encryption_key[encryption_key_length] = {65, 118, 105, 115, 32, 68, 117, 114, 103, 97, 110};  // In decimal this spells "Avis Durgan"
+	FILE *fp;
+	
+	printf("Length of encryption_key array is %d\n", encryption_key_length);
+	
+	if (argc < 2) {
+		printf("usage: %s path/to/OBJECT\n", argv[0]);
+		return (EXIT_FAILURE);
+	}
+	
+	if ((fp = fopen(argv[1], "r")) == NULL) {		
+		fprintf(stderr, "Could not open input file %s\n", argv[1]);
+		exit(EXIT_FAILURE);
+	}
+
 	[pool release];
 	return 0;
 }
