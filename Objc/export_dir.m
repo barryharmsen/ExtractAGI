@@ -1,8 +1,8 @@
 /*
  *	export_dir.m
  *
- *	Description: Reverse engineer the WORDS.TOK file from an AGI Sierra game.
- *	             The results are saved into two files: words.txt and words.json
+ *	Description: Reverse engineer the four DIR files from an AGI Sierra game.
+ *	             The results are saved into the file dir.json
  * 	Author: Chad Armstrong (chad@edenwaith.com)
  *	Date: 5-6 July 2018
  *	To compile: gcc -w -framework Foundation export_dir.m -o export_dir
