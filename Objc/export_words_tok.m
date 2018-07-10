@@ -6,6 +6,7 @@
  * 	Author: Chad Armstrong (chad@edenwaith.com)
  *	Date: 25-28 June 2018
  *	To compile: gcc -w -framework Foundation export_words_tok.m -o export_words
+ *	To run: ./export_words path/to/WORDS.TOK
  *
  *	Resources:
  *	- WORDS.TOK specs: http://www.agidev.com/articles/agispec/agispecs-10.html#ss10.2
@@ -14,6 +15,7 @@
  *	Based off of code from:
  *	- https://github.com/barryharmsen/ExtractAGI/blob/master/export_words_tok.py
  *	- http://www.agidev.com/articles/agispec/examples/otherdata/words.pas
+ *	- http://www.agidev.com/articles/agispec/examples/files/volx2.c
  */
 
 #import <Foundation/Foundation.h>

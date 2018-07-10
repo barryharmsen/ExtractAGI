@@ -1,0 +1,110 @@
+{
+  "0" : {
+    "name" : "?",
+    "room" : 0
+  },
+  "3" : {
+    "name" : "dagger",
+    "room" : 0
+  },
+  "6" : {
+    "name" : "chest",
+    "room" : 0
+  },
+  "9" : {
+    "name" : "carrot",
+    "room" : 0
+  },
+  "12" : {
+    "name" : "gold walnut",
+    "room" : 0
+  },
+  "15" : {
+    "name" : "key",
+    "room" : 0
+  },
+  "18" : {
+    "name" : "note",
+    "room" : 0
+  },
+  "21" : {
+    "name" : "magic ring",
+    "room" : 0
+  },
+  "24" : {
+    "name" : "fourleaf clover",
+    "room" : 0
+  },
+  "27" : {
+    "name" : "ceramic bowl",
+    "room" : 0
+  },
+  "30" : {
+    "name" : "full bowl",
+    "room" : 0
+  },
+  "33" : {
+    "name" : "water bucket",
+    "room" : 0
+  },
+  "36" : {
+    "name" : "full bucket",
+    "room" : 0
+  },
+  "39" : {
+    "name" : "pebbles",
+    "room" : 0
+  },
+  "42" : {
+    "name" : "leather slingshot",
+    "room" : 0
+  },
+  "45" : {
+    "name" : "pouch of diamonds",
+    "room" : 0
+  },
+  "48" : {
+    "name" : "pouch",
+    "room" : 0
+  },
+  "51" : {
+    "name" : "sceptre",
+    "room" : 0
+  },
+  "54" : {
+    "name" : "cheese",
+    "room" : 0
+  },
+  "57" : {
+    "name" : "magic mirror",
+    "room" : 0
+  },
+  "60" : {
+    "name" : "gold egg",
+    "room" : 0
+  },
+  "63" : {
+    "name" : "shield",
+    "room" : 0
+  },
+  "66" : {
+    "name" : "fiddle",
+    "room" : 0
+  },
+  "69" : {
+    "name" : "walnut",
+    "room" : 0
+  },
+  "72" : {
+    "name" : "mushroom",
+    "room" : 0
+  },
+  "75" : {
+    "name" : "beans",
+    "room" : 0
+  },
+  "78" : {
+    "name" : "water",
+    "room" : 0
+  }
+}
