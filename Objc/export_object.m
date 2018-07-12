@@ -114,7 +114,7 @@ int main(int argc, char *argv[])
 			object_name_index++;
 		}
 		
-		NSString *key        = [NSString stringWithFormat:@"%d", i-3];
+		NSString *key        = [NSString stringWithFormat:@"%d", (i-3)/3];
 		NSNumber *roomNum    = [NSNumber numberWithInt: room_num];
 		NSDictionary *object = @{@"name": [currentObject copy], @"room": roomNum};
 		
