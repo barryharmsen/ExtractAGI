@@ -1,0 +1,978 @@
+{
+  "246" : [
+    "unknownword"
+  ],
+  "28" : [
+    "close",
+    "shut"
+  ],
+  "195" : [
+    "amulet"
+  ],
+  "53" : [
+    "island"
+  ],
+  "187" : [
+    "blow"
+  ],
+  "73" : [
+    "unlock"
+  ],
+  "29" : [
+    "brooch"
+  ],
+  "54" : [
+    "kill",
+    "murder"
+  ],
+  "71" : [
+    "use"
+  ],
+  "240" : [
+    "var"
+  ],
+  "196" : [
+    "marry"
+  ],
+  "80" : [
+    "fight"
+  ],
+  "55" : [
+    "flag"
+  ],
+  "188" : [
+    "cube",
+    "sugar",
+    "sugar cube"
+  ],
+  "214" : [
+    "water fall",
+    "waterfall"
+  ],
+  "167" : [
+    "wave",
+    "waves"
+  ],
+  "24" : [
+    "window"
+  ],
+  "180" : [
+    "y",
+    "yes"
+  ],
+  "234" : [
+    "yell"
+  ],
+  "197" : [
+    "say"
+  ],
+  "82" : [
+    "bottle",
+    "glass",
+    "jar"
+  ],
+  "189" : [
+    "flying horse",
+    "horse"
+  ],
+  "57" : [
+    "sign"
+  ],
+  "83" : [
+    "cloth",
+    "fabric",
+    "material"
+  ],
+  "58" : [
+    "count dracula",
+    "dracula",
+    "dwarf",
+    "enchanter",
+    "fiend",
+    "ghoul",
+    "king",
+    "king neptune",
+    "man",
+    "monk",
+    "neptune",
+    "vampire",
+    "wiz",
+    "wizard"
+  ],
+  "198" : [
+    "silver"
+  ],
+  "59" : [
+    "clam",
+    "clam shell",
+    "clamshell",
+    "shell"
+  ],
+  "84" : [
+    "snake",
+    "viper"
+  ],
+  "85" : [
+    "knife",
+    "sword"
+  ],
+  "199" : [
+    "gold",
+    "golden"
+  ],
+  "86" : [
+    "bridle",
+    "leather bridle"
+  ],
+  "87" : [
+    "carpet",
+    "magic carpet",
+    "rug"
+  ],
+  "88" : [
+    "lie"
+  ],
+  "89" : [
+    "light"
+  ],
+  "30" : [
+    "capture",
+    "catch"
+  ],
+  "31" : [
+    "restart",
+    "restart game"
+  ],
+  "32" : [
+    "cross",
+    "cross and chain"
+  ],
+  "33" : [
+    "canyon",
+    "chasm",
+    "gorge"
+  ],
+  "35" : [
+    "drink"
+  ],
+  "60" : [
+    "bracelet",
+    "diamond and sapphire bracelet",
+    "diamond bracelet"
+  ],
+  "61" : [
+    "pole",
+    "stake",
+    "stick"
+  ],
+  "37" : [
+    "boulder",
+    "boulders",
+    "rock",
+    "rocks"
+  ],
+  "62" : [
+    "get in",
+    "get into"
+  ],
+  "38" : [
+    "hole",
+    "opening"
+  ],
+  "39" : [
+    "ring",
+    "ruby ring"
+  ],
+  "65" : [
+    "boat",
+    "rowboat"
+  ],
+  "0" : [
+    "a",
+    "all",
+    "an",
+    "another",
+    "at",
+    "down",
+    "every",
+    "first",
+    "for",
+    "from",
+    "gingerbread",
+    "guess",
+    "i",
+    "in",
+    "into",
+    "is",
+    "it",
+    "little",
+    "me",
+    "my",
+    "now",
+    "of",
+    "off",
+    "old",
+    "on",
+    "out",
+    "over",
+    "palm",
+    "please",
+    "second",
+    "sir",
+    "some",
+    "that",
+    "the",
+    "these",
+    "third",
+    "this",
+    "those",
+    "through",
+    "to",
+    "under",
+    "up",
+    "will",
+    "with",
+    "you"
+  ],
+  "91" : [
+    "cabinet",
+    "display case"
+  ],
+  "1" : [
+    "anyword"
+  ],
+  "66" : [
+    "who"
+  ],
+  "2" : [
+    "check out",
+    "examine",
+    "inspect",
+    "look",
+    "view"
+  ],
+  "92" : [
+    "candle"
+  ],
+  "3" : [
+    "area",
+    "around",
+    "bedchamber",
+    "cave",
+    "cavern",
+    "chamber",
+    "corridor",
+    "forest",
+    "hall",
+    "hall way",
+    "hallway",
+    "landscape",
+    "room",
+    "vicinity",
+    "zone"
+  ],
+  "4" : [
+    "enter",
+    "go"
+  ],
+  "93" : [
+    "bed"
+  ],
+  "5" : [
+    "acquire",
+    "get",
+    "pick",
+    "rob",
+    "swipe",
+    "take"
+  ],
+  "69" : [
+    "branch",
+    "branches",
+    "log",
+    "logs",
+    "wood"
+  ],
+  "6" : [
+    "climb",
+    "scale"
+  ],
+  "94" : [
+    "programmed",
+    "wrote"
+  ],
+  "7" : [
+    "play"
+  ],
+  "95" : [
+    "stairs",
+    "stairway",
+    "steps"
+  ],
+  "8" : [
+    "grass",
+    "ground"
+  ],
+  "9" : [
+    "tree",
+    "trees",
+    "woods"
+  ],
+  "96" : [
+    "torch",
+    "torches"
+  ],
+  "97" : [
+    "chest",
+    "trunk"
+  ],
+  "98" : [
+    "diamond and sapphire tiara",
+    "diamond tiara",
+    "tiara"
+  ],
+  "99" : [
+    "consume",
+    "eat",
+    "taste"
+  ],
+  "100" : [
+    "kitchen"
+  ],
+  "10" : [
+    "beach",
+    "sand",
+    "seashore"
+  ],
+  "11" : [
+    "bush",
+    "bushes",
+    "foliage",
+    "plant",
+    "plants",
+    "shrub",
+    "shrubs"
+  ],
+  "101" : [
+    "cupboard"
+  ],
+  "110" : [
+    "what is"
+  ],
+  "102" : [
+    "ham",
+    "meat",
+    "smoked ham"
+  ],
+  "13" : [
+    "speak",
+    "talk"
+  ],
+  "14" : [
+    "find",
+    "locate"
+  ],
+  "111" : [
+    "lamp",
+    "magic lamp",
+    "oil lamp"
+  ],
+  "200" : [
+    "look down"
+  ],
+  "103" : [
+    "table"
+  ],
+  "40" : [
+    "give",
+    "offer",
+    "present"
+  ],
+  "15" : [
+    "smell",
+    "sniff"
+  ],
+  "112" : [
+    "hush",
+    "quiet",
+    "silence"
+  ],
+  "16" : [
+    "blossom",
+    "blossoms",
+    "flower",
+    "flowers"
+  ],
+  "41" : [
+    "jewelry"
+  ],
+  "201" : [
+    "point"
+  ],
+  "104" : [
+    "wake"
+  ],
+  "17" : [
+    "basket",
+    "basket of goodies",
+    "food",
+    "goodies",
+    "goody basket",
+    "snacks"
+  ],
+  "42" : [
+    "kiss"
+  ],
+  "113" : [
+    "last name",
+    "name"
+  ],
+  "202" : [
+    "let"
+  ],
+  "18" : [
+    "bitch",
+    "cunt",
+    "damsel",
+    "fairy",
+    "girl",
+    "grandma",
+    "grandmother",
+    "hag",
+    "hagatha",
+    "her",
+    "hose bag",
+    "lady",
+    "little red riding hood",
+    "maiden",
+    "mermaid",
+    "old hag",
+    "old lady",
+    "old woman",
+    "red riding hood",
+    "riding hood",
+    "slut",
+    "sperm burping gutter slut",
+    "valanice",
+    "whore",
+    "witch",
+    "woman"
+  ],
+  "43" : [
+    "embrace",
+    "hug"
+  ],
+  "105" : [
+    "pound"
+  ],
+  "130" : [
+    "wolf"
+  ],
+  "122" : [
+    "cauldron",
+    "pot"
+  ],
+  "211" : [
+    "disk"
+  ],
+  "19" : [
+    "open"
+  ],
+  "114" : [
+    "genie"
+  ],
+  "203" : [
+    "look in",
+    "look inside"
+  ],
+  "44" : [
+    "quit"
+  ],
+  "106" : [
+    "casket",
+    "coffin"
+  ],
+  "220" : [
+    "bureau",
+    "dresser"
+  ],
+  "70" : [
+    "diamond and sapphire necklace",
+    "diamond necklace",
+    "necklace"
+  ],
+  "123" : [
+    "brew"
+  ],
+  "212" : [
+    "cap",
+    "hat",
+    "hats"
+  ],
+  "45" : [
+    "pos"
+  ],
+  "140" : [
+    "drop",
+    "put",
+    "set"
+  ],
+  "115" : [
+    "bird",
+    "caged nightingale",
+    "nightingale"
+  ],
+  "131" : [
+    "pray",
+    "worship"
+  ],
+  "132" : [
+    "graham",
+    "grahams",
+    "king graham"
+  ],
+  "72" : [
+    "hammer",
+    "mallet"
+  ],
+  "221" : [
+    "drawer"
+  ],
+  "124" : [
+    "aid",
+    "assist",
+    "care",
+    "help"
+  ],
+  "213" : [
+    "look across"
+  ],
+  "47" : [
+    "rusty trident",
+    "trident"
+  ],
+  "48" : [
+    "magic seahorse",
+    "sea horse",
+    "seahorse"
+  ],
+  "230" : [
+    "key hole",
+    "keyhole"
+  ],
+  "116" : [
+    "bird cage",
+    "birdcage",
+    "cage"
+  ],
+  "133" : [
+    "bow",
+    "kneel"
+  ],
+  "108" : [
+    "cushion",
+    "pillow"
+  ],
+  "74" : [
+    "inscription"
+  ],
+  "150" : [
+    "knock"
+  ],
+  "49" : [
+    "object",
+    "sp"
+  ],
+  "125" : [
+    "put on",
+    "wear"
+  ],
+  "117" : [
+    "cover",
+    "drape"
+  ],
+  "206" : [
+    "batman",
+    "batmobile",
+    "car"
+  ],
+  "75" : [
+    "key"
+  ],
+  "142" : [
+    "fishing net",
+    "net"
+  ],
+  "231" : [
+    "look up"
+  ],
+  "109" : [
+    "pat",
+    "pet",
+    "poke",
+    "polish",
+    "rub",
+    "stroke",
+    "tap",
+    "touch"
+  ],
+  "126" : [
+    "feed"
+  ],
+  "215" : [
+    "keys"
+  ],
+  "151" : [
+    "lake",
+    "ocean",
+    "pond",
+    "sea",
+    "water"
+  ],
+  "143" : [
+    "dolphin",
+    "fish",
+    "gasping fish",
+    "golden fish",
+    "porpoise",
+    "shark"
+  ],
+  "207" : [
+    "get off"
+  ],
+  "222" : [
+    "ramp"
+  ],
+  "135" : [
+    "altar"
+  ],
+  "224" : [
+    "jump"
+  ],
+  "160" : [
+    "fast"
+  ],
+  "127" : [
+    "antique",
+    "antiques",
+    "junk"
+  ],
+  "78" : [
+    "bridge"
+  ],
+  "216" : [
+    "one"
+  ],
+  "144" : [
+    "cliff",
+    "cliffs",
+    "mountain",
+    "mountains"
+  ],
+  "208" : [
+    "flower box",
+    "window box"
+  ],
+  "152" : [
+    "bouquet",
+    "bouquet of flowers"
+  ],
+  "136" : [
+    "ladder"
+  ],
+  "233" : [
+    "quilt"
+  ],
+  "79" : [
+    "read"
+  ],
+  "128" : [
+    "broth",
+    "chicken broth",
+    "chicken soup",
+    "soup"
+  ],
+  "153" : [
+    "fence"
+  ],
+  "141" : [
+    "rescue",
+    "save",
+    "save game"
+  ],
+  "242" : [
+    "reset"
+  ],
+  "209" : [
+    "get on",
+    "ride"
+  ],
+  "241" : [
+    "sf"
+  ],
+  "77" : [
+    "skull",
+    "skulls"
+  ],
+  "226" : [
+    "bell"
+  ],
+  "232" : [
+    "sky"
+  ],
+  "129" : [
+    "black cape",
+    "black cloak",
+    "cape",
+    "cloak"
+  ],
+  "218" : [
+    "both"
+  ],
+  "154" : [
+    "follow"
+  ],
+  "146" : [
+    "game"
+  ],
+  "235" : [
+    "listen"
+  ],
+  "243" : [
+    "credit"
+  ],
+  "138" : [
+    "earrings"
+  ],
+  "227" : [
+    "across"
+  ],
+  "252" : [
+    "board"
+  ],
+  "155" : [
+    "sit",
+    "sit down"
+  ],
+  "219" : [
+    "chair",
+    "chairs"
+  ],
+  "244" : [
+    "ani"
+  ],
+  "172" : [
+    "pry"
+  ],
+  "236" : [
+    "benches",
+    "pew",
+    "pews"
+  ],
+  "147" : [
+    "restore",
+    "restore game"
+  ],
+  "139" : [
+    "cast",
+    "throw",
+    "throw back",
+    "toss"
+  ],
+  "253" : [
+    "fastest"
+  ],
+  "164" : [
+    "fly",
+    "fly away"
+  ],
+  "181" : [
+    "no"
+  ],
+  "156" : [
+    "cut"
+  ],
+  "228" : [
+    "rat"
+  ],
+  "173" : [
+    "abracadabra"
+  ],
+  "148" : [
+    "dig"
+  ],
+  "237" : [
+    "love"
+  ],
+  "165" : [
+    "home"
+  ],
+  "254" : [
+    "empty"
+  ],
+  "190" : [
+    "lid"
+  ],
+  "182" : [
+    "buy",
+    "purchase"
+  ],
+  "157" : [
+    "exit",
+    "get out",
+    "leave"
+  ],
+  "20" : [
+    "break",
+    "knock down",
+    "smash"
+  ],
+  "149" : [
+    "hello",
+    "hi"
+  ],
+  "238" : [
+    "bat"
+  ],
+  "229" : [
+    "priority"
+  ],
+  "191" : [
+    "fire",
+    "fireplace"
+  ],
+  "21" : [
+    "antique shop",
+    "antique store",
+    "building",
+    "castle",
+    "church",
+    "cottage",
+    "house",
+    "monastery",
+    "palace",
+    "shop",
+    "store",
+    "tower"
+  ],
+  "174" : [
+    "sesame"
+  ],
+  "158" : [
+    "dive",
+    "swim under"
+  ],
+  "161" : [
+    "slow"
+  ],
+  "247" : [
+    "status"
+  ],
+  "175" : [
+    "look under"
+  ],
+  "22" : [
+    "door",
+    "doors"
+  ],
+  "239" : [
+    "position"
+  ],
+  "192" : [
+    "lift"
+  ],
+  "183" : [
+    "steal"
+  ],
+  "23" : [
+    "box",
+    "mailbox"
+  ],
+  "159" : [
+    "normal"
+  ],
+  "248" : [
+    "pause",
+    "pause game"
+  ],
+  "225" : [
+    "stump",
+    "stumps"
+  ],
+  "163" : [
+    "suntan",
+    "tan"
+  ],
+  "251" : [
+    "sv"
+  ],
+  "137" : [
+    "swim",
+    "swimming",
+    "wade",
+    "wading"
+  ],
+  "168" : [
+    "move",
+    "pull",
+    "push",
+    "shove"
+  ],
+  "193" : [
+    "back"
+  ],
+  "250" : [
+    "tester"
+  ],
+  "50" : [
+    "brambles",
+    "briars",
+    "thorns"
+  ],
+  "185" : [
+    "remove",
+    "take off"
+  ],
+  "25" : [
+    "show"
+  ],
+  "177" : [
+    "my name"
+  ],
+  "249" : [
+    "stab"
+  ],
+  "51" : [
+    "hungry lion",
+    "lion"
+  ],
+  "194" : [
+    "fishing"
+  ],
+  "204" : [
+    "thank",
+    "thank you"
+  ],
+  "217" : [
+    "them"
+  ],
+  "186" : [
+    "book shelf",
+    "bookcase"
+  ],
+  "52" : [
+    "ghost",
+    "ghosts",
+    "spook",
+    "spooks"
+  ],
+  "26" : [
+    "tp"
+  ],
+  "245" : [
+    "trace"
+  ],
+  "46" : [
+    "treasure"
+  ]
+}

@@ -1,0 +1,1760 @@
+{
+  "28" : [
+    "n",
+    "no"
+  ],
+  "172" : [
+    "away"
+  ],
+  "34" : [
+    "glass",
+    "glasses",
+    "pane",
+    "window",
+    "windows"
+  ],
+  "142" : [
+    "area",
+    "backroom",
+    "lounge",
+    "room"
+  ],
+  "29" : [
+    "billfold",
+    "wallet"
+  ],
+  "40" : [
+    "count"
+  ],
+  "112" : [
+    "ash tray",
+    "ashtray",
+    "container"
+  ],
+  "35" : [
+    "body"
+  ],
+  "173" : [
+    "doormat",
+    "mat",
+    "welcome mat"
+  ],
+  "41" : [
+    "ask",
+    "call",
+    "say",
+    "speak",
+    "talk"
+  ],
+  "143" : [
+    "furnishings",
+    "furniture"
+  ],
+  "36" : [
+    "increase",
+    "lift",
+    "open",
+    "raise"
+  ],
+  "113" : [
+    "bill",
+    "tab"
+  ],
+  "42" : [
+    "hello",
+    "hi"
+  ],
+  "37" : [
+    "move",
+    "press",
+    "pull",
+    "push",
+    "replace",
+    "shove",
+    "turn"
+  ],
+  "174" : [
+    "radio"
+  ],
+  "43" : [
+    "mirror"
+  ],
+  "270" : [
+    "come"
+  ],
+  "38" : [
+    "board",
+    "enter",
+    "exit",
+    "get in",
+    "get into",
+    "get out",
+    "go",
+    "leave",
+    "walk"
+  ],
+  "240" : [
+    "lost"
+  ],
+  "114" : [
+    "card",
+    "cards",
+    "disco pass",
+    "pass"
+  ],
+  "210" : [
+    "along"
+  ],
+  "44" : [
+    "bin",
+    "can",
+    "dumpster",
+    "garbage",
+    "garbage bin",
+    "rubbish",
+    "trash",
+    "trash bin",
+    "trash can"
+  ],
+  "39" : [
+    "climb",
+    "climb on"
+  ],
+  "50" : [
+    "cabinet",
+    "closet",
+    "cupboard",
+    "wardrobe"
+  ],
+  "145" : [
+    "bucks",
+    "cash",
+    "coin",
+    "dollar",
+    "dollars",
+    "money"
+  ],
+  "271" : [
+    "holler",
+    "scream",
+    "screams",
+    "shout",
+    "yell"
+  ],
+  "45" : [
+    "bed"
+  ],
+  "115" : [
+    "ladder"
+  ],
+  "51" : [
+    "drawer",
+    "drawers"
+  ],
+  "241" : [
+    "moose",
+    "moosehead"
+  ],
+  "46" : [
+    "ledge",
+    "window ledge"
+  ],
+  "176" : [
+    "brush",
+    "clean",
+    "rinse",
+    "wash"
+  ],
+  "175" : [
+    "note",
+    "notes"
+  ],
+  "52" : [
+    "bear",
+    "bearskin",
+    "carpet",
+    "rug"
+  ],
+  "272" : [
+    "dive",
+    "muff dive"
+  ],
+  "47" : [
+    "below",
+    "beneath",
+    "under"
+  ],
+  "242" : [
+    "love"
+  ],
+  "116" : [
+    "capsule",
+    "capsules",
+    "vial",
+    "vials"
+  ],
+  "53" : [
+    "out",
+    "outside"
+  ],
+  "212" : [
+    "side"
+  ],
+  "48" : [
+    "above",
+    "across",
+    "over",
+    "top of"
+  ],
+  "177" : [
+    "box of candy",
+    "candy",
+    "candy box"
+  ],
+  "147" : [
+    "carry",
+    "grasp",
+    "hang",
+    "hold",
+    "lean",
+    "reach"
+  ],
+  "54" : [
+    "key"
+  ],
+  "117" : [
+    "bargain",
+    "deal",
+    "negotiate"
+  ],
+  "49" : [
+    "present"
+  ],
+  "60" : [
+    "drain",
+    "empty",
+    "pour",
+    "remove",
+    "spill",
+    "take off"
+  ],
+  "213" : [
+    "light pole",
+    "pole",
+    "telephone pole"
+  ],
+  "55" : [
+    "last"
+  ],
+  "178" : [
+    "doll",
+    "dolls"
+  ],
+  "243" : [
+    "room service"
+  ],
+  "61" : [
+    "find",
+    "locate",
+    "search",
+    "where",
+    "wheres"
+  ],
+  "274" : [
+    "laugh"
+  ],
+  "56" : [
+    "add",
+    "conceal",
+    "drop",
+    "give",
+    "hide",
+    "loan",
+    "offer",
+    "place",
+    "put",
+    "return",
+    "serve",
+    "set"
+  ],
+  "118" : [
+    "flower",
+    "flowers",
+    "rose"
+  ],
+  "148" : [
+    "close",
+    "shut"
+  ],
+  "62" : [
+    "back",
+    "behind"
+  ],
+  "214" : [
+    "deliver"
+  ],
+  "179" : [
+    "centerfold",
+    "jugs",
+    "jugs magazine",
+    "magazine",
+    "magazines"
+  ],
+  "57" : [
+    "lie",
+    "lie down"
+  ],
+  "149" : [
+    "im",
+    "larry",
+    "larry laffer",
+    "me",
+    "myself",
+    "self"
+  ],
+  "63" : [
+    "door",
+    "doors",
+    "doorway",
+    "doorways"
+  ],
+  "310" : [
+    "fastest"
+  ],
+  "58" : [
+    "aim",
+    "point",
+    "shake",
+    "swing",
+    "touch",
+    "wave"
+  ],
+  "119" : [
+    "elevator"
+  ],
+  "245" : [
+    "dress",
+    "dressed"
+  ],
+  "64" : [
+    "bra",
+    "bras",
+    "clothes",
+    "clothing",
+    "coat",
+    "lingerie",
+    "nylons",
+    "panties",
+    "pants",
+    "pocket",
+    "pockets",
+    "raincoat",
+    "stockings",
+    "trenchcoat",
+    "underpants",
+    "underwear"
+  ],
+  "341" : [
+    "clit",
+    "clitoris",
+    "crack",
+    "cracks",
+    "cunt",
+    "piece of ass",
+    "piece of tail",
+    "pussy",
+    "slit",
+    "snatch"
+  ],
+  "311" : [
+    "all",
+    "belongings",
+    "everything",
+    "inv",
+    "inventory",
+    "item",
+    "items",
+    "object",
+    "objects",
+    "stuff",
+    "things"
+  ],
+  "70" : [
+    "desk",
+    "table",
+    "tables"
+  ],
+  "276" : [
+    "establish eye contact"
+  ],
+  "65" : [
+    "bolt",
+    "latch",
+    "lock"
+  ],
+  "244" : [
+    "naked",
+    "nude",
+    "strip",
+    "undress",
+    "undressed"
+  ],
+  "275" : [
+    "piece"
+  ],
+  "216" : [
+    "libbed",
+    "ribbed"
+  ],
+  "342" : [
+    "crap",
+    "dump",
+    "shit"
+  ],
+  "66" : [
+    "break",
+    "bust",
+    "destroy",
+    "rip",
+    "shatter",
+    "smash",
+    "tear"
+  ],
+  "71" : [
+    "rack",
+    "shelf",
+    "shelves"
+  ],
+  "211" : [
+    "sing"
+  ],
+  "72" : [
+    "book",
+    "books",
+    "page"
+  ],
+  "215" : [
+    "smooth"
+  ],
+  "67" : [
+    "bureau",
+    "chest",
+    "dresser",
+    "waist"
+  ],
+  "247" : [
+    "art",
+    "art work",
+    "art works",
+    "artwork",
+    "artworks",
+    "painting",
+    "paintings",
+    "picture",
+    "pictures"
+  ],
+  "217" : [
+    "colored"
+  ],
+  "343" : [
+    "leak",
+    "pee",
+    "piss",
+    "urinate"
+  ],
+  "146" : [
+    "status"
+  ],
+  "68" : [
+    "smoke"
+  ],
+  "73" : [
+    "thank you",
+    "thanks"
+  ],
+  "278" : [
+    "bucket",
+    "ice bucket",
+    "wine bucket"
+  ],
+  "74" : [
+    "name"
+  ],
+  "248" : [
+    "ceiling fan",
+    "fan"
+  ],
+  "69" : [
+    "hear",
+    "hearing",
+    "listen",
+    "listening"
+  ],
+  "80" : [
+    "fireplace"
+  ],
+  "344" : [
+    "copulate",
+    "fuck",
+    "fucking",
+    "hump",
+    "jump her bones",
+    "lay",
+    "make love",
+    "mount",
+    "mount up",
+    "screw",
+    "seduce",
+    "sex",
+    "sleep with"
+  ],
+  "75" : [
+    "casino",
+    "hotel"
+  ],
+  "218" : [
+    "plain"
+  ],
+  "59" : [
+    "top"
+  ],
+  "81" : [
+    "bouncer",
+    "bum",
+    "cab driver",
+    "cabbie",
+    "clerk",
+    "comedian",
+    "comic",
+    "cop",
+    "driver",
+    "drunk",
+    "dude",
+    "flasher",
+    "guy",
+    "guys",
+    "he",
+    "him",
+    "man",
+    "men",
+    "minister",
+    "pervert",
+    "pimp",
+    "policeman",
+    "preacher",
+    "shopkeeper",
+    "steve",
+    "storekeeper",
+    "wino"
+  ],
+  "279" : [
+    "ankle",
+    "ankles",
+    "calf",
+    "calves",
+    "leg",
+    "legs",
+    "thigh",
+    "thighs"
+  ],
+  "76" : [
+    "box",
+    "boxes",
+    "crate",
+    "crates"
+  ],
+  "249" : [
+    "barrel"
+  ],
+  "219" : [
+    "lubricated"
+  ],
+  "82" : [
+    "begin",
+    "start"
+  ],
+  "345" : [
+    "cut one",
+    "fart"
+  ],
+  "77" : [
+    "length",
+    "long"
+  ],
+  "273" : [
+    "under water",
+    "underwater"
+  ],
+  "144" : [
+    "use",
+    "using",
+    "with"
+  ],
+  "83" : [
+    "burn",
+    "candle",
+    "candles",
+    "ignite",
+    "lamp",
+    "light",
+    "lite"
+  ],
+  "277" : [
+    "vows"
+  ],
+  "78" : [
+    "jump",
+    "leap"
+  ],
+  "246" : [
+    "way"
+  ],
+  "346" : [
+    "asshole",
+    "bitch",
+    "bullshit",
+    "dick head",
+    "dirty word",
+    "dyke",
+    "fag",
+    "faggot",
+    "fucker",
+    "mother fucker",
+    "shithead",
+    "what the fuck"
+  ],
+  "84" : [
+    "fire",
+    "flame",
+    "flames"
+  ],
+  "79" : [
+    "blond",
+    "blonde",
+    "broad",
+    "dealer",
+    "eve",
+    "eves",
+    "faith",
+    "faiths",
+    "fawn",
+    "fawns",
+    "girl",
+    "girls",
+    "guard",
+    "her",
+    "hooker",
+    "hookers",
+    "lady",
+    "prostitute",
+    "prostitutes",
+    "she",
+    "slut",
+    "whore",
+    "whores",
+    "woman",
+    "women"
+  ],
+  "90" : [
+    "ceiling"
+  ],
+  "85" : [
+    "pot"
+  ],
+  "91" : [
+    "champagne",
+    "wine"
+  ],
+  "347" : [
+    "boob",
+    "boobs",
+    "breast",
+    "breasts",
+    "knocker",
+    "knockers",
+    "nipple",
+    "nipples",
+    "tit",
+    "tits"
+  ],
+  "86" : [
+    "counter",
+    "meter"
+  ],
+  "92" : [
+    "beer"
+  ],
+  "87" : [
+    "lips",
+    "mouth",
+    "smile"
+  ],
+  "348" : [
+    "ass",
+    "butt",
+    "rearend"
+  ],
+  "93" : [
+    "food",
+    "gum",
+    "meal"
+  ],
+  "88" : [
+    "basket",
+    "baskets",
+    "waste basket",
+    "wastebasket"
+  ],
+  "94" : [
+    "bread"
+  ],
+  "89" : [
+    "buy",
+    "order",
+    "pay",
+    "purchase",
+    "spend"
+  ],
+  "349" : [
+    "cunnilingus",
+    "sixtynine"
+  ],
+  "95" : [
+    "apple"
+  ],
+  "96" : [
+    "rob",
+    "steal",
+    "swipe"
+  ],
+  "97" : [
+    "bite",
+    "drink",
+    "eat",
+    "lick",
+    "suck",
+    "swallow",
+    "taste"
+  ],
+  "98" : [
+    "here",
+    "there"
+  ],
+  "99" : [
+    "knife",
+    "pocket knife"
+  ],
+  "190" : [
+    "eight"
+  ],
+  "160" : [
+    "liquid",
+    "water"
+  ],
+  "130" : [
+    "ball",
+    "balls",
+    "nuts"
+  ],
+  "100" : [
+    "cut",
+    "slice"
+  ],
+  "191" : [
+    "nine"
+  ],
+  "161" : [
+    "rope",
+    "ropes"
+  ],
+  "131" : [
+    "gimme"
+  ],
+  "101" : [
+    "basin",
+    "sink",
+    "wash basin"
+  ],
+  "192" : [
+    "get up",
+    "rise",
+    "stand"
+  ],
+  "162" : [
+    "diamond ring",
+    "ring"
+  ],
+  "132" : [
+    "bench",
+    "benches",
+    "chair",
+    "chairs",
+    "couch",
+    "pew",
+    "pews",
+    "seat",
+    "sofa",
+    "stool"
+  ],
+  "102" : [
+    "broom"
+  ],
+  "193" : [
+    "alter",
+    "change",
+    "switch"
+  ],
+  "163" : [
+    "blow",
+    "blow up",
+    "inflate"
+  ],
+  "133" : [
+    "fur"
+  ],
+  "103" : [
+    "rest",
+    "sit",
+    "sit down"
+  ],
+  "194" : [
+    "channel",
+    "channels",
+    "station",
+    "stations"
+  ],
+  "164" : [
+    "let go",
+    "let go of",
+    "release",
+    "unfasten",
+    "untie"
+  ],
+  "290" : [
+    "password"
+  ],
+  "134" : [
+    "number"
+  ],
+  "260" : [
+    "sky"
+  ],
+  "104" : [
+    "city",
+    "town"
+  ],
+  "230" : [
+    "loosen"
+  ],
+  "195" : [
+    "juke",
+    "juke box",
+    "jukebox",
+    "jute",
+    "jute box",
+    "jutebox"
+  ],
+  "200" : [
+    "breath spray",
+    "breathspray",
+    "spray"
+  ],
+  "165" : [
+    "finger"
+  ],
+  "291" : [
+    "leisure suit",
+    "suit"
+  ],
+  "135" : [
+    "skin"
+  ],
+  "261" : [
+    "tank"
+  ],
+  "105" : [
+    "business"
+  ],
+  "231" : [
+    "bet",
+    "gamble",
+    "wager"
+  ],
+  "196" : [
+    "dry",
+    "wipe"
+  ],
+  "201" : [
+    "hanging"
+  ],
+  "166" : [
+    "booze",
+    "bourbon",
+    "gin",
+    "liquor",
+    "mai tai",
+    "pina colada",
+    "rum",
+    "rye",
+    "scotch",
+    "vodka",
+    "white russian"
+  ],
+  "292" : [
+    "bribe"
+  ],
+  "136" : [
+    "inside"
+  ],
+  "262" : [
+    "altar"
+  ],
+  "106" : [
+    "beat",
+    "hit",
+    "hurt",
+    "kick",
+    "pound",
+    "punch",
+    "strike"
+  ],
+  "232" : [
+    "handle",
+    "lever"
+  ],
+  "197" : [
+    "attach",
+    "fasten",
+    "tie"
+  ],
+  "202" : [
+    "action"
+  ],
+  "167" : [
+    "control",
+    "remote",
+    "remote control",
+    "tv control"
+  ],
+  "293" : [
+    "cooler",
+    "icebox",
+    "refrigerator"
+  ],
+  "137" : [
+    "breath"
+  ],
+  "263" : [
+    "person",
+    "player"
+  ],
+  "107" : [
+    "bang",
+    "knock",
+    "knock on"
+  ],
+  "233" : [
+    "double"
+  ],
+  "198" : [
+    "clothes line",
+    "clothesline",
+    "line"
+  ],
+  "203" : [
+    "bar",
+    "leftys",
+    "tavern"
+  ],
+  "168" : [
+    "condom",
+    "condoms",
+    "lubber",
+    "lubbers",
+    "prophylactic",
+    "prophylactics",
+    "protection",
+    "rubber",
+    "rubbers",
+    "sheath"
+  ],
+  "294" : [
+    "directory assistance",
+    "information",
+    "operator"
+  ],
+  "138" : [
+    "fingers",
+    "hand",
+    "hand full",
+    "handful",
+    "hands"
+  ],
+  "264" : [
+    "drummer"
+  ],
+  "108" : [
+    "cap",
+    "cork",
+    "cover",
+    "lid",
+    "stopper"
+  ],
+  "234" : [
+    "split",
+    "split pair"
+  ],
+  "199" : [
+    "decrease",
+    "lower"
+  ],
+  "204" : [
+    "disco"
+  ],
+  "169" : [
+    "shot",
+    "whiskey",
+    "whisky"
+  ],
+  "295" : [
+    "applaud",
+    "cheer",
+    "clap"
+  ],
+  "300" : [
+    "deflate"
+  ],
+  "139" : [
+    "corner"
+  ],
+  "109" : [
+    "bottle",
+    "bottles",
+    "jar",
+    "jars"
+  ],
+  "265" : [
+    "radiator"
+  ],
+  "235" : [
+    "surrender"
+  ],
+  "205" : [
+    "chapel",
+    "church",
+    "parlor"
+  ],
+  "0" : [
+    "about",
+    "ajax",
+    "an",
+    "and",
+    "another",
+    "around",
+    "at",
+    "bad",
+    "beautiful",
+    "been",
+    "big",
+    "black",
+    "bottle of",
+    "cheap",
+    "cold",
+    "convenience",
+    "cute",
+    "employee",
+    "every",
+    "for",
+    "front",
+    "funky",
+    "glass of",
+    "good",
+    "gorgeous",
+    "grocery",
+    "have",
+    "hers",
+    "his",
+    "hot",
+    "hundred",
+    "hurry",
+    "if",
+    "in",
+    "inflatable",
+    "into",
+    "is",
+    "it",
+    "its",
+    "ken",
+    "large",
+    "later",
+    "little",
+    "living",
+    "long stemmed",
+    "lovely",
+    "main",
+    "marriage",
+    "membership",
+    "mine",
+    "more",
+    "my",
+    "naugahyde",
+    "now",
+    "of",
+    "oh",
+    "plastic",
+    "please",
+    "quickie",
+    "quickly",
+    "red",
+    "security",
+    "sent",
+    "shit for",
+    "sleazy",
+    "slowly",
+    "small",
+    "some",
+    "son of a",
+    "soon",
+    "spanish",
+    "ten",
+    "that",
+    "the",
+    "then",
+    "these",
+    "thirty",
+    "this",
+    "those",
+    "through",
+    "till",
+    "to",
+    "trench",
+    "twenty",
+    "unit",
+    "until",
+    "us",
+    "utility",
+    "want",
+    "we",
+    "wedding",
+    "what",
+    "when",
+    "whoopie",
+    "why",
+    "will",
+    "would",
+    "young"
+  ],
+  "296" : [
+    "face"
+  ],
+  "1" : [
+    "anyword"
+  ],
+  "301" : [
+    "help",
+    "hint"
+  ],
+  "266" : [
+    "bracelet",
+    "watch",
+    "wrist watch",
+    "wristwatch"
+  ],
+  "236" : [
+    "house rules",
+    "rule",
+    "rules"
+  ],
+  "2" : [
+    "examine",
+    "gaze",
+    "look",
+    "look on",
+    "looking",
+    "read",
+    "see",
+    "show",
+    "stare",
+    "view"
+  ],
+  "206" : [
+    "fuzz",
+    "lint",
+    "pocket lint"
+  ],
+  "3" : [
+    "look in",
+    "look inside",
+    "look into"
+  ],
+  "297" : [
+    "eyes"
+  ],
+  "4" : [
+    "do"
+  ],
+  "302" : [
+    "save"
+  ],
+  "267" : [
+    "waiter",
+    "waitress"
+  ],
+  "237" : [
+    "new"
+  ],
+  "5" : [
+    "up"
+  ],
+  "207" : [
+    "black jack",
+    "blackjack",
+    "twenty one"
+  ],
+  "6" : [
+    "down"
+  ],
+  "298" : [
+    "hair"
+  ],
+  "7" : [
+    "dance",
+    "dancing",
+    "date",
+    "get down"
+  ],
+  "268" : [
+    "heart"
+  ],
+  "303" : [
+    "restore"
+  ],
+  "8" : [
+    "flush"
+  ],
+  "238" : [
+    "odds"
+  ],
+  "208" : [
+    "slot",
+    "slot machine",
+    "slot machines",
+    "slots"
+  ],
+  "9" : [
+    "balcony",
+    "fire escape",
+    "rail",
+    "railing"
+  ],
+  "299" : [
+    "flirt",
+    "wink"
+  ],
+  "304" : [
+    "restart"
+  ],
+  "269" : [
+    "expectorate",
+    "spit"
+  ],
+  "400" : [
+    "business card",
+    "business cards"
+  ],
+  "239" : [
+    "bikini",
+    "swim suit",
+    "swimming suit",
+    "towel"
+  ],
+  "209" : [
+    "dog",
+    "doggy",
+    "pup",
+    "puppy"
+  ],
+  "305" : [
+    "game"
+  ],
+  "401" : [
+    "duty",
+    "work"
+  ],
+  "306" : [
+    "done",
+    "fold",
+    "quit",
+    "stop"
+  ],
+  "402" : [
+    "sierra"
+  ],
+  "307" : [
+    "slow"
+  ],
+  "308" : [
+    "normal"
+  ],
+  "309" : [
+    "fast",
+    "faster"
+  ],
+  "180" : [
+    "old",
+    "used"
+  ],
+  "150" : [
+    "from"
+  ],
+  "120" : [
+    "machine"
+  ],
+  "181" : [
+    "building",
+    "shop",
+    "store"
+  ],
+  "151" : [
+    "unbolt",
+    "unlatch",
+    "unlock"
+  ],
+  "121" : [
+    "newspaper",
+    "paper"
+  ],
+  "9999" : [
+    "rol"
+  ],
+  "182" : [
+    "alley"
+  ],
+  "152" : [
+    "customers",
+    "dancers",
+    "gamblers",
+    "people"
+  ],
+  "122" : [
+    "al sent me",
+    "ken sent me"
+  ],
+  "183" : [
+    "one"
+  ],
+  "153" : [
+    "caress",
+    "feel",
+    "fondle",
+    "pat",
+    "pet",
+    "pinch",
+    "rub",
+    "stroke"
+  ],
+  "123" : [
+    "wake",
+    "wake up"
+  ],
+  "184" : [
+    "two"
+  ],
+  "154" : [
+    "embrace",
+    "hug",
+    "kiss"
+  ],
+  "280" : [
+    "bubbles",
+    "jets"
+  ],
+  "124" : [
+    "fight",
+    "kill",
+    "murder",
+    "stab"
+  ],
+  "250" : [
+    "you",
+    "your",
+    "youre",
+    "yours",
+    "yourself"
+  ],
+  "220" : [
+    "rough",
+    "roughcut"
+  ],
+  "185" : [
+    "three"
+  ],
+  "155" : [
+    "bartender",
+    "lefty"
+  ],
+  "281" : [
+    "credit card",
+    "credit cards"
+  ],
+  "125" : [
+    "head"
+  ],
+  "251" : [
+    "fire hydrant",
+    "fire plug",
+    "fireplug",
+    "hydrant"
+  ],
+  "221" : [
+    "striped"
+  ],
+  "186" : [
+    "four"
+  ],
+  "156" : [
+    "cab",
+    "car",
+    "cars",
+    "taxi",
+    "taxicab"
+  ],
+  "282" : [
+    "pillow"
+  ],
+  "126" : [
+    "throw",
+    "toss"
+  ],
+  "252" : [
+    "enjoy",
+    "like"
+  ],
+  "222" : [
+    "plaid"
+  ],
+  "187" : [
+    "five"
+  ],
+  "157" : [
+    "sleep",
+    "sleeping"
+  ],
+  "283" : [
+    "home"
+  ],
+  "127" : [
+    "smell",
+    "sniff"
+  ],
+  "253" : [
+    "disc jockey",
+    "dj"
+  ],
+  "223" : [
+    "peppermint"
+  ],
+  "188" : [
+    "six"
+  ],
+  "158" : [
+    "aphrodisiac",
+    "fly",
+    "pill",
+    "pill bottle",
+    "pills"
+  ],
+  "284" : [
+    "answer"
+  ],
+  "128" : [
+    "boil",
+    "cook",
+    "heat",
+    "warm"
+  ],
+  "254" : [
+    "garden",
+    "roof",
+    "roof top",
+    "rooftop",
+    "terrace"
+  ],
+  "224" : [
+    "spearmint"
+  ],
+  "350" : [
+    "blow job",
+    "suck me"
+  ],
+  "189" : [
+    "seven"
+  ],
+  "159" : [
+    "hammer"
+  ],
+  "285" : [
+    "dial"
+  ],
+  "129" : [
+    "cup"
+  ],
+  "255" : [
+    "gun",
+    "guns",
+    "pistol",
+    "pistols",
+    "weapon",
+    "weapons"
+  ],
+  "225" : [
+    "stage"
+  ],
+  "351" : [
+    "cock",
+    "dick",
+    "dong",
+    "prick"
+  ],
+  "321" : [
+    "position"
+  ],
+  "286" : [
+    "tip"
+  ],
+  "256" : [
+    "time"
+  ],
+  "226" : [
+    "bush",
+    "bushes",
+    "dirt",
+    "plant",
+    "planter",
+    "planters",
+    "plants"
+  ],
+  "352" : [
+    "bull shit",
+    "christ",
+    "dam",
+    "dam it",
+    "damn",
+    "damn it",
+    "fuck off",
+    "fuck you",
+    "go to hell",
+    "god dam",
+    "god damn",
+    "jesus christ",
+    "sit on it",
+    "up your",
+    "up yours"
+  ],
+  "322" : [
+    "priority"
+  ],
+  "287" : [
+    "east"
+  ],
+  "257" : [
+    "on",
+    "on to",
+    "onto"
+  ],
+  "227" : [
+    "boo",
+    "heckle",
+    "hiss"
+  ],
+  "353" : [
+    "jack off",
+    "jerk off",
+    "masturbate"
+  ],
+  "323" : [
+    "sp",
+    "xy"
+  ],
+  "288" : [
+    "west"
+  ],
+  "258" : [
+    "off"
+  ],
+  "228" : [
+    "music",
+    "record",
+    "recording",
+    "song",
+    "songs",
+    "sound",
+    "sounds",
+    "tune"
+  ],
+  "324" : [
+    "tp"
+  ],
+  "289" : [
+    "pause",
+    "pause game"
+  ],
+  "259" : [
+    "fence"
+  ],
+  "229" : [
+    "coffee",
+    "cola",
+    "dwinkies",
+    "junk food",
+    "loritos",
+    "wallowars"
+  ],
+  "325" : [
+    "reset"
+  ],
+  "326" : [
+    "var"
+  ],
+  "327" : [
+    "flag"
+  ],
+  "10" : [
+    "lobby"
+  ],
+  "11" : [
+    "abuse",
+    "play with"
+  ],
+  "12" : [
+    "honeymoon suite",
+    "suite"
+  ],
+  "13" : [
+    "penthouse",
+    "penthouse suite"
+  ],
+  "14" : [
+    "hot tub",
+    "hottub",
+    "jacuzzi",
+    "pool",
+    "spa",
+    "tub"
+  ],
+  "20" : [
+    "bedroom"
+  ],
+  "15" : [
+    "married",
+    "marry",
+    "propose",
+    "wed"
+  ],
+  "21" : [
+    "phone",
+    "telephone"
+  ],
+  "16" : [
+    "play",
+    "playing"
+  ],
+  "22" : [
+    "hall",
+    "hallway"
+  ],
+  "17" : [
+    "catch",
+    "get",
+    "grab",
+    "hail",
+    "hey",
+    "pick",
+    "pick up",
+    "take",
+    "whistle",
+    "yo"
+  ],
+  "23" : [
+    "drinks",
+    "round",
+    "round of drinks"
+  ],
+  "18" : [
+    "bye",
+    "good bye",
+    "goodbye",
+    "so long"
+  ],
+  "24" : [
+    "hole",
+    "peephole"
+  ],
+  "19" : [
+    "button",
+    "knob"
+  ],
+  "30" : [
+    "bag"
+  ],
+  "170" : [
+    "fill"
+  ],
+  "140" : [
+    "brick",
+    "bricks",
+    "graffiti",
+    "sign",
+    "wall",
+    "walls"
+  ],
+  "25" : [
+    "cigarette",
+    "cigarettes",
+    "smokes"
+  ],
+  "110" : [
+    "television",
+    "tv"
+  ],
+  "31" : [
+    "curb",
+    "earth",
+    "floor",
+    "ground",
+    "sidewalk"
+  ],
+  "26" : [
+    "street"
+  ],
+  "171" : [
+    "bathroom",
+    "bowl",
+    "john",
+    "restroom",
+    "toilet"
+  ],
+  "32" : [
+    "nothing"
+  ],
+  "141" : [
+    "make"
+  ],
+  "27" : [
+    "ok",
+    "y",
+    "yes"
+  ],
+  "111" : [
+    "put on",
+    "wear"
+  ],
+  "33" : [
+    "stair",
+    "staircase",
+    "stairs",
+    "stairway",
+    "steps",
+    "upstairs"
+  ]
+}

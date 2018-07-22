@@ -1,0 +1,1585 @@
+{
+  "28" : [
+    "lab",
+    "laboratory"
+  ],
+  "172" : [
+    "away"
+  ],
+  "34" : [
+    "glass",
+    "pane",
+    "window",
+    "windows"
+  ],
+  "142" : [
+    "chore",
+    "job"
+  ],
+  "112" : [
+    "bone",
+    "bones",
+    "fish bone",
+    "fishbone",
+    "skeleton",
+    "skeletons",
+    "skull",
+    "skulls"
+  ],
+  "40" : [
+    "enchanter",
+    "magician",
+    "manannan",
+    "sorcerer",
+    "wiz",
+    "wizard"
+  ],
+  "35" : [
+    "bug",
+    "fly",
+    "fly wings",
+    "wings"
+  ],
+  "173" : [
+    "on",
+    "on to",
+    "onto"
+  ],
+  "41" : [
+    "call",
+    "say",
+    "shout",
+    "speak",
+    "talk",
+    "yell"
+  ],
+  "143" : [
+    "ears"
+  ],
+  "36" : [
+    "lift",
+    "open"
+  ],
+  "113" : [
+    "equipment",
+    "implements",
+    "instruments"
+  ],
+  "42" : [
+    "desert",
+    "land",
+    "plain",
+    "plains"
+  ],
+  "37" : [
+    "move",
+    "pull",
+    "push",
+    "replace",
+    "shove",
+    "turn"
+  ],
+  "174" : [
+    "look in",
+    "look inside",
+    "look into",
+    "look through"
+  ],
+  "43" : [
+    "looking glass",
+    "mirror"
+  ],
+  "270" : [
+    "gate"
+  ],
+  "38" : [
+    "board",
+    "enter",
+    "exit",
+    "get out",
+    "go",
+    "leave"
+  ],
+  "114" : [
+    "essence"
+  ],
+  "240" : [
+    "crows nest",
+    "crowsnest"
+  ],
+  "210" : [
+    "six"
+  ],
+  "144" : [
+    "try",
+    "use",
+    "using",
+    "with"
+  ],
+  "39" : [
+    "climb"
+  ],
+  "50" : [
+    "cabinet",
+    "closet",
+    "cupboard",
+    "wardrobe"
+  ],
+  "145" : [
+    "porridge"
+  ],
+  "45" : [
+    "bed",
+    "beds",
+    "bunk",
+    "bunks",
+    "pillow"
+  ],
+  "115" : [
+    "compound",
+    "dough",
+    "mixture"
+  ],
+  "241" : [
+    "flower",
+    "flowers"
+  ],
+  "271" : [
+    "here",
+    "there"
+  ],
+  "51" : [
+    "drawer",
+    "drawers"
+  ],
+  "211" : [
+    "seven"
+  ],
+  "176" : [
+    "down"
+  ],
+  "175" : [
+    "up"
+  ],
+  "52" : [
+    "carpet",
+    "carpets",
+    "rug",
+    "rugs"
+  ],
+  "272" : [
+    "anchor"
+  ],
+  "47" : [
+    "below",
+    "beneath",
+    "under"
+  ],
+  "116" : [
+    "capsule",
+    "capsules",
+    "vial",
+    "vials"
+  ],
+  "242" : [
+    "sky"
+  ],
+  "53" : [
+    "out",
+    "outside"
+  ],
+  "212" : [
+    "eight"
+  ],
+  "48" : [
+    "above",
+    "across",
+    "over",
+    "top of"
+  ],
+  "177" : [
+    "pouch",
+    "pouches"
+  ],
+  "147" : [
+    "carry",
+    "grab",
+    "grasp",
+    "hold",
+    "reach"
+  ],
+  "54" : [
+    "key"
+  ],
+  "117" : [
+    "off"
+  ],
+  "243" : [
+    "mast"
+  ],
+  "60" : [
+    "drain",
+    "draw",
+    "empty",
+    "extract",
+    "pour",
+    "remove",
+    "spill",
+    "withdraw"
+  ],
+  "213" : [
+    "nine"
+  ],
+  "55" : [
+    "last"
+  ],
+  "273" : [
+    "dive",
+    "swim"
+  ],
+  "178" : [
+    "flint"
+  ],
+  "61" : [
+    "drapery",
+    "picture",
+    "tapestry"
+  ],
+  "148" : [
+    "hang",
+    "suspend"
+  ],
+  "56" : [
+    "add",
+    "conceal",
+    "dip",
+    "drop",
+    "drops",
+    "hide",
+    "include",
+    "place",
+    "put",
+    "return",
+    "scrape",
+    "set",
+    "sprinkle",
+    "stack"
+  ],
+  "118" : [
+    "night shade",
+    "nightshade"
+  ],
+  "244" : [
+    "canyon",
+    "chasm",
+    "gorge",
+    "valley"
+  ],
+  "62" : [
+    "back",
+    "behind"
+  ],
+  "274" : [
+    "crystal",
+    "crystal ball"
+  ],
+  "57" : [
+    "lay",
+    "lie"
+  ],
+  "179" : [
+    "root"
+  ],
+  "149" : [
+    "alexander",
+    "boy",
+    "gwydion",
+    "im",
+    "me",
+    "myself",
+    "self"
+  ],
+  "63" : [
+    "door",
+    "doors",
+    "doorway",
+    "doorways"
+  ],
+  "119" : [
+    "mandrake"
+  ],
+  "58" : [
+    "aim",
+    "point",
+    "shake",
+    "swing",
+    "touch",
+    "wave"
+  ],
+  "245" : [
+    "ladder",
+    "rope ladder"
+  ],
+  "215" : [
+    "gimme"
+  ],
+  "64" : [
+    "clothes",
+    "gown",
+    "gowns",
+    "hat",
+    "hats",
+    "robe",
+    "robes",
+    "slipper",
+    "slippers"
+  ],
+  "146" : [
+    "status"
+  ],
+  "214" : [
+    "ten"
+  ],
+  "70" : [
+    "counter",
+    "desk",
+    "table"
+  ],
+  "276" : [
+    "goods",
+    "supplies",
+    "wares"
+  ],
+  "65" : [
+    "bolt",
+    "latch",
+    "lock"
+  ],
+  "246" : [
+    "bluff",
+    "bluffs",
+    "cliff",
+    "cliffs",
+    "hill",
+    "hills",
+    "mountain",
+    "mountains",
+    "peak",
+    "peaks"
+  ],
+  "59" : [
+    "top"
+  ],
+  "71" : [
+    "bookcase",
+    "bookshelf",
+    "bookshelves",
+    "shelf",
+    "shelves"
+  ],
+  "216" : [
+    "smell",
+    "sniff"
+  ],
+  "66" : [
+    "break",
+    "destroy",
+    "rip",
+    "shatter",
+    "smash",
+    "tear"
+  ],
+  "49" : [
+    "treasure",
+    "treasure chest"
+  ],
+  "72" : [
+    "book",
+    "books",
+    "page",
+    "sorcery of old",
+    "volume"
+  ],
+  "277" : [
+    "rob",
+    "steal",
+    "swipe"
+  ],
+  "67" : [
+    "bureau",
+    "chest of drawers",
+    "dresser"
+  ],
+  "247" : [
+    "cloud",
+    "clouds",
+    "fog"
+  ],
+  "217" : [
+    "glint"
+  ],
+  "73" : [
+    "rod",
+    "wand"
+  ],
+  "68" : [
+    "all",
+    "belongings",
+    "everything",
+    "inventory",
+    "item",
+    "items",
+    "object",
+    "objects",
+    "possessions",
+    "stuff",
+    "things"
+  ],
+  "278" : [
+    "ale",
+    "beer",
+    "booze",
+    "liquor",
+    "rum",
+    "wine"
+  ],
+  "74" : [
+    "handle",
+    "lever"
+  ],
+  "248" : [
+    "path",
+    "trail"
+  ],
+  "69" : [
+    "hear",
+    "listen"
+  ],
+  "80" : [
+    "fireplace",
+    "hearth",
+    "mantle"
+  ],
+  "218" : [
+    "throw",
+    "toss"
+  ],
+  "75" : [
+    "hatch",
+    "trapdoor"
+  ],
+  "81" : [
+    "forest",
+    "log",
+    "logs",
+    "tree",
+    "trees",
+    "wood",
+    "woods"
+  ],
+  "249" : [
+    "how"
+  ],
+  "76" : [
+    "duster"
+  ],
+  "219" : [
+    "begone"
+  ],
+  "82" : [
+    "begin",
+    "build",
+    "start"
+  ],
+  "77" : [
+    "read"
+  ],
+  "83" : [
+    "burn",
+    "candle",
+    "candles",
+    "ignite",
+    "light",
+    "torch",
+    "torches"
+  ],
+  "78" : [
+    "clean",
+    "dust",
+    "sweep",
+    "wipe"
+  ],
+  "84" : [
+    "fire",
+    "flame",
+    "flames"
+  ],
+  "79" : [
+    "lard"
+  ],
+  "90" : [
+    "ceiling",
+    "roof"
+  ],
+  "85" : [
+    "chamber pot",
+    "kettle",
+    "kettles",
+    "pan",
+    "pans",
+    "pot",
+    "pots",
+    "skillet",
+    "skillets"
+  ],
+  "91" : [
+    "beam",
+    "beams",
+    "rafter",
+    "rafters"
+  ],
+  "86" : [
+    "nightstand",
+    "vanity"
+  ],
+  "92" : [
+    "herb",
+    "herbs",
+    "spice",
+    "spices"
+  ],
+  "87" : [
+    "holder",
+    "rack"
+  ],
+  "93" : [
+    "food",
+    "meal"
+  ],
+  "88" : [
+    "basket",
+    "baskets",
+    "waste basket",
+    "wastebasket"
+  ],
+  "94" : [
+    "bread",
+    "loaf",
+    "loaf of bread"
+  ],
+  "89" : [
+    "butter churn",
+    "churn"
+  ],
+  "95" : [
+    "apple",
+    "fruit",
+    "grapes"
+  ],
+  "96" : [
+    "chop",
+    "meat",
+    "mutton",
+    "mutton chop"
+  ],
+  "97" : [
+    "drink",
+    "eat",
+    "swallow",
+    "taste"
+  ],
+  "98" : [
+    "ladle",
+    "spoon",
+    "spoonful",
+    "spoonfuls",
+    "spoons"
+  ],
+  "99" : [
+    "dagger",
+    "knife"
+  ],
+  "190" : [
+    "magic",
+    "magical"
+  ],
+  "160" : [
+    "liquid",
+    "water"
+  ],
+  "130" : [
+    "ball",
+    "balls",
+    "piece",
+    "pieces"
+  ],
+  "100" : [
+    "carve",
+    "chop up",
+    "cut",
+    "cut up",
+    "slice"
+  ],
+  "191" : [
+    "cage",
+    "coop",
+    "fence",
+    "pen",
+    "wall",
+    "walls"
+  ],
+  "161" : [
+    "mud"
+  ],
+  "131" : [
+    "brew",
+    "storm brew"
+  ],
+  "101" : [
+    "basin",
+    "bowl",
+    "bowls"
+  ],
+  "192" : [
+    "corner"
+  ],
+  "162" : [
+    "bit",
+    "pinch"
+  ],
+  "132" : [
+    "bird",
+    "birds",
+    "buzzard",
+    "buzzards",
+    "chicken",
+    "chickens",
+    "crow",
+    "crows",
+    "gull",
+    "gulls",
+    "seagull",
+    "seagulls",
+    "vulture",
+    "vultures"
+  ],
+  "102" : [
+    "broom"
+  ],
+  "193" : [
+    "cat",
+    "kitty"
+  ],
+  "163" : [
+    "blow"
+  ],
+  "133" : [
+    "fur",
+    "hair"
+  ],
+  "103" : [
+    "get in",
+    "sit",
+    "sit down"
+  ],
+  "194" : [
+    "dog",
+    "kenny",
+    "lance",
+    "mutt"
+  ],
+  "164" : [
+    "let go",
+    "let go of",
+    "release",
+    "unfasten",
+    "untie"
+  ],
+  "290" : [
+    "jump"
+  ],
+  "134" : [
+    "reptile",
+    "serpent",
+    "snake"
+  ],
+  "260" : [
+    "bang",
+    "knock"
+  ],
+  "104" : [
+    "moose",
+    "moosehead"
+  ],
+  "230" : [
+    "half",
+    "onehalf"
+  ],
+  "200" : [
+    "boat",
+    "lifeboat"
+  ],
+  "195" : [
+    "storm",
+    "storms"
+  ],
+  "165" : [
+    "finger"
+  ],
+  "291" : [
+    "bin",
+    "bins",
+    "box",
+    "boxes",
+    "crate",
+    "crates"
+  ],
+  "135" : [
+    "reptile skin",
+    "skin",
+    "snake skin",
+    "snakeskin"
+  ],
+  "261" : [
+    "hit",
+    "kick",
+    "punch",
+    "strike"
+  ],
+  "105" : [
+    "feed",
+    "give",
+    "offer",
+    "serve"
+  ],
+  "231" : [
+    "pluck"
+  ],
+  "201" : [
+    "feather",
+    "feathers"
+  ],
+  "196" : [
+    "shop",
+    "store"
+  ],
+  "166" : [
+    "brush",
+    "bush",
+    "bushes",
+    "plant",
+    "plants",
+    "shrub",
+    "shrubs"
+  ],
+  "292" : [
+    "well"
+  ],
+  "136" : [
+    "thimble",
+    "thimbleful",
+    "thimbles"
+  ],
+  "262" : [
+    "spiderweb",
+    "web"
+  ],
+  "106" : [
+    "passage",
+    "tunnel"
+  ],
+  "232" : [
+    "wake",
+    "wake up"
+  ],
+  "197" : [
+    "inside"
+  ],
+  "202" : [
+    "amber"
+  ],
+  "167" : [
+    "cactii",
+    "cactus"
+  ],
+  "293" : [
+    "castle",
+    "palace"
+  ],
+  "137" : [
+    "dew"
+  ],
+  "263" : [
+    "cave",
+    "cavern",
+    "caves"
+  ],
+  "107" : [
+    "poison",
+    "poisoned"
+  ],
+  "233" : [
+    "knob",
+    "knobs"
+  ],
+  "198" : [
+    "foot"
+  ],
+  "203" : [
+    "number"
+  ],
+  "168" : [
+    "bucket",
+    "pail"
+  ],
+  "294" : [
+    "porch"
+  ],
+  "138" : [
+    "fingers",
+    "hand",
+    "hand full",
+    "handful",
+    "hands"
+  ],
+  "264" : [
+    "spider",
+    "spiders"
+  ],
+  "108" : [
+    "cap",
+    "cork",
+    "cover",
+    "lid",
+    "plug",
+    "stopper"
+  ],
+  "234" : [
+    "programmed",
+    "wrote"
+  ],
+  "204" : [
+    "bench",
+    "benches",
+    "chair",
+    "chairs",
+    "seat",
+    "seats"
+  ],
+  "199" : [
+    "ship",
+    "vessel"
+  ],
+  "169" : [
+    "juice"
+  ],
+  "295" : [
+    "name"
+  ],
+  "300" : [
+    "hello",
+    "hi"
+  ],
+  "139" : [
+    "knead",
+    "mix",
+    "stir"
+  ],
+  "109" : [
+    "bottle",
+    "bottles",
+    "empty jar",
+    "jar",
+    "jars"
+  ],
+  "265" : [
+    "building",
+    "buildings",
+    "cottage",
+    "hide out",
+    "hideout",
+    "hideout",
+    "house",
+    "houses",
+    "shack",
+    "tree house",
+    "treehouse"
+  ],
+  "235" : [
+    "save"
+  ],
+  "205" : [
+    "one"
+  ],
+  "0" : [
+    "abominable",
+    "an",
+    "and",
+    "another",
+    "around",
+    "at",
+    "baby",
+    "bad",
+    "been",
+    "big",
+    "black",
+    "brass",
+    "buried",
+    "carving",
+    "ceramic",
+    "clay",
+    "cloud land",
+    "cloudland",
+    "cold",
+    "daventry",
+    "dead",
+    "deer skin",
+    "deerskin",
+    "dining",
+    "dried",
+    "every",
+    "for",
+    "front",
+    "good",
+    "guess",
+    "have",
+    "hot",
+    "hurry",
+    "if",
+    "in",
+    "into",
+    "invisibility",
+    "invisible",
+    "iron",
+    "is",
+    "it",
+    "its",
+    "large",
+    "later",
+    "leather",
+    "little",
+    "llewdor",
+    "mama",
+    "metal",
+    "mine",
+    "my",
+    "now",
+    "oak",
+    "of",
+    "oh",
+    "old",
+    "pair",
+    "palm",
+    "papa",
+    "petal",
+    "please",
+    "powdered",
+    "quickly",
+    "rose",
+    "sack",
+    "sacks",
+    "silver",
+    "slowly",
+    "small",
+    "some",
+    "soon",
+    "sprig",
+    "tail",
+    "that",
+    "the",
+    "these",
+    "this",
+    "those",
+    "tin",
+    "to",
+    "tuft",
+    "underground",
+    "want",
+    "what",
+    "when",
+    "why",
+    "will",
+    "wooden",
+    "you",
+    "your"
+  ],
+  "301" : [
+    "dragon",
+    "monster",
+    "snowman",
+    "yeti"
+  ],
+  "1" : [
+    "anyword"
+  ],
+  "813" : [
+    "nothing"
+  ],
+  "296" : [
+    "snow"
+  ],
+  "2" : [
+    "examine",
+    "feel",
+    "look",
+    "look on",
+    "see",
+    "show",
+    "view"
+  ],
+  "236" : [
+    "restore"
+  ],
+  "266" : [
+    "town",
+    "village"
+  ],
+  "3" : [
+    "cast",
+    "do",
+    "fix",
+    "perform",
+    "prepare"
+  ],
+  "206" : [
+    "two"
+  ],
+  "302" : [
+    "eagle"
+  ],
+  "297" : [
+    "thank",
+    "thank you",
+    "thanks"
+  ],
+  "267" : [
+    "dock",
+    "pier",
+    "wharf"
+  ],
+  "4" : [
+    "tp"
+  ],
+  "237" : [
+    "game"
+  ],
+  "5" : [
+    "quit",
+    "stop"
+  ],
+  "207" : [
+    "three"
+  ],
+  "6" : [
+    "position"
+  ],
+  "298" : [
+    "find",
+    "locate",
+    "search",
+    "where"
+  ],
+  "303" : [
+    "count"
+  ],
+  "268" : [
+    "bay",
+    "ocean",
+    "sea",
+    "waves"
+  ],
+  "7" : [
+    "slow"
+  ],
+  "8" : [
+    "normal"
+  ],
+  "238" : [
+    "map",
+    "scroll"
+  ],
+  "208" : [
+    "four"
+  ],
+  "9" : [
+    "fast"
+  ],
+  "299" : [
+    "ass",
+    "asshole",
+    "cunt",
+    "dirty word",
+    "fart",
+    "fuck",
+    "fucking",
+    "mother fucker",
+    "piss",
+    "pussy",
+    "screw",
+    "shit",
+    "tit",
+    "tits"
+  ],
+  "304" : [
+    "body"
+  ],
+  "269" : [
+    "beach",
+    "sand"
+  ],
+  "400" : [
+    "dig"
+  ],
+  "239" : [
+    "barrel",
+    "barrels",
+    "keg",
+    "kegs"
+  ],
+  "209" : [
+    "five"
+  ],
+  "401" : [
+    "mice",
+    "mouse",
+    "rat",
+    "rats"
+  ],
+  "402" : [
+    "shark",
+    "sharks"
+  ],
+  "403" : [
+    "moat"
+  ],
+  "404" : [
+    "drinks",
+    "round",
+    "round of drinks"
+  ],
+  "180" : [
+    "fish",
+    "fishes"
+  ],
+  "150" : [
+    "grains of salt",
+    "salt",
+    "salt grains"
+  ],
+  "120" : [
+    "mushroom",
+    "toad stool",
+    "toadstool"
+  ],
+  "181" : [
+    "chest",
+    "trunk"
+  ],
+  "151" : [
+    "mistletoe"
+  ],
+  "121" : [
+    "spit",
+    "spittle"
+  ],
+  "9999" : [
+    "rol"
+  ],
+  "182" : [
+    "ointment"
+  ],
+  "152" : [
+    "rock",
+    "rocks",
+    "stone",
+    "stones"
+  ],
+  "122" : [
+    "frog",
+    "toad"
+  ],
+  "183" : [
+    "shovel"
+  ],
+  "153" : [
+    "pat",
+    "pet",
+    "rub",
+    "smear"
+  ],
+  "123" : [
+    "mortar",
+    "mortar and pestle",
+    "pestle",
+    "pestle and mortar"
+  ],
+  "184" : [
+    "unlock"
+  ],
+  "154" : [
+    "embrace",
+    "hug",
+    "kiss"
+  ],
+  "124" : [
+    "brazier",
+    "burner"
+  ],
+  "250" : [
+    "length",
+    "long"
+  ],
+  "220" : [
+    "ii"
+  ],
+  "185" : [
+    "from"
+  ],
+  "155" : [
+    "acorn",
+    "acorns"
+  ],
+  "281" : [
+    "sword",
+    "swords"
+  ],
+  "125" : [
+    "crumble",
+    "crush",
+    "grind",
+    "pound"
+  ],
+  "251" : [
+    "time"
+  ],
+  "221" : [
+    "iv"
+  ],
+  "186" : [
+    "close",
+    "shut"
+  ],
+  "156" : [
+    "flatten",
+    "press",
+    "spread",
+    "squash",
+    "squeeze"
+  ],
+  "282" : [
+    "buy",
+    "order",
+    "purchase",
+    "spend"
+  ],
+  "126" : [
+    "flour",
+    "grain",
+    "grains",
+    "powder"
+  ],
+  "252" : [
+    "play",
+    "playing",
+    "ski"
+  ],
+  "222" : [
+    "vii"
+  ],
+  "187" : [
+    "coin",
+    "coins",
+    "gold",
+    "money"
+  ],
+  "157" : [
+    "sleep",
+    "sleeping",
+    "slumber"
+  ],
+  "127" : [
+    "charcoal",
+    "coal"
+  ],
+  "253" : [
+    "help"
+  ],
+  "800" : [
+    "clock"
+  ],
+  "223" : [
+    "xiv"
+  ],
+  "188" : [
+    "furnishings",
+    "furniture"
+  ],
+  "158" : [
+    "fish oil",
+    "oil"
+  ],
+  "284" : [
+    "bandit",
+    "bandits",
+    "captain",
+    "captains",
+    "clerk",
+    "crew",
+    "customers",
+    "dwarf",
+    "ghost",
+    "gnome",
+    "guard",
+    "guy",
+    "guys",
+    "image",
+    "king",
+    "man",
+    "men",
+    "oracle",
+    "pirate",
+    "pirates",
+    "rogue",
+    "rogues",
+    "sailor",
+    "sailors",
+    "sentry",
+    "shop keeper",
+    "shopkeeper",
+    "storekeeper"
+  ],
+  "128" : [
+    "boil",
+    "cook",
+    "heat",
+    "warm"
+  ],
+  "801" : [
+    "visible"
+  ],
+  "224" : [
+    "xxv"
+  ],
+  "189" : [
+    "area",
+    "chamber",
+    "room"
+  ],
+  "159" : [
+    "cookie",
+    "patty"
+  ],
+  "285" : [
+    "barmaid",
+    "bartender",
+    "girl",
+    "medusa",
+    "princess",
+    "princess rosella",
+    "queen",
+    "rosella",
+    "statue",
+    "waitress",
+    "woman"
+  ],
+  "129" : [
+    "cup",
+    "empty cup"
+  ],
+  "802" : [
+    "clear"
+  ],
+  "255" : [
+    "hole",
+    "porthole"
+  ],
+  "225" : [
+    "lxxxiv"
+  ],
+  "286" : [
+    "animal",
+    "animals",
+    "squirrel",
+    "squirrels"
+  ],
+  "803" : [
+    "henceforth"
+  ],
+  "256" : [
+    "rope"
+  ],
+  "226" : [
+    "clxix"
+  ],
+  "287" : [
+    "lizard",
+    "lizards"
+  ],
+  "804" : [
+    "lightning",
+    "rain"
+  ],
+  "257" : [
+    "creek",
+    "river",
+    "stream",
+    "waterfall"
+  ],
+  "258" : [
+    "bear",
+    "bears"
+  ],
+  "805" : [
+    "thunder"
+  ],
+  "228" : [
+    "head"
+  ],
+  "289" : [
+    "oven",
+    "stove",
+    "woodstove"
+  ],
+  "259" : [
+    "garden",
+    "yard"
+  ],
+  "806" : [
+    "yes"
+  ],
+  "229" : [
+    "kill",
+    "murder",
+    "slay",
+    "stab"
+  ],
+  "807" : [
+    "no"
+  ],
+  "808" : [
+    "coin purse",
+    "purse"
+  ],
+  "809" : [
+    "bag"
+  ],
+  "10" : [
+    "fastest"
+  ],
+  "11" : [
+    "priority"
+  ],
+  "12" : [
+    "sp"
+  ],
+  "13" : [
+    "restart"
+  ],
+  "14" : [
+    "capture",
+    "catch",
+    "get",
+    "pick",
+    "pick up",
+    "take"
+  ],
+  "20" : [
+    "bedroom"
+  ],
+  "15" : [
+    "reset"
+  ],
+  "21" : [
+    "var"
+  ],
+  "16" : [
+    "banner",
+    "banners",
+    "flag",
+    "flags"
+  ],
+  "22" : [
+    "hall",
+    "hallway"
+  ],
+  "23" : [
+    "office",
+    "study"
+  ],
+  "18" : [
+    "bye",
+    "good bye",
+    "so long"
+  ],
+  "24" : [
+    "who"
+  ],
+  "19" : [
+    "chart"
+  ],
+  "170" : [
+    "fill"
+  ],
+  "30" : [
+    "tower"
+  ],
+  "140" : [
+    "divide",
+    "halve",
+    "separate",
+    "split"
+  ],
+  "25" : [
+    "bar",
+    "tavern"
+  ],
+  "110" : [
+    "saffron"
+  ],
+  "31" : [
+    "deck",
+    "earth",
+    "floor",
+    "grass",
+    "grasses",
+    "ground"
+  ],
+  "26" : [
+    "kitchen"
+  ],
+  "171" : [
+    "spell",
+    "spells"
+  ],
+  "32" : [
+    "spyglass",
+    "telescope"
+  ],
+  "141" : [
+    "form",
+    "make",
+    "shape"
+  ],
+  "27" : [
+    "rise",
+    "stand"
+  ],
+  "111" : [
+    "beaker",
+    "beakers",
+    "flask",
+    "flasks",
+    "measuring cup",
+    "measuring cups",
+    "stirrer",
+    "stirrers"
+  ],
+  "33" : [
+    "stair",
+    "staircase",
+    "stairs",
+    "stairway",
+    "steps",
+    "upstairs"
+  ]
+}
