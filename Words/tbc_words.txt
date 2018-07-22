@@ -1,0 +1,17 @@
+anyword
+flag
+get
+gimme
+object
+position
+priority
+release
+reset
+rol
+room
+set
+show
+sp
+tp
+var
+xy

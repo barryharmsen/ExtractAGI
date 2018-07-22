@@ -1,0 +1,106 @@
+{
+  "0" : {
+    "name" : "nothing",
+    "room" : 0
+  },
+  "1" : {
+    "name" : "Knapsack",
+    "room" : 61
+  },
+  "2" : {
+    "name" : "Corn",
+    "room" : 9
+  },
+  "3" : {
+    "name" : "Gruel",
+    "room" : 61
+  },
+  "4" : {
+    "name" : "Food Wallet",
+    "room" : 14
+  },
+  "5" : {
+    "name" : "Bread",
+    "room" : 61
+  },
+  "6" : {
+    "name" : "Water Flask",
+    "room" : 61
+  },
+  "7" : {
+    "name" : "Water",
+    "room" : 0
+  },
+  "8" : {
+    "name" : "Apple",
+    "room" : 61
+  },
+  "9" : {
+    "name" : "Cookies",
+    "room" : 66
+  },
+  "10" : {
+    "name" : "Rope",
+    "room" : 61
+  },
+  "11" : {
+    "name" : "Dagger",
+    "room" : 11
+  },
+  "12" : {
+    "name" : "Magic Sword",
+    "room" : 53
+  },
+  "13" : {
+    "name" : "Harp",
+    "room" : 48
+  },
+  "14" : {
+    "name" : "Lute",
+    "room" : 2
+  },
+  "15" : {
+    "name" : "Flying Dust",
+    "room" : 62
+  },
+  "16" : {
+    "name" : "Keys",
+    "room" : 50
+  },
+  "17" : {
+    "name" : "Tin Cup",
+    "room" : 52
+  },
+  "18" : {
+    "name" : "Magic Word",
+    "room" : 66
+  },
+  "19" : {
+    "name" : "Magic Mirror",
+    "room" : 62
+  },
+  "20" : {
+    "name" : "Book of Knowledge",
+    "room" : 12
+  },
+  "21" : {
+    "name" : "Pot of Gold",
+    "room" : 12
+  },
+  "22" : {
+    "name" : "Hero Shield",
+    "room" : 12
+  },
+  "23" : {
+    "name" : "Suit of Armor",
+    "room" : 12
+  },
+  "24" : {
+    "name" : "Bread",
+    "room" : 0
+  },
+  "25" : {
+    "name" : "Bread",
+    "room" : 0
+  }
+}

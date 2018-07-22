@@ -1,0 +1,1439 @@
+{
+  "0" : [
+    "a",
+    "all",
+    "an",
+    "another",
+    "at",
+    "can",
+    "could",
+    "for",
+    "from",
+    "i",
+    "if",
+    "in",
+    "inside",
+    "into",
+    "is",
+    "it",
+    "may",
+    "me",
+    "now",
+    "of",
+    "off",
+    "out",
+    "over",
+    "say",
+    "sliding glass",
+    "some",
+    "that",
+    "the",
+    "these",
+    "this",
+    "those",
+    "through",
+    "to",
+    "under",
+    "will",
+    "with",
+    "would",
+    "you"
+  ],
+  "1" : [
+    "anyword"
+  ],
+  "2" : [
+    "quit"
+  ],
+  "3" : [
+    "restart"
+  ],
+  "4" : [
+    "restore"
+  ],
+  "5" : [
+    "save"
+  ],
+  "6" : [
+    "game"
+  ],
+  "7" : [
+    "pause"
+  ],
+  "8" : [
+    "help"
+  ],
+  "9" : [
+    "slow"
+  ],
+  "10" : [
+    "normal",
+    "regular"
+  ],
+  "11" : [
+    "fast"
+  ],
+  "12" : [
+    "fastest"
+  ],
+  "13" : [
+    "speed"
+  ],
+  "14" : [
+    "y",
+    "yes"
+  ],
+  "15" : [
+    "n",
+    "no"
+  ],
+  "16" : [
+    "on"
+  ],
+  "18" : [
+    "clock"
+  ],
+  "19" : [
+    "inv",
+    "inventory"
+  ],
+  "20" : [
+    "check out",
+    "examine",
+    "look"
+  ],
+  "21" : [
+    "acquire",
+    "get",
+    "grab",
+    "pick up",
+    "steal",
+    "take"
+  ],
+  "22" : [
+    "use"
+  ],
+  "30" : [
+    "test object"
+  ],
+  "31" : [
+    "die"
+  ],
+  "32" : [
+    "green towel",
+    "towel",
+    "wash cloth",
+    "washcloth"
+  ],
+  "33" : [
+    "television",
+    "television set",
+    "tv",
+    "tv set"
+  ],
+  "34" : [
+    "computer"
+  ],
+  "35" : [
+    "climb",
+    "scale"
+  ],
+  "36" : [
+    "jump"
+  ],
+  "37" : [
+    "rail",
+    "railing"
+  ],
+  "38" : [
+    "change back into",
+    "change into",
+    "put back on",
+    "put on",
+    "wear"
+  ],
+  "39" : [
+    "remote",
+    "remote control",
+    "remote controller"
+  ],
+  "40" : [
+    "switch on",
+    "turn on"
+  ],
+  "41" : [
+    "switch off",
+    "turn off"
+  ],
+  "42" : [
+    "watch"
+  ],
+  "43" : [
+    "balcony"
+  ],
+  "44" : [
+    "go swimming",
+    "swim"
+  ],
+  "45" : [
+    "enter",
+    "get in",
+    "get into",
+    "go in",
+    "go into"
+  ],
+  "46" : [
+    "water"
+  ],
+  "47" : [
+    "billiards",
+    "pool",
+    "swimming pool",
+    "water hole",
+    "waterhole"
+  ],
+  "48" : [
+    "dive",
+    "submerse"
+  ],
+  "49" : [
+    "go under"
+  ],
+  "50" : [
+    "remove",
+    "take off"
+  ],
+  "51" : [
+    "undress"
+  ],
+  "52" : [
+    "clothes",
+    "clothing",
+    "outfit",
+    "suit"
+  ],
+  "53" : [
+    "open",
+    "open up",
+    "pull open"
+  ],
+  "54" : [
+    "door",
+    "doors"
+  ],
+  "55" : [
+    "knock",
+    "knock on",
+    "rap",
+    "rap on"
+  ],
+  "56" : [
+    "kill",
+    "murder"
+  ],
+  "57" : [
+    "asshole",
+    "boy",
+    "dude",
+    "gentleman",
+    "guy",
+    "him",
+    "himself",
+    "man",
+    "stud"
+  ],
+  "58" : [
+    "babe",
+    "bitch",
+    "chick",
+    "girl",
+    "her",
+    "herself",
+    "lady",
+    "wench",
+    "woman"
+  ],
+  "59" : [
+    "kiss",
+    "make out"
+  ],
+  "60" : [
+    "fuck",
+    "have sex",
+    "make love",
+    "screw"
+  ],
+  "61" : [
+    "piss",
+    "take a leak"
+  ],
+  "62" : [
+    "shit",
+    "take a dump",
+    "take a shit"
+  ],
+  "63" : [
+    "converse",
+    "speak",
+    "talk"
+  ],
+  "64" : [
+    "plant",
+    "plants"
+  ],
+  "65" : [
+    "couch"
+  ],
+  "66" : [
+    "futon"
+  ],
+  "67" : [
+    "pull out"
+  ],
+  "68" : [
+    "change",
+    "exchange",
+    "switch"
+  ],
+  "69" : [
+    "sit",
+    "sit down"
+  ],
+  "70" : [
+    "stand",
+    "stand up"
+  ],
+  "71" : [
+    "key",
+    "keys"
+  ],
+  "72" : [
+    "apartment",
+    "home",
+    "house",
+    "pad",
+    "place"
+  ],
+  "73" : [
+    "bathroom"
+  ],
+  "74" : [
+    "potty",
+    "toilet",
+    "toilet seat"
+  ],
+  "75" : [
+    "basin",
+    "sink",
+    "wash basin"
+  ],
+  "76" : [
+    "mirror"
+  ],
+  "77" : [
+    "kitchen"
+  ],
+  "78" : [
+    "fridge",
+    "frig",
+    "frigerator",
+    "icebox",
+    "refrigerator"
+  ],
+  "79" : [
+    "oven"
+  ],
+  "80" : [
+    "stove"
+  ],
+  "81" : [
+    "wall"
+  ],
+  "82" : [
+    "close",
+    "shut"
+  ],
+  "83" : [
+    "elevator",
+    "lift"
+  ],
+  "84" : [
+    "press",
+    "push"
+  ],
+  "85" : [
+    "button",
+    "buttons"
+  ],
+  "86" : [
+    "dave",
+    "davey",
+    "david",
+    "davie",
+    "davy"
+  ],
+  "87" : [
+    "beck",
+    "becky",
+    "rebecca"
+  ],
+  "88" : [
+    "food"
+  ],
+  "89" : [
+    "what"
+  ],
+  "90" : [
+    "kind"
+  ],
+  "91" : [
+    "bathtub",
+    "tub"
+  ],
+  "92" : [
+    "shower"
+  ],
+  "93" : [
+    "bath"
+  ],
+  "94" : [
+    "clean",
+    "wash"
+  ],
+  "95" : [
+    "body"
+  ],
+  "96" : [
+    "up"
+  ],
+  "97" : [
+    "down"
+  ],
+  "98" : [
+    "escape",
+    "exit",
+    "get out",
+    "leave"
+  ],
+  "99" : [
+    "cabinet",
+    "cupboard"
+  ],
+  "100" : [
+    "desk"
+  ],
+  "101" : [
+    "hand",
+    "hands"
+  ],
+  "102" : [
+    "table"
+  ],
+  "103" : [
+    "consume",
+    "eat"
+  ],
+  "104" : [
+    "sunglasses"
+  ],
+  "105" : [
+    "below",
+    "bottom"
+  ],
+  "106" : [
+    "lock"
+  ],
+  "107" : [
+    "unlock"
+  ],
+  "108" : [
+    "board",
+    "message board"
+  ],
+  "109" : [
+    "message",
+    "messages"
+  ],
+  "110" : [
+    "mailbox",
+    "mailboxes"
+  ],
+  "111" : [
+    "inbox"
+  ],
+  "112" : [
+    "manager",
+    "managers",
+    "mike"
+  ],
+  "113" : [
+    "office"
+  ],
+  "114" : [
+    "floor",
+    "ground"
+  ],
+  "115" : [
+    "read"
+  ],
+  "116" : [
+    "write"
+  ],
+  "117" : [
+    "crap",
+    "garbage",
+    "trash"
+  ],
+  "118" : [
+    "chute"
+  ],
+  "119" : [
+    "dodo",
+    "dodo bird"
+  ],
+  "120" : [
+    "bench",
+    "chair",
+    "comfy chair",
+    "seat"
+  ],
+  "121" : [
+    "counter"
+  ],
+  "122" : [
+    "coffee"
+  ],
+  "123" : [
+    "run"
+  ],
+  "124" : [
+    "ask",
+    "inquire"
+  ],
+  "125" : [
+    "designation",
+    "name"
+  ],
+  "126" : [
+    "action figure",
+    "action figures",
+    "figure",
+    "figures"
+  ],
+  "127" : [
+    "ask about",
+    "inguire about",
+    "talk about"
+  ],
+  "128" : [
+    "jake"
+  ],
+  "129" : [
+    "jen",
+    "jennifer",
+    "jenny"
+  ],
+  "130" : [
+    "lounge"
+  ],
+  "131" : [
+    "dodo bird report",
+    "dodo report",
+    "report",
+    "report on dodo",
+    "report on dodo bird",
+    "research assignment",
+    "research report"
+  ],
+  "132" : [
+    "adventure",
+    "quest"
+  ],
+  "133" : [
+    "graham",
+    "king graham",
+    "sir graham"
+  ],
+  "134" : [
+    "babes",
+    "bitches",
+    "chicks",
+    "girls",
+    "ladies",
+    "women"
+  ],
+  "135" : [
+    "copy",
+    "ditto",
+    "extra copy"
+  ],
+  "136" : [
+    "stairs",
+    "stairwell"
+  ],
+  "137" : [
+    "hall",
+    "hallway"
+  ],
+  "138" : [
+    "play"
+  ],
+  "139" : [
+    "mag",
+    "magazine",
+    "magazines",
+    "mags",
+    "periodical",
+    "periodicals"
+  ],
+  "140" : [
+    "end",
+    "finish",
+    "stop"
+  ],
+  "141" : [
+    "reading"
+  ],
+  "142" : [
+    "recent"
+  ],
+  "143" : [
+    "edition",
+    "editions"
+  ],
+  "144" : [
+    "drive"
+  ],
+  "145" : [
+    "shop",
+    "shoppe",
+    "store"
+  ],
+  "146" : [
+    "action figure store",
+    "toy land",
+    "toy store",
+    "toyland",
+    "toys r us"
+  ],
+  "147" : [
+    "car",
+    "cars",
+    "geo",
+    "geo prizm"
+  ],
+  "148" : [
+    "driving"
+  ],
+  "149" : [
+    "back"
+  ],
+  "150" : [
+    "behind"
+  ],
+  "151" : [
+    "reveal",
+    "tell"
+  ],
+  "152" : [
+    "explain",
+    "tell about"
+  ],
+  "153" : [
+    "put back",
+    "replace",
+    "return"
+  ],
+  "154" : [
+    "towel rack"
+  ],
+  "155" : [
+    "put"
+  ],
+  "156" : [
+    "dress"
+  ],
+  "157" : [
+    "find",
+    "search for",
+    "where",
+    "wheres"
+  ],
+  "158" : [
+    "attention"
+  ],
+  "159" : [
+    "sun"
+  ],
+  "160" : [
+    "being in sun",
+    "getting tan",
+    "laying out",
+    "sunbathing",
+    "suntanning",
+    "tanning"
+  ],
+  "161" : [
+    "tan"
+  ],
+  "162" : [
+    "boy friend",
+    "boyfriend"
+  ],
+  "163" : [
+    "swimming"
+  ],
+  "164" : [
+    "pool shed",
+    "shed"
+  ],
+  "165" : [
+    "sign"
+  ],
+  "166" : [
+    "fence"
+  ],
+  "167" : [
+    "never mind",
+    "nevermind",
+    "nothing"
+  ],
+  "168" : [
+    "bye",
+    "bye bye",
+    "goodbye"
+  ],
+  "169" : [
+    "thank you",
+    "thanks"
+  ],
+  "170" : [
+    "fuck you"
+  ],
+  "171" : [
+    "hello",
+    "hi"
+  ],
+  "172" : [
+    "good fuck",
+    "lovemaking",
+    "sex"
+  ],
+  "173" : [
+    "get off",
+    "get up"
+  ],
+  "174" : [
+    "get on"
+  ],
+  "175" : [
+    "lie"
+  ],
+  "176" : [
+    "sleep"
+  ],
+  "177" : [
+    "go"
+  ],
+  "178" : [
+    "check beneath",
+    "check under",
+    "examine beneath",
+    "examine under",
+    "look beneath",
+    "look under",
+    "search beneath",
+    "search under"
+  ],
+  "179" : [
+    "cash",
+    "dead presidents",
+    "deniro",
+    "funding",
+    "funds",
+    "green paper",
+    "money"
+  ],
+  "180" : [
+    "drawer"
+  ],
+  "181" : [
+    "about"
+  ],
+  "182" : [
+    "kendra"
+  ],
+  "183" : [
+    "do"
+  ],
+  "184" : [
+    "has",
+    "have"
+  ],
+  "185" : [
+    "she"
+  ],
+  "186" : [
+    "he"
+  ],
+  "187" : [
+    "hot tub",
+    "jacuzzi",
+    "whirlpool"
+  ],
+  "188" : [
+    "wife"
+  ],
+  "189" : [
+    "maria",
+    "marie"
+  ],
+  "190" : [
+    "letter",
+    "mail"
+  ],
+  "191" : [
+    "phone",
+    "telephone"
+  ],
+  "192" : [
+    "receiver"
+  ],
+  "193" : [
+    "check"
+  ],
+  "194" : [
+    "dial"
+  ],
+  "195" : [
+    "number"
+  ],
+  "196" : [
+    "hang up"
+  ],
+  "197" : [
+    "umbrella"
+  ],
+  "198" : [
+    "tree",
+    "trees"
+  ],
+  "199" : [
+    "ivy"
+  ],
+  "200" : [
+    "lamp",
+    "lamp pole",
+    "lamp post",
+    "street light"
+  ],
+  "201" : [
+    "bush",
+    "bushes",
+    "shrub",
+    "shrubbery",
+    "shrubs"
+  ],
+  "202" : [
+    "sidewalk"
+  ],
+  "203" : [
+    "building",
+    "structure"
+  ],
+  "204" : [
+    "hear",
+    "listen"
+  ],
+  "205" : [
+    "call"
+  ],
+  "206" : [
+    "mark",
+    "marks"
+  ],
+  "207" : [
+    "rachel",
+    "rachels"
+  ],
+  "208" : [
+    "college",
+    "school",
+    "ucla",
+    "university"
+  ],
+  "209" : [
+    "gate"
+  ],
+  "210" : [
+    "switch box",
+    "switchbox"
+  ],
+  "211" : [
+    "strange thing",
+    "thing"
+  ],
+  "212" : [
+    "device",
+    "machine"
+  ],
+  "213" : [
+    "car port",
+    "carport",
+    "garage"
+  ],
+  "214" : [
+    "m",
+    "m button",
+    "main"
+  ],
+  "215" : [
+    "1",
+    "one",
+    "one button"
+  ],
+  "216" : [
+    "2",
+    "two",
+    "two button"
+  ],
+  "217" : [
+    "3",
+    "three",
+    "three button"
+  ],
+  "218" : [
+    "galactor",
+    "galactor action figure",
+    "galactor figure"
+  ],
+  "219" : [
+    "pipe"
+  ],
+  "220" : [
+    "driveway",
+    "road",
+    "street"
+  ],
+  "221" : [
+    "freeway"
+  ],
+  "222" : [
+    "light"
+  ],
+  "223" : [
+    "blinking"
+  ],
+  "224" : [
+    "alright",
+    "fine",
+    "good",
+    "ok",
+    "okay",
+    "sure"
+  ],
+  "225" : [
+    "bad",
+    "not good",
+    "not so good"
+  ],
+  "226" : [
+    "path"
+  ],
+  "227" : [
+    "funny",
+    "funny looking",
+    "strange",
+    "strange looking"
+  ],
+  "228" : [
+    "people",
+    "persons"
+  ],
+  "229" : [
+    "basketball"
+  ],
+  "230" : [
+    "field"
+  ],
+  "231" : [
+    "track"
+  ],
+  "232" : [
+    "letters"
+  ],
+  "233" : [
+    "book"
+  ],
+  "234" : [
+    "black",
+    "little black"
+  ],
+  "235" : [
+    "get all",
+    "get everything"
+  ],
+  "236" : [
+    "merv and sven",
+    "thugs",
+    "two thugs"
+  ],
+  "237" : [
+    "give",
+    "hand over"
+  ],
+  "238" : [
+    "painting",
+    "paintings",
+    "picture",
+    "pictures"
+  ],
+  "239" : [
+    "bed"
+  ],
+  "240" : [
+    "make"
+  ],
+  "241" : [
+    "bear",
+    "bear statue",
+    "bruin",
+    "bruin bear",
+    "bruin bear statue",
+    "bruin statue",
+    "mascot",
+    "schools mascot",
+    "statue"
+  ],
+  "242" : [
+    "animal",
+    "creature",
+    "monster"
+  ],
+  "243" : [
+    "advice",
+    "consultation"
+  ],
+  "244" : [
+    "black jacket",
+    "black leather jacket",
+    "jacket",
+    "leather jacket"
+  ],
+  "245" : [
+    "clown",
+    "funny man"
+  ],
+  "246" : [
+    "favor"
+  ],
+  "247" : [
+    "ride"
+  ],
+  "248" : [
+    "carpet",
+    "rug"
+  ],
+  "249" : [
+    "rent"
+  ],
+  "250" : [
+    "pay"
+  ],
+  "251" : [
+    "am",
+    "im"
+  ],
+  "252" : [
+    "hundred"
+  ],
+  "253" : [
+    "dollar",
+    "dollars"
+  ],
+  "254" : [
+    "wallet"
+  ],
+  "255" : [
+    "driver id",
+    "drivers license",
+    "id",
+    "identification",
+    "license",
+    "liscense"
+  ],
+  "256" : [
+    "look in",
+    "look inside",
+    "search"
+  ],
+  "257" : [
+    "shelf",
+    "shelves"
+  ],
+  "258" : [
+    "toy",
+    "toys"
+  ],
+  "259" : [
+    "doll",
+    "dolly"
+  ],
+  "260" : [
+    "child",
+    "kid"
+  ],
+  "261" : [
+    "magic"
+  ],
+  "262" : [
+    "lizard"
+  ],
+  "263" : [
+    "castle"
+  ],
+  "264" : [
+    "bicycle",
+    "bike"
+  ],
+  "265" : [
+    "arcade game",
+    "video game",
+    "video games"
+  ],
+  "266" : [
+    "rocket",
+    "rockets"
+  ],
+  "267" : [
+    "model",
+    "model kit",
+    "model kits",
+    "models"
+  ],
+  "268" : [
+    "batteries",
+    "battery"
+  ],
+  "269" : [
+    "street warriors"
+  ],
+  "270" : [
+    "batminion"
+  ],
+  "271" : [
+    "bar wars"
+  ],
+  "272" : [
+    "puke",
+    "puke linewalker",
+    "pukelinewalker"
+  ],
+  "273" : [
+    "hammered head",
+    "hammeredhead"
+  ],
+  "274" : [
+    "buy",
+    "purchase"
+  ],
+  "275" : [
+    "rub"
+  ],
+  "276" : [
+    "boat",
+    "sail boat",
+    "sailboat",
+    "tugboat"
+  ],
+  "277" : [
+    "satan"
+  ],
+  "278" : [
+    "truck"
+  ],
+  "279" : [
+    "clown clothes",
+    "clown outfit",
+    "clown suit",
+    "clownclothes",
+    "clownoutfit",
+    "clownsuit"
+  ],
+  "280" : [
+    "fuel",
+    "gas",
+    "gasoline",
+    "oil"
+  ],
+  "281" : [
+    "brick",
+    "bricks"
+  ],
+  "282" : [
+    "copymat"
+  ],
+  "283" : [
+    "window"
+  ],
+  "284" : [
+    "bum",
+    "homeless",
+    "homeless man",
+    "transient"
+  ],
+  "285" : [
+    "bottle"
+  ],
+  "286" : [
+    "windows"
+  ],
+  "287" : [
+    "colored",
+    "glass",
+    "stained glass"
+  ],
+  "288" : [
+    "break"
+  ],
+  "289" : [
+    "movie poster",
+    "movie posters",
+    "poster",
+    "posters"
+  ],
+  "290" : [
+    "movie theater",
+    "movie theatre",
+    "theater",
+    "theatre"
+  ],
+  "291" : [
+    "feature",
+    "film",
+    "movie"
+  ],
+  "292" : [
+    "frame",
+    "frames",
+    "holder",
+    "poster case",
+    "poster frame",
+    "poster holder"
+  ],
+  "293" : [
+    "move"
+  ],
+  "294" : [
+    "comic",
+    "comic book",
+    "comic books",
+    "comics"
+  ],
+  "295" : [
+    "green guy",
+    "green looking guy",
+    "gumby"
+  ],
+  "296" : [
+    "owner",
+    "roger"
+  ],
+  "297" : [
+    "bar",
+    "malcolms",
+    "malcolms on campus",
+    "pub",
+    "sports bar"
+  ],
+  "298" : [
+    "peddle",
+    "sell"
+  ],
+  "299" : [
+    "bargain",
+    "make deal",
+    "make offer"
+  ],
+  "300" : [
+    "dried snake",
+    "dried snake skin",
+    "snake",
+    "snake skin"
+  ],
+  "301" : [
+    "become",
+    "turn into"
+  ],
+  "302" : [
+    "employee",
+    "salesman",
+    "worker"
+  ],
+  "303" : [
+    "employee position",
+    "employment",
+    "employment position",
+    "job",
+    "position as employee"
+  ],
+  "304" : [
+    "box",
+    "boxes",
+    "case",
+    "cases",
+    "shipment",
+    "shipments"
+  ],
+  "305" : [
+    "2mart",
+    "kwiki mart",
+    "mart",
+    "quicki mart",
+    "quickie mart",
+    "twenty four mart"
+  ],
+  "306" : [
+    "hare krishna",
+    "nut",
+    "religious nut",
+    "zealot"
+  ],
+  "307" : [
+    "cemetary",
+    "graveyard"
+  ],
+  "308" : [
+    "alcohol",
+    "beer",
+    "booze",
+    "liquer",
+    "liquir",
+    "spirits"
+  ],
+  "309" : [
+    "work"
+  ],
+  "310" : [
+    "unfold"
+  ],
+  "311" : [
+    "dream"
+  ],
+  "312" : [
+    "cook"
+  ],
+  "313" : [
+    "application"
+  ],
+  "314" : [
+    "apply"
+  ],
+  "315" : [
+    "crate",
+    "crates"
+  ],
+  "316" : [
+    "four hundred",
+    "four hundred dollars"
+  ],
+  "317" : [
+    "fountain",
+    "inverted fountain"
+  ],
+  "318" : [
+    "face"
+  ],
+  "319" : [
+    "drink"
+  ],
+  "320" : [
+    "stock room",
+    "stockroom",
+    "storage room",
+    "storageroom",
+    "warehouse"
+  ],
+  "321" : [
+    "pray",
+    "worship"
+  ],
+  "322" : [
+    "cooler",
+    "ice chest",
+    "ice cooler",
+    "icechest"
+  ],
+  "323" : [
+    "coca cola",
+    "coke",
+    "cola",
+    "pepsi",
+    "pop",
+    "soda",
+    "soda pop",
+    "sodapop"
+  ],
+  "1000" : [
+    "sp"
+  ],
+  "1001" : [
+    "tp"
+  ],
+  "1002" : [
+    "pos",
+    "position"
+  ],
+  "1003" : [
+    "object"
+  ],
+  "1004" : [
+    "flag"
+  ],
+  "1005" : [
+    "mem"
+  ],
+  "1006" : [
+    "pri",
+    "priority"
+  ],
+  "1007" : [
+    "var"
+  ],
+  "1010" : [
+    "reset"
+  ],
+  "1011" : [
+    "set"
+  ],
+  "1012" : [
+    "show"
+  ],
+  "1013" : [
+    "trace"
+  ],
+  "1014" : [
+    "debug"
+  ],
+  "1015" : [
+    "room"
+  ],
+  "1016" : [
+    "drop"
+  ],
+  "1017" : [
+    "gimme"
+  ],
+  "1018" : [
+    "release"
+  ],
+  "1019" : [
+    "hide"
+  ],
+  "1020" : [
+    "coords"
+  ],
+  "9999" : [
+    "rol"
+  ]
+}

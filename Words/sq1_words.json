@@ -1,0 +1,1364 @@
+{
+  "0" : [
+    "a",
+    "all",
+    "an",
+    "another",
+    "at",
+    "every",
+    "first",
+    "flashing",
+    "for",
+    "from",
+    "guess",
+    "i",
+    " n",
+    " nside",
+    " nto",
+    " s",
+    " t",
+    "little",
+    "me",
+    "now",
+    "of",
+    "off",
+    "old",
+    "on",
+    "out",
+    "over",
+    "please",
+    "second",
+    "sir",
+    "some",
+    "that",
+    "the",
+    "these",
+    "third",
+    "this",
+    "those",
+    "through",
+    "to",
+    "under",
+    "up",
+    "will",
+    "with",
+    "you"
+  ],
+  "1" : [
+    "anyword"
+  ],
+  "2" : [
+    "check out",
+    "examine",
+    " nspect",
+    "look",
+    "view"
+  ],
+  "3" : [
+    "cart",
+    "cartridge"
+  ],
+  "4" : [
+    "climb in",
+    "climb into",
+    "enter",
+    "get in",
+    "get inside",
+    "get into",
+    "go"
+  ],
+  "5" : [
+    "acquire",
+    "get",
+    "grab",
+    "pick",
+    "pick up",
+    "rob",
+    "swipe",
+    "take"
+  ],
+  "6" : [
+    "climb",
+    "scale"
+  ],
+  "7" : [
+    "computer console",
+    "console",
+    "control panel",
+    "controls",
+    "panel"
+  ],
+  "8" : [
+    "access tube",
+    "access tubes",
+    "dome",
+    "domes"
+  ],
+  "9" : [
+    "tree",
+    "trees"
+  ],
+  "10" : [
+    "keyboard"
+  ],
+  "11" : [
+    "bush",
+    "bushes",
+    "fern",
+    "plant",
+    "plants",
+    "shrub",
+    "shrubs",
+    "vegetation"
+  ],
+  "12" : [
+    "pilot droid",
+    "qr  pilot droid"
+  ],
+  "13" : [
+    "speak",
+    "talk"
+  ],
+  "14" : [
+    "find",
+    "locate"
+  ],
+  "15" : [
+    "smell",
+    "sniff"
+  ],
+  "16" : [
+    "display",
+    "monitor",
+    "read out",
+    "read outs",
+    "readouts",
+    "readouts",
+    "screen"
+  ],
+  "17" : [
+    "elevator",
+    "elevator door",
+    "elevators"
+  ],
+  "18" : [
+    "astral"
+  ],
+  "19" : [
+    "open"
+  ],
+  "20" : [
+    "break",
+    "knock down",
+    "smash"
+  ],
+  "21" : [
+    "building",
+    "house",
+    "hut",
+    "shack",
+    "shop",
+    "store"
+  ],
+  "22" : [
+    "door",
+    "doors",
+    "doorway"
+  ],
+  "23" : [
+    "sp"
+  ],
+  "24" : [
+    "port",
+    "viewing port",
+    "window",
+    "windows"
+  ],
+  "25" : [
+    "deltaur"
+  ],
+  "26" : [
+    "tp"
+  ],
+  "27" : [
+    " gnition",
+    "key hole",
+    "key ignition",
+    "keyhole"
+  ],
+  "28" : [
+    "close",
+    "shut"
+  ],
+  "29" : [
+    "computer"
+  ],
+  "30" : [
+    "capture",
+    "catch"
+  ],
+  "31" : [
+    "restart"
+  ],
+  "32" : [
+    "floor",
+    "grass",
+    "ground"
+  ],
+  "33" : [
+    "canyon",
+    "chasm",
+    "gorge"
+  ],
+  "34" : [
+    "status"
+  ],
+  "35" : [
+    "drink"
+  ],
+  "36" : [
+    "pause"
+  ],
+  "37" : [
+    "boulder",
+    "boulders",
+    "rock",
+    "rocks"
+  ],
+  "38" : [
+    "entryway",
+    "hole",
+    "opening",
+    "pit",
+    "shaft",
+    "tunnel"
+  ],
+  "39" : [
+    "press",
+    "push"
+  ],
+  "40" : [
+    "give",
+    "offer",
+    "present",
+    "redeem",
+    "show"
+  ],
+  "41" : [
+    "test",
+    "test fly"
+  ],
+  "42" : [
+    "kiss"
+  ],
+  "43" : [
+    "clothes",
+    "flight suit",
+    "sarien suit",
+    "sarien uniform",
+    "space suit",
+    "spacesuit",
+    "suit",
+    "uniform"
+  ],
+  "44" : [
+    "quit"
+  ],
+  "45" : [
+    "pos",
+    "position"
+  ],
+  "46" : [
+    "craft",
+    "escape pod",
+    "pod",
+    "rocket",
+    "ship",
+    "ships",
+    "shuttle",
+    "space craft",
+    "space ship",
+    "spacecraft",
+    "spaceship",
+    "vessel"
+  ],
+  "47" : [
+    "button",
+    "buttons",
+    "switch"
+  ],
+  "48" : [
+    "bodies",
+    "body",
+    "corpse",
+    "dead body",
+    "dead man"
+  ],
+  "49" : [
+    "object"
+  ],
+  "50" : [
+    "geyser",
+    "steam",
+    "steam geyser"
+  ],
+  "51" : [
+    "shelf",
+    "shelves"
+  ],
+  "52" : [
+    "girl",
+    "lady",
+    "woman"
+  ],
+  "53" : [
+    "base",
+    "pedestal",
+    "platform"
+  ],
+  "54" : [
+    "attack",
+    "destroy",
+    "destruct",
+    "kill",
+    "murder"
+  ],
+  "55" : [
+    "banner",
+    "banners",
+    "flag",
+    "flags"
+  ],
+  "56" : [
+    "leak",
+    "pee",
+    "potty"
+  ],
+  "57" : [
+    "sign"
+  ],
+  "58" : [
+    "being",
+    "beings",
+    "crew man",
+    "crew person",
+    "crewman",
+    "crewperson",
+    "dude",
+    "guard",
+    "keronian",
+    "man",
+    "mans",
+    "men",
+    "people",
+    "person",
+    "sarien",
+    "sariens",
+    "scientist",
+    "technician",
+    "worker"
+  ],
+  "59" : [
+    "left"
+  ],
+  "60" : [
+    "right"
+  ],
+  "61" : [
+    "dead"
+  ],
+  "62" : [
+    "mem"
+  ],
+  "63" : [
+    "pri"
+  ],
+  "64" : [
+    "holy"
+  ],
+  "65" : [
+    "life"
+  ],
+  "66" : [
+    "who"
+  ],
+  "69" : [
+    "autonav",
+    "autopilot"
+  ],
+  "70" : [
+    "escape"
+  ],
+  "71" : [
+    "use"
+  ],
+  "72" : [
+    "lever",
+    "throttle"
+  ],
+  "73" : [
+    "unlock"
+  ],
+  "74" : [
+    " nscription"
+  ],
+  "75" : [
+    "key",
+    "keys",
+    "skimmer key"
+  ],
+  "76" : [
+    "id.",
+    " card",
+    " d",
+    " d card",
+    " dentification card",
+    "sarien id card"
+  ],
+  "77" : [
+    "fill",
+    " nsert",
+    "put in"
+  ],
+  "78" : [
+    "droid",
+    "droids",
+    "robot",
+    "robots"
+  ],
+  "79" : [
+    "read"
+  ],
+  "80" : [
+    "fight"
+  ],
+  "81" : [
+    "space"
+  ],
+  "82" : [
+    "planet",
+    "planets",
+    "star",
+    "stars"
+  ],
+  "83" : [
+    "explore",
+    "frisk",
+    "rummage",
+    "search"
+  ],
+  "84" : [
+    "asshole",
+    "cock sucker",
+    "cocksucker",
+    "dick head",
+    "dickhead",
+    "fart",
+    "fuck",
+    "motherfucker",
+    "piss",
+    "shit",
+    "shit head",
+    "shithead"
+  ],
+  "85" : [
+    "dont touch",
+    "dont touch"
+  ],
+  "86" : [
+    "bike",
+    "sand skimmer",
+    "skimmer"
+  ],
+  "87" : [
+    "scott",
+    "scott murphy"
+  ],
+  "88" : [
+    "lie"
+  ],
+  "89" : [
+    "light",
+    "lights",
+    "lite"
+  ],
+  "90" : [
+    "done"
+  ],
+  "91" : [
+    "cabinet"
+  ],
+  "92" : [
+    "power"
+  ],
+  "93" : [
+    "bed"
+  ],
+  "94" : [
+    "programmed",
+    "wrote"
+  ],
+  "95" : [
+    "stairs",
+    "stairway",
+    "steps"
+  ],
+  "96" : [
+    "glass",
+    "mirror"
+  ],
+  "97" : [
+    "wall",
+    "walls"
+  ],
+  "98" : [
+    "play"
+  ],
+  "99" : [
+    "consume",
+    "eat",
+    "taste"
+  ],
+  "101" : [
+    "chunk",
+    "fragment",
+    "hunk",
+    "part",
+    "piece"
+  ],
+  "102" : [
+    "reset"
+  ],
+  "103" : [
+    "table"
+  ],
+  "104" : [
+    "wake"
+  ],
+  "105" : [
+    "hit",
+    "pound"
+  ],
+  "106" : [
+    "var"
+  ],
+  "108" : [
+    "cheat"
+  ],
+  "109" : [
+    "pat",
+    "pet",
+    "poke",
+    "polish",
+    "rub",
+    "stroke",
+    "tap",
+    "touch"
+  ],
+  "110" : [
+    "what is"
+  ],
+  "111" : [
+    "ale",
+    "beer",
+    "keronian ale",
+    "swill"
+  ],
+  "112" : [
+    "quiet"
+  ],
+  "113" : [
+    "name"
+  ],
+  "114" : [
+    "cash",
+    "credit",
+    "currency",
+    "money"
+  ],
+  "115" : [
+    "pocket",
+    "pockets"
+  ],
+  "116" : [
+    "load"
+  ],
+  "117" : [
+    "cover"
+  ],
+  "118" : [
+    "card"
+  ],
+  "119" : [
+    "credit card",
+    "key card",
+    "keycard"
+  ],
+  "122" : [
+    "buck",
+    "buckazoid",
+    "buckazoids",
+    "bucks"
+  ],
+  "123" : [
+    "brew"
+  ],
+  "124" : [
+    "aid",
+    "assist",
+    "care",
+    "help"
+  ],
+  "125" : [
+    "put on",
+    "wear"
+  ],
+  "126" : [
+    "feed"
+  ],
+  "127" : [
+    "cartridge slot",
+    "slot",
+    "slot machine",
+    "slots"
+  ],
+  "128" : [
+    "bay door",
+    "bay doors",
+    "baydoor",
+    "baydoors"
+  ],
+  "129" : [
+    "airlock",
+    "airlock door"
+  ],
+  "130" : [
+    "handle"
+  ],
+  "131" : [
+    "pray"
+  ],
+  "132" : [
+    "turn",
+    "turn on"
+  ],
+  "133" : [
+    "kneel"
+  ],
+  "135" : [
+    "ken"
+  ],
+  "136" : [
+    "ladder"
+  ],
+  "137" : [
+    "area",
+    "around",
+    "cave",
+    "cavern",
+    "chamber",
+    "corridor",
+    "hall",
+    "hall way",
+    "hallway",
+    "landscape",
+    "room",
+    "zone"
+  ],
+  "138" : [
+    "be"
+  ],
+  "139" : [
+    "cast",
+    "throw",
+    "toss"
+  ],
+  "140" : [
+    "drop",
+    "put",
+    "set"
+  ],
+  "141" : [
+    "rescue",
+    "save"
+  ],
+  "142" : [
+    "alien",
+    "aliens"
+  ],
+  "143" : [
+    "orat"
+  ],
+  "144" : [
+    "cliff",
+    "cliffs",
+    "mountain",
+    "mountains"
+  ],
+  "146" : [
+    "game"
+  ],
+  "147" : [
+    "restore"
+  ],
+  "148" : [
+    "dig"
+  ],
+  "149" : [
+    "hello",
+    "hi"
+  ],
+  "150" : [
+    "knock"
+  ],
+  "151" : [
+    "dehydrated water",
+    "water"
+  ],
+  "152" : [
+    "case",
+    "chest",
+    "trunk"
+  ],
+  "153" : [
+    "barrier",
+    "fence"
+  ],
+  "154" : [
+    "follow"
+  ],
+  "155" : [
+    "sit",
+    "sit down"
+  ],
+  "156" : [
+    "cut",
+    "slice",
+    "stab"
+  ],
+  "157" : [
+    "disembark",
+    "exit",
+    "get off",
+    "get out",
+    "leave"
+  ],
+  "158" : [
+    "dive"
+  ],
+  "159" : [
+    "normal"
+  ],
+  "160" : [
+    "fast"
+  ],
+  "161" : [
+    "slow"
+  ],
+  "163" : [
+    "bomb",
+    "bombs",
+    "gas bomb",
+    "gas grenade",
+    "grenade",
+    "grenades",
+    "smoke bomb"
+  ],
+  "164" : [
+    "fly",
+    "fly away"
+  ],
+  "165" : [
+    "home"
+  ],
+  "167" : [
+    "exlax"
+  ],
+  "168" : [
+    "move",
+    "pull",
+    "shove"
+  ],
+  "172" : [
+    "pry"
+  ],
+  "173" : [
+    "grate",
+    "grating",
+    "vent"
+  ],
+  "174" : [
+    "sesame"
+  ],
+  "175" : [
+    "look under"
+  ],
+  "177" : [
+    "my name"
+  ],
+  "180" : [
+    "y",
+    "yes"
+  ],
+  "181" : [
+    "n",
+    "no"
+  ],
+  "182" : [
+    "buy",
+    "purchase"
+  ],
+  "183" : [
+    "steal"
+  ],
+  "185" : [
+    "get down",
+    "remove",
+    "take off",
+    "take out",
+    "unbuckle",
+    "unfasten"
+  ],
+  "186" : [
+    "bookcase"
+  ],
+  "187" : [
+    "blow"
+  ],
+  "188" : [
+    "cube"
+  ],
+  "189" : [
+    "blow me"
+  ],
+  "190" : [
+    "lid"
+  ],
+  "191" : [
+    "fire"
+  ],
+  "192" : [
+    "lift"
+  ],
+  "193" : [
+    "back"
+  ],
+  "194" : [
+    "sector"
+  ],
+  "195" : [
+    "laundry",
+    "laundry cleaning unit",
+    "machine",
+    "wash machine",
+    "washer",
+    "washing machine"
+  ],
+  "196" : [
+    "hh"
+  ],
+  "197" : [
+    "say"
+  ],
+  "198" : [
+    "author"
+  ],
+  "199" : [
+    "dialect translator",
+    "electric gadget",
+    "electrical device",
+    "electrical gadget",
+    "gadget",
+    "translator"
+  ],
+  "200" : [
+    "look down"
+  ],
+  "201" : [
+    "point"
+  ],
+  "202" : [
+    "let"
+  ],
+  "203" : [
+    "look in",
+    "look inside",
+    "look through"
+  ],
+  "204" : [
+    "thank",
+    "thank you"
+  ],
+  "206" : [
+    "car"
+  ],
+  "208" : [
+    "sled"
+  ],
+  "209" : [
+    "board",
+    "get on",
+    "ride",
+    "stand"
+  ],
+  "210" : [
+    "format",
+    " nit",
+    " nitialize"
+  ],
+  "211" : [
+    "disk"
+  ],
+  "212" : [
+    "hat"
+  ],
+  "213" : [
+    "look across"
+  ],
+  "214" : [
+    "waterfall"
+  ],
+  "215" : [
+    "lint",
+    "pocket lint"
+  ],
+  "216" : [
+    "one"
+  ],
+  "217" : [
+    "them"
+  ],
+  "218" : [
+    "both"
+  ],
+  "219" : [
+    "chair",
+    "chairs"
+  ],
+  "220" : [
+    "launch"
+  ],
+  "221" : [
+    "drawer"
+  ],
+  "222" : [
+    "ramp"
+  ],
+  "224" : [
+    "jump"
+  ],
+  "226" : [
+    "bell"
+  ],
+  "227" : [
+    "across"
+  ],
+  "228" : [
+    "generator",
+    "star generator"
+  ],
+  "229" : [
+    "priority"
+  ],
+  "230" : [
+    "a9"
+  ],
+  "231" : [
+    "look up"
+  ],
+  "232" : [
+    "sky"
+  ],
+  "233" : [
+    "belt",
+    "belts",
+    "seat belt",
+    "seatbelt"
+  ],
+  "234" : [
+    "yell"
+  ],
+  "235" : [
+    "listen"
+  ],
+  "236" : [
+    "buckle",
+    "fasten"
+  ],
+  "237" : [
+    "love"
+  ],
+  "238" : [
+    "helmet"
+  ],
+  "239" : [
+    "dirt",
+    "sand"
+  ],
+  "240" : [
+    "stuff"
+  ],
+  "241" : [
+    "jet pack",
+    "jetpack"
+  ],
+  "242" : [
+    "step"
+  ],
+  "243" : [
+    "down"
+  ],
+  "245" : [
+    "type"
+  ],
+  "246" : [
+    "sound"
+  ],
+  "247" : [
+    "alarm"
+  ],
+  "248" : [
+    "foot step",
+    "foot steps",
+    "footstep",
+    "footsteps"
+  ],
+  "249" : [
+    "ceiling"
+  ],
+  "250" : [
+    "kick"
+  ],
+  "251" : [
+    "box",
+    "boxes",
+    "cartridge retrieval unit",
+    "model dx cartridge retrieval unit",
+    "model dx unit",
+    "retrieval unit",
+    "unit",
+    "units"
+  ],
+  "252" : [
+    "rail",
+    "railing"
+  ],
+  "253" : [
+    "closet",
+    "closet door"
+  ],
+  "254" : [
+    "dial"
+  ],
+  "255" : [
+    "smoke"
+  ],
+  "256" : [
+    "roll"
+  ],
+  "257" : [
+    "snort"
+  ],
+  "258" : [
+    "bury"
+  ],
+  "259" : [
+    "bridge"
+  ],
+  "260" : [
+    "arch",
+    "arches",
+    "archs"
+  ],
+  "261" : [
+    "spider",
+    "spider droid"
+  ],
+  "262" : [
+    "antenna",
+    "pinnacle",
+    "spire",
+    "tower"
+  ],
+  "263" : [
+    "edge"
+  ],
+  "264" : [
+    "kit",
+    "supplies",
+    "survival",
+    "survival kit"
+  ],
+  "266" : [
+    "gun",
+    "pulseray",
+    "raygun",
+    "weapon"
+  ],
+  "267" : [
+    "control",
+    "device",
+    "remote",
+    "remote control"
+  ],
+  "268" : [
+    "army knife",
+    "knife",
+    "xenon army knife"
+  ],
+  "269" : [
+    "can",
+    "container",
+    "cylinder"
+  ],
+  "270" : [
+    "seat"
+  ],
+  "271" : [
+    "fix",
+    "repair"
+  ],
+  "272" : [
+    " nstructions",
+    "label"
+  ],
+  "273" : [
+    "letters",
+    "printing",
+    "writing"
+  ],
+  "274" : [
+    "acid"
+  ],
+  "275" : [
+    "fluid",
+    "liquid"
+  ],
+  "276" : [
+    "pool",
+    "puddle"
+  ],
+  "277" : [
+    "drip",
+    "drips",
+    "drops"
+  ],
+  "278" : [
+    "beam",
+    "beams",
+    "force field",
+    "laser",
+    "laser beam"
+  ],
+  "279" : [
+    "piston",
+    "pistons",
+    "steam generator"
+  ],
+  "281" : [
+    "catwalk",
+    "walkway"
+  ],
+  "282" : [
+    "post"
+  ],
+  "284" : [
+    "dune",
+    "dunes"
+  ],
+  "285" : [
+    "animal",
+    "beast",
+    "creature",
+    "monster",
+    "tentacle",
+    "tentacles"
+  ],
+  "286" : [
+    "tiny"
+  ],
+  "287" : [
+    "trace"
+  ],
+  "288" : [
+    "city",
+    "flats",
+    "settlement",
+    "town",
+    "ulence flats"
+  ],
+  "289" : [
+    "bar"
+  ],
+  "290" : [
+    "mound",
+    "pile"
+  ],
+  "291" : [
+    "band",
+    "combo",
+    "group",
+    "musician",
+    "musicians"
+  ],
+  "292" : [
+    "bar tender",
+    "barkeep",
+    "bartender"
+  ],
+  "293" : [
+    "customer",
+    "customers",
+    "patron",
+    "patrons"
+  ],
+  "294" : [
+    "sweeper"
+  ],
+  "295" : [
+    "thing"
+  ],
+  "296" : [
+    "salesman",
+    "salesthing"
+  ],
+  "297" : [
+    "dust",
+    "powder"
+  ],
+  "298" : [
+    "counter"
+  ],
+  "300" : [
+    "unscrew"
+  ],
+  "301" : [
+    "gimmie",
+    "give me"
+  ],
+  "302" : [
+    "wine",
+    "wine cooler"
+  ],
+  "303" : [
+    "strip",
+    "uncloth",
+    "undress"
+  ],
+  "304" : [
+    "plug",
+    "plug in"
+  ],
+  "305" : [
+    "kerona"
+  ],
+  "306" : [
+    "start"
+  ],
+  "307" : [
+    "hold"
+  ],
+  "308" : [
+    "place"
+  ],
+  "309" : [
+    "block"
+  ],
+  "310" : [
+    "clock"
+  ],
+  "311" : [
+    "nozzle"
+  ],
+  "312" : [
+    "suck"
+  ],
+  "313" : [
+    "regulator"
+  ],
+  "314" : [
+    "draw"
+  ],
+  "315" : [
+    "stage"
+  ],
+  "316" : [
+    "wind shield",
+    "windshield"
+  ],
+  "325" : [
+    "leader"
+  ],
+  "326" : [
+    "coupon",
+    "coupons"
+  ],
+  "327" : [
+    "run"
+  ],
+  "328" : [
+    "reach"
+  ],
+  "329" : [
+    "head"
+  ],
+  "330" : [
+    "nap",
+    "sleep"
+  ],
+  "331" : [
+    "return"
+  ],
+  "332" : [
+    "bay",
+    "vehicle bay"
+  ],
+  "333" : [
+    "cabin",
+    "cockpit"
+  ],
+  "334" : [
+    "outside"
+  ],
+  "335" : [
+    "desert"
+  ],
+  "336" : [
+    "lock"
+  ],
+  "337" : [
+    "arcada"
+  ],
+  "338" : [
+    "hide"
+  ],
+  "339" : [
+    "archive",
+    "archives",
+    "books",
+    "data archive",
+    "data archives",
+    "library",
+    "volumes"
+  ],
+  "340" : [
+    "cartridges"
+  ],
+  "341" : [
+    "next"
+  ],
+  "342" : [
+    "ledge",
+    "path"
+  ],
+  "343" : [
+    "spit"
+  ],
+  "344" : [
+    "fastest"
+  ],
+  "345" : [
+    "mirrored",
+    "reflective"
+  ]
+}
