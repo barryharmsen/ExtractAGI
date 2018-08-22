@@ -35,7 +35,7 @@ with open(config["exportDir"]["main"] + 'dir.json') as dir_file:
                 views[view_index] = {}
                 # Vol no, not sure why we need this
                 vol = struct.unpack('B', v.read(1))[0]
-                # resource lenght, LO-HI
+                # resource length, LO-HI
                 reslen = struct.unpack('<H', v.read(2))[0]
 
                 v.seek(2, 1)
