@@ -4,7 +4,7 @@
  *	Description: Export the VIEW sprite objects from the volume files and save out the images.
  * 	Author: Chad Armstrong (chad@edenwaith.com)
  *	Date: 24-25 July 2018
- *	To compile: gcc -w -framework Foundation export_view.m -o export_view
+ *	To compile: gcc -w -framework Foundation -framework AppKit export_view.m -o export_view
  *	To run: ./export_view path/to/dir.json path/to/agi/files
  *
  *	Resources:
@@ -23,6 +23,7 @@
  */
 
 #import <Foundation/Foundation.h>
+#import <AppKit/AppKit.h> // Used for NSBitmapImageRep
 
 int main(int argc, char *argv[]) 
 {
@@ -63,6 +64,7 @@ int main(int argc, char *argv[])
 // 	160 = A0
 // 	255 = FF
 	
+	/*
 	int colorPalette[16][3] = {	{0, 0, 0}, 		// Black
 								{0, 0, 160}, 	// Dark blue
 								{0, 255, 80}, 	// Bright green grass
@@ -80,6 +82,25 @@ int main(int argc, char *argv[])
            						{255, 255, 80},	// Yellow
            						{255, 255, 255} // White
            					  };
+	*/
+           					  
+    NSArray *colorPalette = @[	[NSColor colorWithCalibratedRed: 0.0 green: 0.0 blue: 0.0 alpha: 1.0],
+								[NSColor colorWithCalibratedRed: 0.0 green: 0.0 blue: 160.0/255.0 alpha: 1.0],
+								[NSColor colorWithCalibratedRed: 0.0 green: 1.0 blue: 80.0/255.0 alpha: 1.0],
+								[NSColor colorWithCalibratedRed: 0.0 green: 160.0/255.0 blue: 160.0/255.0 alpha: 1.0], // Teal
+								[NSColor colorWithCalibratedRed: 160.0/255.0 green: 0.0 blue: 0.0 alpha: 1.0],
+								[NSColor colorWithCalibratedRed: 128.0/255.0 green: 0.0 blue: 160.0/255.0 alpha: 1.0],
+								[NSColor colorWithCalibratedRed: 160.0/255.0 green: 80.0/255.0 blue: 0.0 alpha: 1.0], // Wood brown
+								[NSColor colorWithCalibratedRed: 160.0/255.0 green: 160.0/255.0 blue: 160.0/255.0 alpha: 1.0],
+								[NSColor colorWithCalibratedRed: 80.0/255.0 green: 80.0/255.0 blue: 80.0/255.0 alpha: 1.0],
+								[NSColor colorWithCalibratedRed: 80.0/255.0 green: 80.0/255.0 blue: 1.0 alpha: 1.0],
+								[NSColor colorWithCalibratedRed: 0.0 green: 1.0 blue: 80.0/255.0 alpha: 1.0],
+								[NSColor colorWithCalibratedRed: 80.0/255.0 green: 1.0 blue: 1.0 alpha: 1.0], // Light blue
+								[NSColor colorWithCalibratedRed: 1.0 green: 80.0/255.0 blue: 80.0/255.0 alpha: 1.0],
+								[NSColor colorWithCalibratedRed: 1.0 green: 80.0/255.0 blue: 1.0 alpha: 1.0], // Light purple
+								[NSColor colorWithCalibratedRed: 1.0 green: 1.0 blue: 80.0/255.0 alpha: 1.0], // Yellow
+    							[NSColor colorWithCalibratedRed: 1.0 green: 1.0 blue: 1.0 alpha: 1.0] // White
+    						];
 	
 	if ([fm fileExistsAtPath: dirFilePath] == YES) {
 		// 1. Get the set of VIEWs and their offsets from dir.json
@@ -155,6 +176,8 @@ int main(int argc, char *argv[])
 					
 					printf("key: %s bytes 3 - 6: %d %d %d (%d) %d %d %d %d %d (%d)\n", [key UTF8String], volNum, lowResByte, highResByte, reslen, byteSix, byteSeven, numLoops, desc1, desc2, descPosition);
 					
+					int loop_offsets[numLoops+1]; // Array containing loop offsets
+					
 //					Loop Header					
 // 					Byte  Meaning
 // 					----- -----------------------------------------------------------
@@ -163,18 +186,164 @@ int main(int argc, char *argv[])
 // 					 3-4  Position of second cel (if any), relative to start of loop
 // 					 5-6  Position of third cel (if any), relative to start of loop
 // 					----- -----------------------------------------------------------
+
+					// Get loop offsets
 					for (int i = 0; i < numLoops; i++) {
-						int view_offset1 = getc(volFile);
-						int view_offset2 = getc(volFile);
-						int view_offset = view_offset2*256 + view_offset1 + offset + 5;
-						printf("\t view_offset: %d\n", view_offset);
+						int loop_offset1 = getc(volFile);
+						int loop_offset2 = getc(volFile);
+						// Double-check on the 5 offset value.  
+						// Supposedly 5 is the length of the view header
+						int loop_offset = loop_offset2*256 + loop_offset1 + offset + 5;
+						printf("\t view_offset: %d\n", loop_offset);
+						// TODO: Save this offset so it can be accessed later
+						// Save the offset for each loop for each view
+						loop_offsets[i] = loop_offset;
+					}
+					
+					// Gets cells for each loop
+					for (int i = 0; i < numLoops; i++) {
+					
+						int loop_offset = loop_offsets[i];
+						fseek(volFile, loop_offset, SEEK_SET);
+						
+						int num_cells = getc(volFile);
+						printf("\t num_cells: %d\n", num_cells);
+						// getc(volFile);
+						
+						int loop_positions[num_cells]; // = {0} // perhaps init this way
+						
+						for (int j = 0; j < num_cells; j++) {
+						// loop_pos = struct.unpack('<H', v.read(2))[0] \
+                                   + loop_offset
+                        	int loop_pos1 = getc(volFile);
+                        	int loop_pos2 = getc(volFile);
+                            int loop_pos = loop_pos2*256 + loop_pos1 + loop_offset;
+                            // printf("\t loop_pos: %d\n", loop_pos);
+                            loop_positions[j] = loop_pos;
+						}
+						
+// 						Byte  Meaning
+// 						----- -----------------------------------------------------------
+// 						  0   Width of cel (remember that AGI pixels are 2 normal EGA
+// 							  pixels wide so a cel of width 12 is actually 24 pixels
+// 							  wide on screen)
+// 						  1   Height of cel
+// 						  2   Transparency and cel mirroring
+// 						----- -----------------------------------------------------------
+						// Double-check that num_cells is still the right number of loops
+						for (int k = 0; k < num_cells; k++) {
+							int cel_offset = loop_positions[k];
+							fseek(volFile, cel_offset, SEEK_SET);
+							
+							int cel_width = getc(volFile);
+							int cel_height = getc(volFile);
+							int cel_settings = getc(volFile);
+							int cel_mirror = cel_settings >> 4;
+							int cel_transparency = cel_settings & 0b00001111;
+							
+							printf("\t Cell %d: (%d x %d) %d %d %d\n", k, cel_width, cel_height, cel_settings, cel_mirror, cel_transparency);
+
+							// TODO: Get the cell transparency color
+							
+							// Create the bitmap image from the image data
+							// NSBitmapImageRep *bitmap = [NSBitmapImageRep initWithBitmapDataPlanes:pixelsWide:pixelsHigh:bitsPerSample:samplesPerPixel:hasAlpha:isPlanar:colorSpaceName:bitmapFormat:bytesPerRow:bitsPerPixel
+							int image_width = cel_width * 2;
+							
+							NSBitmapImageRep *bitmap = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:NULL
+                                                                   pixelsWide:image_width
+                                                                   pixelsHigh:cel_height
+                                                                bitsPerSample:8
+                                                              samplesPerPixel:4
+                                                                     hasAlpha:YES
+                                                                     isPlanar:NO
+                                                               colorSpaceName:NSCalibratedRGBColorSpace // @"NSDeviceRGBColorSpace" // NSCalibratedRGBColorSpace
+                                                                   bytesPerRow:4 * image_width
+                                                                  bitsPerPixel:32];
+							
+							// Loop through the data to construct the image
+							 
+							int row = 0, col = 0;
+							BOOL loopComplete = NO;
+							printf("\t Starting to loop through the cel data: (%d x %d)\n", image_width, cel_height);
+							while (loopComplete == NO) {
+							// NSColor *pixelColor = [NSColor colorWithCalibratedRed: 1.0 green: 0.0 blue: 0.0 alpha: 1.0];
+							// [bitmap setColor: pixelColor atX: x y: y];
+							// [nsBitmapImageRepObj setPixel:zColourAry atX:x y:y];      
+								int byte = getc(volFile);
+								printf("\t byte: %d row: %d col: %d ", byte, row, col);
+								if (byte == 0) { // End of row
+									row++;
+									col = 0;
+									
+									if (row >= cel_height) {
+										loopComplete = YES;
+										printf("\nLoop is complete\n");
+										// break;
+									}
+								}
+								
+								if (loopComplete == NO) {
+									int colorIndex = byte >> 4;
+									
+									// TODO: Implement
+									// if the color == color_transparency
+									
+									
+									
+									if (colorIndex < 0) {
+										colorIndex = 0;
+									}
+									
+									if (colorIndex > 15) {
+										colorIndex = 15;
+									}
+									
+									NSColor *pixelColor = colorPalette[colorIndex]; //  palette[color];
+									int numPixels = byte & 0b00001111; // number of pixels for this particular color
+									
+									printf("\t colorIndex: %d numPixels: %d \n", colorIndex, numPixels);
+									
+									// The width of each pixel is times 2 for these graphics
+									for (int p = 0; p < numPixels*2; p++) {
+									// cell_image[row * (cell_width * 2) + (col + p)] = color_rgb
+										int y = row;
+										int x = col + p;
+										
+										// NSColor *redColor = [NSColor colorWithCalibratedRed:1.0 green: 0.0 blue: 0.0 alpha: 1.0];
+										[bitmap setColor: pixelColor atX: x y: y];
+									}
+									
+									col += (numPixels * 2);
+									
+								}
+							}
+                        	
+                        	// TODO: Create the export_views directory
+                        	
+                        	
+                        	// Save the image
+                        	NSString *imagePath = [NSString stringWithFormat:@"%@/export_views/%@_%d_%d.png", agiDir, key, i, k];
+                        	NSLog(@"imagePath: %@", imagePath);
+                        	
+//                         	NSData *sRGBPNGData = [[bm bitmapImageRepByConvertingTosRGBColorSpace] PNGRepresentationAsProgressive:NO];
+// [sRGBPNGData writeToFile:@"foo/bar.png" atomically:YES];
+
+                        	NSData *data = [bitmap representationUsingType: NSPNGFileType properties: nil];
+							[data writeToFile: imagePath atomically: NO];
+							
+                        	
+						}
+						
+					
 					}
 					
 
 				}
 				
 				
-				fclose(volFile); // TODO: Check for failure on closing the file
+				if (fclose(volFile) != 0) {
+					perror("Error closing file");
+				}
 				
 			}];
 
