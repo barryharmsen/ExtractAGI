@@ -9,6 +9,7 @@
  *
  *	History:
  *	- Version 1.0: 25 August 2018 - Initial release
+ *	- Version 1.0.1: 19 October 2018 - Updated the color palette to match CGA colors
  *
  *	Resources:
  *	- VIEW specs: http://www.agidev.com/articles/agispec/agispecs-8.html
@@ -32,54 +33,50 @@ int main(int argc, char *argv[])
 
 	if (argc < 3) {
 		printf("usage: %s path/to/dir.json path/to/agi/files\n", argv[0]);
+		exit(EXIT_FAILURE);
 	}
 	
 	NSString *dirFilePath = [[NSString stringWithUTF8String: argv[1]] stringByExpandingTildeInPath];;
 	NSString *agiDir = [[NSString stringWithUTF8String: argv[2]] stringByExpandingTildeInPath];
 	NSFileManager *fm = [NSFileManager defaultManager];
 	
-// 	palette = [
 // 	(0, 0, 0),      : 000000 : Black
-// 	(0, 0, 160),    : 0000A0 : Dark blue
-// 	(0, 255, 80),   : 00FF50 : Bright green grass
-// 	(0, 160, 160),  : 00A0A0 : Teal
-// 	(160, 0, 0),    : A00000 : Deep red
-// 	(128, 0, 160),  : 8000A0 : Purple
-// 	(160, 80, 0),   : A05000 : Wood brown
-// 	(160, 160, 160),: A0A0A0 : Light grey
-// 	(80, 80, 80),   : 505050 : Dark grey
-// 	(80, 80, 255),  : 5050FF : Blue-purple
-// 	(0, 255, 80),   : 00FF50 : More bright green...same as above??  
-// 
-// 	(80, 160, 0),   : 50A000 : Darker green -- how about this, instead?
-// 
-// 	(80, 255, 255), : 50FFFF : Light blue
-// 	(255, 80, 80),  : FF5050 : Salmon
-// 	(255, 80, 255), : FF50FF : Light purple
-// 	(255, 255, 80), : FFFF50 : Yellow
+// 	(0, 0, 170),    : 0000AA : Blue
+// 	(0, 170, 0),    : 00AA00 : Green
+// 	(0, 170, 170),  : 00AAAA : Cyan
+// 	(170, 0, 0),    : AA0000 : Red
+// 	(170, 0, 170),  : AA00AA : Magenta
+// 	(170, 85, 0),   : AA5500 : Brown
+// 	(170, 170, 170),: AAAAAA : Light grey
+// 	(85, 85, 85),   : 555555 : Dark grey
+// 	(85, 85, 255),  : 5555FF : Light blue
+// 	(0, 255, 85),   : 00FF55 : Light green  
+// 	(85, 255, 255), : 55FFFF : Light cyan
+// 	(255, 85, 85),  : FF5555 : Light red
+// 	(255, 85, 255), : FF55FF : Light magenta
+// 	(255, 255, 85), : FFFF55 : Yellow
 // 	(255, 255, 255) : FFFFFF : White
 // 
 // 	0   = 00
-// 	80  = 50
-// 	128 = 80
-// 	160 = A0
+// 	85  = 55
+// 	170 = AA
 // 	255 = FF
            					  
     NSArray *colorPalette = @[	[NSColor colorWithCalibratedRed: 0.0 green: 0.0 blue: 0.0 alpha: 1.0], // Black
-								[NSColor colorWithCalibratedRed: 0.0 green: 0.0 blue: 160.0/255.0 alpha: 1.0], // Dark blue
-								[NSColor colorWithCalibratedRed: 0.0 green: 1.0 blue: 80.0/255.0 alpha: 1.0], // Bright green grass
-								[NSColor colorWithCalibratedRed: 0.0 green: 160.0/255.0 blue: 160.0/255.0 alpha: 1.0], // Teal
-								[NSColor colorWithCalibratedRed: 160.0/255.0 green: 0.0 blue: 0.0 alpha: 1.0], // Deep red
-								[NSColor colorWithCalibratedRed: 128.0/255.0 green: 0.0 blue: 160.0/255.0 alpha: 1.0], // Purple
-								[NSColor colorWithCalibratedRed: 160.0/255.0 green: 80.0/255.0 blue: 0.0 alpha: 1.0], // Wood brown
-								[NSColor colorWithCalibratedRed: 160.0/255.0 green: 160.0/255.0 blue: 160.0/255.0 alpha: 1.0], // Light grey
-								[NSColor colorWithCalibratedRed: 80.0/255.0 green: 80.0/255.0 blue: 80.0/255.0 alpha: 1.0], // Dark grey
-								[NSColor colorWithCalibratedRed: 80.0/255.0 green: 80.0/255.0 blue: 1.0 alpha: 1.0], // Blue-purple
-								[NSColor colorWithCalibratedRed: 0.0 green: 1.0 blue: 80.0/255.0 alpha: 1.0], // Another bright green?
-								[NSColor colorWithCalibratedRed: 80.0/255.0 green: 1.0 blue: 1.0 alpha: 1.0], // Light blue
-								[NSColor colorWithCalibratedRed: 1.0 green: 80.0/255.0 blue: 80.0/255.0 alpha: 1.0], // Salmon
-								[NSColor colorWithCalibratedRed: 1.0 green: 80.0/255.0 blue: 1.0 alpha: 1.0], // Light purple
-								[NSColor colorWithCalibratedRed: 1.0 green: 1.0 blue: 80.0/255.0 alpha: 1.0], // Yellow
+								[NSColor colorWithCalibratedRed: 0.0 green: 0.0 blue: 170.0/255.0 alpha: 1.0], // Blue
+								[NSColor colorWithCalibratedRed: 0.0 green: 170.0/255.0 blue: 0.0 alpha: 1.0], // Green
+								[NSColor colorWithCalibratedRed: 0.0 green: 170.0/255.0 blue: 170.0/255.0 alpha: 1.0], // Cyan
+								[NSColor colorWithCalibratedRed: 170.0/255.0 green: 0.0 blue: 0.0 alpha: 1.0], // Red
+								[NSColor colorWithCalibratedRed: 170.0/255.0 green: 0.0 blue: 170.0/255.0 alpha: 1.0], // Magenta
+								[NSColor colorWithCalibratedRed: 170.0/255.0 green: 85.0/255.0 blue: 0.0 alpha: 1.0], // Brown
+								[NSColor colorWithCalibratedRed: 170.0/255.0 green: 170.0/255.0 blue: 170.0/255.0 alpha: 1.0], // Light grey
+								[NSColor colorWithCalibratedRed: 85.0/255.0 green: 85.0/255.0 blue: 85.0/255.0 alpha: 1.0], // Dark grey
+								[NSColor colorWithCalibratedRed: 85.0/255.0 green: 85.0/255.0 blue: 1.0 alpha: 1.0], // Light blue
+								[NSColor colorWithCalibratedRed: 0.0 green: 1.0 blue: 85.0/255.0 alpha: 1.0], // Light green
+								[NSColor colorWithCalibratedRed: 85.0/255.0 green: 1.0 blue: 1.0 alpha: 1.0], // Light cyan
+								[NSColor colorWithCalibratedRed: 1.0 green: 85.0/255.0 blue: 85.0/255.0 alpha: 1.0], // Light red
+								[NSColor colorWithCalibratedRed: 1.0 green: 85.0/255.0 blue: 1.0 alpha: 1.0], // Light magenta
+								[NSColor colorWithCalibratedRed: 1.0 green: 1.0 blue: 85.0/255.0 alpha: 1.0], // Yellow
     							[NSColor colorWithCalibratedRed: 1.0 green: 1.0 blue: 1.0 alpha: 1.0], // White
     							[NSColor colorWithCalibratedRed: 1.0 green: 1.0 blue: 1.0 alpha: 0.0] // Clear
     						];
@@ -138,6 +135,8 @@ int main(int argc, char *argv[])
 				int ls_byte = getc(volFile);
 				long signature = ms_byte*256 + ls_byte;
 				
+				// printf("Big Endian: %d*256 + %d = %d\n", ms_byte, ls_byte, signature);
+				
 				// View Header
 // 				Byte  Meaning
 // 				----- -----------------------------------------------------------
@@ -168,7 +167,8 @@ int main(int argc, char *argv[])
 					int desc1 = getc(volFile); // description byte 1 -- 0 - 255
 					int desc2 = getc(volFile); // description byte 2 -- 0 or 1
 					int descPosition = desc2*256 + desc1;
-					
+					// TODO: Use the descPosition value (if non-zero) and find the item description
+					printf("Little endian: %d*256 + %d = %d\n", desc2, desc1, descPosition);
 					int loop_offsets[numLoops+1]; // Array containing loop offsets
 					
 //					Loop Header					
@@ -251,9 +251,9 @@ int main(int argc, char *argv[])
 
 							while (loopComplete == NO) {
     
-								int byte = getc(volFile);
+								int pixelByte = getc(volFile);
 
-								if (byte == 0) { // End of row
+								if (pixelByte == 0) { // End of row
 									row++;
 									col = 0;
 									
@@ -264,7 +264,7 @@ int main(int argc, char *argv[])
 								
 								if (loopComplete == NO) {
 								
-									int colorIndex = byte >> 4;
+									int colorIndex = pixelByte >> 4;
 									
 									if (colorIndex < 0) {
 										colorIndex = 0;
@@ -279,7 +279,7 @@ int main(int argc, char *argv[])
 									}
 									
 									NSColor *pixelColor = colorPalette[colorIndex];
-									int numPixels = byte & 0b00001111; // number of pixels for this particular color
+									int numPixels = pixelByte & 0b00001111; // number of pixels for this particular color
 									
 									// The width of each pixel is times 2 for these graphics
 									for (int p = 0; p < numPixels*2; p++) {
@@ -294,6 +294,7 @@ int main(int argc, char *argv[])
 								}
 							}
                         	
+                        	// TODO: Save the images as an animated GIF
                         	// Save the image
                         	NSString *imagePath = [NSString stringWithFormat:@"%@/export_views/%@_%d_%d.png", agiDir, key, i, k];
                         	NSData *data = [bitmap representationUsingType: NSPNGFileType properties: nil];
