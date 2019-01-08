@@ -16,17 +16,17 @@
  *
  *	Based off of code from:
  *	- https://github.com/barryharmsen/ExtractAGI/blob/master/export_pic.py
- *	- http://www.agidev.com/articles/agispec/examples/view/viewview.pas
+ *	- http://www.agidev.com/articles/agispec/examples/picture/showpic.c
  *	- http://www.agidev.com/articles/agispec/examples/files/volx2.c
  */
 
 #import <Foundation/Foundation.h>
 #import <AppKit/AppKit.h> // Used for NSBitmapImageRep
 
-// void drawLine(int x1, int y1, int x2, int y2, NSBitmapRep *img, NSColor *color);
-// void lineRound(coord, direction); // TODO: Figure out parameter types
-// void floodFill(int x, int y, NSBitmapRep *picture, NSColor *color);
-// void saveImage(NSArray *imgArray, NSString *filename, int width, intheight);
+void drawLine(int x1, int y1, int x2, int y2, NSMutableArray *pictureArray, NSColor *color);
+int lineRound(float coord, float direction);
+void floodFill(int x, int y, NSMutableArray *imgDataArray, NSColor *color, NSArray *colorPalette);
+void saveImage(NSArray *imgDataArray, NSString *filePath, int width, int height);
 
 int main(int argc, char *argv[]) 
 {
@@ -82,9 +82,9 @@ int main(int argc, char *argv[])
     							[NSColor colorWithCalibratedRed: 1.0 green: 1.0 blue: 1.0 alpha: 0.0] // Clear
     						];
     						
-	NSDictionary *actions = @{ @240: @"Change picture colour and enable picture draw.",
+	NSDictionary *actions = @{ @240: @"Change picture color and enable picture draw.",
 							   @241: @"Disable picture draw.",
-							   @242: @"Change priority colour and enable priority draw.",
+							   @242: @"Change priority color and enable priority draw.",
 							   @243: @"Disable priority draw.",
 							   @244: @"Draw a Y corner.",
 							   @245: @"Draw an X corner.",
@@ -149,6 +149,9 @@ int main(int argc, char *argv[])
 				NSColor *priorityColor = colorPalette[4]; // Priority screen draw color
 				BOOL priorityDrawEnabled = NO;
 				int selectedAction = 0;
+				
+				NSMutableArray *pictureArray  = [NSMutableArray new];
+				NSMutableArray *priorityArray = [NSMutableArray new];
 			
 				// 2. Get the volume number and offset of each VIEW
 				NSInteger offset = [[value objectForKey: @"offset"] integerValue];
@@ -191,8 +194,8 @@ int main(int argc, char *argv[])
 					
 					int lastIndex = 160 * 168;
 					
-					NSMutableArray *pictureArray  = [NSMutableArray new];
-					NSMutableArray *priorityArray = [NSMutableArray new];
+// 					NSMutableArray *pictureArray  = [NSMutableArray new];
+// 					NSMutableArray *priorityArray = [NSMutableArray new];
 					
 					for (int i = 0; i < lastIndex; i++) {
 						// Set the default colors for the picture and priority arrays
@@ -203,7 +206,7 @@ int main(int argc, char *argv[])
 					for (int i = 0; i < reslen; i++) {
 					
 						int byteVal = getc(volFile);
-						printf("\t byteVal:: %d ", byteVal);
+						// printf("\t byteVal:: %d ", byteVal);
 						
 						// An action is being set
 						if (byteVal >= 240) { // Action values are from 240 - 255
@@ -257,7 +260,7 @@ int main(int argc, char *argv[])
                             	priorityColor = colorPalette[byteVal];
                             }
 
-							// Corner drawing
+							// Corner drawing (244 - y corner, 245 - x corner)
 							else if (selectedAction == 244 || selectedAction == 245) {
 							
 								if (from_x == -1) {
@@ -284,8 +287,7 @@ int main(int argc, char *argv[])
 									}
 									
 									if (pictureDrawEnabled == YES) {
-										// TODO: Enable drawLine method
-										// drawLine(from_x, from_y, to_x, to_y, picture, pictureColor);
+										drawLine(from_x, from_y, to_x, to_y, pictureArray, pictureColor);
 										from_x = to_x;
 										from_y = to_y;
 									}
@@ -294,25 +296,67 @@ int main(int argc, char *argv[])
 							
 							// Absolute line (long lines)
 							else if (selectedAction == 246) {
+							
 								if (from_x == -1) {
+								
 									from_x = byteVal;
 									point_xy = 'x';
+									
 								} else if (from_y == -1) {
+								
 									from_y = byteVal;
 									point_xy = 'y';
+									
+									if (pictureDrawEnabled == YES) {
+										drawLine(from_x, from_y, from_x, from_y, pictureArray, pictureColor);	
+									}
+									
+								} else if (to_x == -1) {
+								
+									to_x = byteVal;
+									point_xy = 'x';
+									
+								} else if (to_y == -1) {
+								
+									to_y = byteVal;
+									point_xy = 'y';
+									
+									// Draw line
+									if (pictureDrawEnabled == YES) {
+										drawLine(from_x, from_y, to_x, to_y, pictureArray, pictureColor);
+									}
+									
+								} else if (point_xy == 'y') {
+								
+									from_x = to_x;
+									to_x = byteVal;
+									point_xy = 'x';
+									
+								} else if (point_xy == 'x') {
+									
+									from_y = to_y;
+									to_y = byteVal;
+									point_xy = 'y';
+									
+									// Draw line
+									if (pictureDrawEnabled == YES) {
+										drawLine(from_x, from_y, to_x, to_y, pictureArray, pictureColor);
+									}
+									
 								}
+
 							}
 							
 							// Relative line (short lines)
 							else if (selectedAction == 247) {
+							
 								if (from_x == -1) {
 									from_x = byteVal;
 								} else if (from_y == -1) {
 									from_y = byteVal;
 									
 									if (pictureDrawEnabled == YES) {
-										// TODO: Enable drawLine
-										// drawLine(from_x, from_y, from_x, from_y, picture, pictureColor);	
+										drawLine(from_x, from_y, from_x, from_y, pictureArray, pictureColor);	
 									}
 								} else {
 
@@ -327,10 +371,11 @@ int main(int argc, char *argv[])
 									} else {
 										to_x = from_x + -1 * ((byteVal >> 4) & 0b0111);
 									}
+									
 									printf("to_x: %d to_y: %d\n", to_x, to_y);
+									
 									if (pictureDrawEnabled == YES) {
-										// TODO: Enable drawLine
-										// drawLine(from_x, from_y, to_x, to_y, picture, pictureColor);	
+										drawLine(from_x, from_y, to_x, to_y, pictureArray, pictureColor);	
 									}
 									
 									from_x = to_x;
@@ -347,24 +392,251 @@ int main(int argc, char *argv[])
 									from_y = byteVal;
 									
 									if (pictureDrawEnabled == YES) {
-										// TODO: add the floodFill method
-										// floodFill(from_x, from_y, picture, pictureColor);
+										floodFill(from_x, from_y, pictureArray, pictureColor, colorPalette);
 										from_x = -1;
 										from_y = -1;
 									}
 								}
 
 							}
+							
+							else {
+								NSLog(@"Other selectedAction:: %d", selectedAction);
+							}
 						}
 					}
 				
 				}
 				
+				// Save the file
+				NSString *filePath = [NSString stringWithFormat:@"%@/export_pics/%@_pic.png", agiDir, key];
+				// saveImage(pictureArray, filePath, 160, 168);
 			}];
 			
+			// Open exportPicsDirPath in Finder
+			[[NSWorkspace sharedWorkspace]openFile:exportPicsDirPath withApplication:@"Finder"];
 		}
 	}
 	
 	[pool release];
 	return 0;
+}
+
+#pragma mark - Drawing Subroutines
+
+void drawLine(int x1, int y1, int x2, int y2, NSMutableArray *pictureArray, NSColor *color) {
+
+	int height = y2 - y1;
+	int width  = x2 - x1;
+	float addX = 0.0;
+	float addY = 0.0;
+	
+	if (height == 0) {
+		addX = 0;
+	} else {
+		addX = (float)width / abs(height); 
+	}
+	
+	if (width == 0) {
+		addY = 0.0;
+	} else {
+		addY = (float)height / abs(width);
+	}
+	
+	printf("drawLine:: (%d, %d, %d, %d) (%f, %f)\n", x1, y1, x2, y2, addX, addY);
+	
+	if (height != 0 && width != 0) {
+	
+		if (abs(width) > abs(height)) {
+		
+			float y = (float)y1;
+			
+			if (width == 0) {
+				addX = 0;
+			} else {
+				addX = width/abs(width);
+			}
+			
+			printf("Width: %d to %d (%f) \n", x1, x2, addX);
+			
+			if (addX < 0) {
+				for (int x = x1; x > x2; x+= addX) {
+					pictureArray[lineRound(y, addY) * 160 + lineRound(x, addX)] = color;
+                	y += addY;
+				}
+			} else {
+				for (int x = x1; x < x2; x+= addX) {
+					pictureArray[lineRound(y, addY) * 160 + lineRound(x, addX)] = color;
+                	y += addY;
+				}
+			}
+			
+			pictureArray[y2 * 160 + x2] = color;
+			
+		} else {
+		
+			float x = (float)x1;
+			
+			if (height == 0) {
+				addY = 0;
+			} else {
+				addY = height / abs(height);
+			}
+			
+			if (addY < 0) {
+				// orange
+				// color = [NSColor colorWithCalibratedRed: 241.0/255.0 green: 151.0/255.0 blue: 55.0/255.0 alpha: 1.0];
+				for (int y = y1; y > y2; y+=addY) {
+					pictureArray[lineRound(y, addY) * 160 + lineRound(x, addX)] = color;
+					x += addX;
+				}
+			} else {
+				// purple
+				// color = [NSColor colorWithCalibratedRed: 136.0/255.0 green: 47.0/255.0 blue: 141.0/255.0 alpha: 1.0];
+				for (int y = y1; y < y2; y+=addY) {
+					pictureArray[lineRound(y, addY) * 160 + lineRound(x, addX)] = color;
+					x += addX;
+				}
+			}
+			
+			pictureArray[y2 * 160 + x2] = color;
+			
+			printf("Height: %d to %d (%f)\n", y1, y2, addY);
+		
+		}
+		
+// 		if (abs(width) > abs(height)):
+//             y = float(y1)
+//             if width == 0:
+//                 addX = 0
+//             else:
+//                 addX = width/abs(width)
+// 
+//             for x in range(x1, x2, addX):
+//                 img[line_round(y, addY) * 160 + line_round(x, addX)] = color
+//                 y += addY
+// 
+//             img[y2 * 160 + x2] = color
+// 
+//         else:
+//             x = float(x1)
+//             if height == 0:
+//                 addY = 0
+//             else:
+//                 addY = height/abs(height)
+// 
+//             for y in range(y1, y2, addY):
+//                 img[line_round(y, addY) * 160 + line_round(x, addX)] = color
+//                 x += addX
+// 
+//             img[y2 * 160 + x2] = color
+            
+	} else {
+		// Single pixel
+		pictureArray[y1 * 160 + x1] = color;
+	}
+}
+
+
+// Round, to get correct coordinate for pixel
+
+// Debating whether direction should be an int or float
+int lineRound(float coord, float direction) {
+	if (direction < 0.0) {
+		if ((float)coord - (int)coord <= 0.501) {
+			return (int)coord;
+		} else {
+			return (int)coord+1;
+		}
+	} else {
+		if ((float)coord - (int)coord <= 0.499) {
+			return (int)coord;
+		} else {
+			return (int)coord+1;
+		}
+	}
+}
+
+
+void floodFill(int x, int y, NSMutableArray *imgDataArray, NSColor *color, NSArray *colorPalette) {
+	NSLog(@"Flood fill");
+	
+	return; // temp code
+	
+	if (color != colorPalette[15]) {
+	
+		NSMutableArray *stack = [NSMutableArray new];
+		
+		// Add current x, y coordinates as a CGPoint to an array
+		[stack addObject: [NSValue valueWithPoint:CGPointMake(x, y)]];
+		
+		// Loop while the array is not empty
+		while ([stack count] > 0) {
+			// Pop the last element from the array and then remove from the array
+			CGPoint point = [[stack lastObject] pointValue]; // Or NSPoint?
+			[stack removeLastObject];
+			
+			int pointX = (int)point.x;
+			int pointY = (int)point.y;
+			
+			// if the imgDataArray[y * 160 + x] is != palette[15] color, continue
+			if (imgDataArray[pointY * 160 + pointX] != colorPalette[15]) {
+				// Set imgDataArray[y * 160 + x] to the given color
+				imgDataArray[pointY * 160 + pointX] = color;
+				printf("Set location %d to a new color\n", pointY*160+pointX);
+				
+				if (pointX < 159) {
+					[stack addObject: [NSValue valueWithPoint:CGPointMake(pointX+1, pointY)]];
+				}
+		
+				if (pointX > 0) {
+					[stack addObject: [NSValue valueWithPoint:CGPointMake(pointX-1, pointY)]];
+				}
+		
+				if (pointY < 167) {
+					[stack addObject: [NSValue valueWithPoint:CGPointMake(pointX, pointY+1)]];
+				}
+		
+				if (pointY > 0) {
+					[stack addObject: [NSValue valueWithPoint:CGPointMake(pointX, pointY-1)]];
+				}
+			}
+		}
+	}
+}
+
+
+void saveImage(NSArray *imgDataArray, NSString *filePath, int width, int height) {
+
+	int image_width = width * 2;
+							
+	NSBitmapImageRep *bitmap = [[NSBitmapImageRep alloc] initWithBitmapDataPlanes:NULL
+										   pixelsWide:image_width
+										   pixelsHigh:height
+										bitsPerSample:8
+									  samplesPerPixel:4
+											 hasAlpha:YES
+											 isPlanar:NO
+									   colorSpaceName:NSCalibratedRGBColorSpace
+										   bytesPerRow:4 * image_width
+										  bitsPerPixel:32];
+										  
+	long imageSize = width * height;
+	
+	for (int i = 0; i < imageSize; i++) {
+		int x = (i % width)*2; // Need to double the width of the image from 160 to 320
+		int y = i / width;
+		NSColor *pixelColor = imgDataArray[i];
+		
+		[bitmap setColor:pixelColor atX:x y:y];
+		[bitmap setColor:pixelColor atX:x+1 y:y];
+	}
+
+	NSData *data = [bitmap representationUsingType: NSPNGFileType properties: nil];
+	
+	if ([data writeToFile: filePath atomically: YES] == NO) {
+		NSLog(@"There was an error saving to file %@", filePath);
+	} else {
+		NSLog(@"Saved to file %@", filePath);
+	}
 }
