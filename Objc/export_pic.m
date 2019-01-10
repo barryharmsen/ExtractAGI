@@ -3,12 +3,12 @@
  *
  *	Description: Export and draw the PICTURE backgrounds from the volume files and save out the images.
  * 	Author: Chad Armstrong (chad@edenwaith.com)
- *	Date: 14 November 2018
+ *	Date: 14 November 2018 - 9 January 2019
  *	To compile: gcc -w -framework Foundation -framework AppKit export_pic.m -o export_pic
  *	To run: ./export_pic path/to/dir.json path/to/agi/files
  *
  *	History:
- *	- Version 1.0:  2018 - Initial release
+ *	- Version 1.0:  9 January 2019 - Initial release
  *
  *	Resources:
  *	- PICTURE specs: http://www.agidev.com/articles/agispec/agispecs-7.html
@@ -17,7 +17,6 @@
  *	Based off of code from:
  *	- https://github.com/barryharmsen/ExtractAGI/blob/master/export_pic.py
  *	- http://www.agidev.com/articles/agispec/examples/picture/showpic.c
- *	- http://www.agidev.com/articles/agispec/examples/files/volx2.c
  */
 
 #import <Foundation/Foundation.h>
@@ -100,24 +99,15 @@ int main(int argc, char *argv[])
 							   @255: @"Unknown"};
 							   
 	
-// 	NSMutableDictionary *pics = [NSMutableDictionary new];
-// 	BOOL intermediateSave = NO;
-// 	NSColor *pictureColor = colorPalette[15]; // Picture draw color
-// 	BOOL pictureDrawEnabled = NO;
-// 	NSColor *priorityColor = colorPalette[4]; // Priority screen draw color
-// 	BOOL priorityDrawEnabled = NO;
-// 	int selectedAction = 0;
-	
 	// The export_dir program needs to be run first so the dir.json file exists which contains the
 	// data where each of the views are stored on each of the volume files.
 	if ([fm fileExistsAtPath: dirFilePath] == YES) {
-		// 1. Get the set of PICTUREs and their offsets from dir.json
+		// Get the set of PICTUREs and their offsets from dir.json
 		NSData *data = [NSData dataWithContentsOfFile:dirFilePath];
 		NSDictionary *dirDict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
 		NSDictionary *picDictionaries = dirDict[@"PICDIR"];
 		
 		if (picDictionaries != nil) {
-			// NSLog(@"picDictionaries:: %@", picDictionaries);
 			
 			// Create the export_pics directory
 			NSString *exportPicsDirPath = [NSString stringWithFormat:@"%@/export_pics", agiDir];
@@ -143,7 +133,6 @@ int main(int argc, char *argv[])
 			[picDictionaries enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSDictionary *value, BOOL *stop) {
 			
 				NSMutableDictionary *pics = [NSMutableDictionary new];
-				BOOL intermediateSave = NO;
 				NSColor *pictureColor = colorPalette[15]; // Picture draw color
 				BOOL pictureDrawEnabled = NO;
 				NSColor *priorityColor = colorPalette[4]; // Priority screen draw color
@@ -172,8 +161,8 @@ int main(int argc, char *argv[])
 				// Big Endian : High - Low (big endian)
 				int ms_byte = getc(volFile); // most significant byte
 				int ls_byte = getc(volFile); // least significant byte
-				long signature = (ms_byte << 8) + ls_byte; // left bit shift by 8, same as multiplying by 256
-				// long signature = ms_byte*256 + ls_byte;
+				long signature = (ms_byte << 8) + ls_byte; // left bit shift by 8, same as multiplying ms_byte by 256
+				// long signature = ms_byte*256 + ls_byte; // Same thing as the above line
 				
 				int from_x = -1;
                 int from_y = -1;
@@ -190,12 +179,7 @@ int main(int argc, char *argv[])
 					ms_byte = getc(volFile);
 					long reslen = ms_byte*256 + ls_byte;
 					
-					printf("reslen:: %d\n", reslen);
-					
 					int lastIndex = 160 * 168;
-					
-// 					NSMutableArray *pictureArray  = [NSMutableArray new];
-// 					NSMutableArray *priorityArray = [NSMutableArray new];
 					
 					for (int i = 0; i < lastIndex; i++) {
 						// Set the default colors for the picture and priority arrays
@@ -206,22 +190,12 @@ int main(int argc, char *argv[])
 					for (int i = 0; i < reslen; i++) {
 					
 						int byteVal = getc(volFile);
-						// printf("\t byteVal:: %d ", byteVal);
 						
 						// An action is being set
 						if (byteVal >= 240) { // Action values are from 240 - 255
 						
 							selectedAction = byteVal;
-                            
-							if (intermediateSave == YES) {
-							// TODO: Complete this section
-								// NSString *filename = 
-								// saveImage(pictureArray, filename, 160, 168);
-								
-								//fname = config["exportDir"]["pic"] + "%s_%s.png" \
-                                    % (pic_index, i)
-                            	//save_image(picture, fname, 160, 168)
-							}
+                            NSLog(@"New selectedAction:: %d (%x)", selectedAction, selectedAction);
 							
 							if (selectedAction == 240) {
 								// Enable picture draw
@@ -247,7 +221,6 @@ int main(int argc, char *argv[])
 							to_y = -1;
 							point_xy = 'z';
 							
-							
 						} else { // Perform on the selected action
 						
 							// Change picture color
@@ -263,6 +236,7 @@ int main(int argc, char *argv[])
 							// Corner drawing (244 - y corner, 245 - x corner)
 							else if (selectedAction == 244 || selectedAction == 245) {
 							
+								NSLog(@"Draw %d corner: %d ----------", selectedAction, byteVal);
 								if (from_x == -1) {
 									from_x = byteVal;
 								} else if (from_y == -1) {
@@ -292,7 +266,7 @@ int main(int argc, char *argv[])
 										from_y = to_y;
 									}
 								}
-							}
+							} 
 							
 							// Absolute line (long lines)
 							else if (selectedAction == 246) {
@@ -308,6 +282,7 @@ int main(int argc, char *argv[])
 									point_xy = 'y';
 									
 									if (pictureDrawEnabled == YES) {
+										// Draw a single dot
 										drawLine(from_x, from_y, from_x, from_y, pictureArray, pictureColor);	
 									}
 									
@@ -355,13 +330,15 @@ int main(int argc, char *argv[])
 								} else if (from_y == -1) {
 									from_y = byteVal;
 									
+									// It may be debatable whether or not to bother drawing here
+									// unless this is just trying to draw the staring dot
 									if (pictureDrawEnabled == YES) {
 										drawLine(from_x, from_y, from_x, from_y, pictureArray, pictureColor);	
 									}
 								} else {
 
-									if (!(byteVal & 0b00001000)) {
-										to_y = from_y + 1 * (byteVal & 0b0111);
+									if (!(byteVal & 0b00001000)) { // 0x08 = 0b00001000
+										to_y = from_y + 1 * (byteVal & 0b0111); // 0x07 = 0b0111
 									} else {
 										to_y = from_y + -1 * (byteVal & 0b0111);
 									}
@@ -372,7 +349,7 @@ int main(int argc, char *argv[])
 										to_x = from_x + -1 * ((byteVal >> 4) & 0b0111);
 									}
 									
-									printf("to_x: %d to_y: %d\n", to_x, to_y);
+									printf("Short line:: to_x: %d to_y: %d\n", to_x, to_y);
 									
 									if (pictureDrawEnabled == YES) {
 										drawLine(from_x, from_y, to_x, to_y, pictureArray, pictureColor);	
@@ -399,10 +376,6 @@ int main(int argc, char *argv[])
 								}
 
 							}
-							
-							else {
-								NSLog(@"Other selectedAction:: %d", selectedAction);
-							}
 						}
 					}
 				
@@ -410,7 +383,7 @@ int main(int argc, char *argv[])
 				
 				// Save the file
 				NSString *filePath = [NSString stringWithFormat:@"%@/export_pics/%@_pic.png", agiDir, key];
-				// saveImage(pictureArray, filePath, 160, 168);
+				saveImage(pictureArray, filePath, 160, 168);
 			}];
 			
 			// Open exportPicsDirPath in Finder
@@ -443,9 +416,15 @@ void drawLine(int x1, int y1, int x2, int y2, NSMutableArray *pictureArray, NSCo
 		addY = (float)height / abs(width);
 	}
 	
-	printf("drawLine:: (%d, %d, %d, %d) (%f, %f)\n", x1, y1, x2, y2, addX, addY);
+	printf("drawLine:: (%d, %d, %d, %d) | Dim: (%d x %d) | Deltas: (%f, %f)\n", x1, y1, x2, y2, width, height, addX, addY);
 	
-	if (height != 0 && width != 0) {
+	if (height == 0 && width == 0) {
+	
+		// Single pixel
+		printf("Drawing a single pixel: (%d, %d, %d, %d)\n", x1, y1, x2, y2);
+		pictureArray[y1 * 160 + x1] = color;
+		
+	} else {
 	
 		if (abs(width) > abs(height)) {
 		
@@ -459,17 +438,23 @@ void drawLine(int x1, int y1, int x2, int y2, NSMutableArray *pictureArray, NSCo
 			
 			printf("Width: %d to %d (%f) \n", x1, x2, addX);
 			
-			if (addX < 0) {
-				for (int x = x1; x > x2; x+= addX) {
-					pictureArray[lineRound(y, addY) * 160 + lineRound(x, addX)] = color;
-                	y += addY;
-				}
-			} else {
-				for (int x = x1; x < x2; x+= addX) {
-					pictureArray[lineRound(y, addY) * 160 + lineRound(x, addX)] = color;
-                	y += addY;
-				}
+			for (float x=(float)x1; x!=x2; x+=addX) {
+			 	// pset(round(x, addX), round(y, addY));
+			 	pictureArray[lineRound(y, addY) * 160 + lineRound(x, addX)] = color;
+			 	y+=addY;
 			}
+			
+// 			if (addX < 0) {
+// 				for (int x = x1; x > x2; x+= addX) {
+// 					pictureArray[lineRound(y, addY) * 160 + lineRound(x, addX)] = color;
+//                 	y += addY;
+// 				}
+// 			} else {
+// 				for (int x = x1; x < x2; x+= addX) {
+// 					pictureArray[lineRound(y, addY) * 160 + lineRound(x, addX)] = color;
+//                 	y += addY;
+// 				}
+// 			}
 			
 			pictureArray[y2 * 160 + x2] = color;
 			
@@ -503,44 +488,12 @@ void drawLine(int x1, int y1, int x2, int y2, NSMutableArray *pictureArray, NSCo
 			
 			printf("Height: %d to %d (%f)\n", y1, y2, addY);
 		
-		}
-		
-// 		if (abs(width) > abs(height)):
-//             y = float(y1)
-//             if width == 0:
-//                 addX = 0
-//             else:
-//                 addX = width/abs(width)
-// 
-//             for x in range(x1, x2, addX):
-//                 img[line_round(y, addY) * 160 + line_round(x, addX)] = color
-//                 y += addY
-// 
-//             img[y2 * 160 + x2] = color
-// 
-//         else:
-//             x = float(x1)
-//             if height == 0:
-//                 addY = 0
-//             else:
-//                 addY = height/abs(height)
-// 
-//             for y in range(y1, y2, addY):
-//                 img[line_round(y, addY) * 160 + line_round(x, addX)] = color
-//                 x += addX
-// 
-//             img[y2 * 160 + x2] = color
-            
-	} else {
-		// Single pixel
-		pictureArray[y1 * 160 + x1] = color;
-	}
+		}   
+	} 
 }
 
 
 // Round, to get correct coordinate for pixel
-
-// Debating whether direction should be an int or float
 int lineRound(float coord, float direction) {
 	if (direction < 0.0) {
 		if ((float)coord - (int)coord <= 0.501) {
@@ -558,10 +511,15 @@ int lineRound(float coord, float direction) {
 }
 
 
+/*
+ * Flood fill from the locations given. Arguments are given in groups of two bytes which 
+ * give the coordinates of the location to start the fill at. If picture drawing is 
+ * enabled then it flood fills from that location on the picture screen to all pixels 
+ * locations that it can reach which are white in color. The boundary is given by any 
+ * pixels which are not white.
+ */
 void floodFill(int x, int y, NSMutableArray *imgDataArray, NSColor *color, NSArray *colorPalette) {
-	NSLog(@"Flood fill");
-	
-	return; // temp code
+	NSLog(@"Flood fill: (%d, %d)", x, y);
 	
 	if (color != colorPalette[15]) {
 	
@@ -579,25 +537,24 @@ void floodFill(int x, int y, NSMutableArray *imgDataArray, NSColor *color, NSArr
 			int pointX = (int)point.x;
 			int pointY = (int)point.y;
 			
-			// if the imgDataArray[y * 160 + x] is != palette[15] color, continue
-			if (imgDataArray[pointY * 160 + pointX] != colorPalette[15]) {
+			if (imgDataArray[pointY * 160 + pointX] == colorPalette[15]) {
 				// Set imgDataArray[y * 160 + x] to the given color
 				imgDataArray[pointY * 160 + pointX] = color;
 				printf("Set location %d to a new color\n", pointY*160+pointX);
 				
-				if (pointX < 159) {
+				if (pointX < 159 && imgDataArray[pointY * 160 + pointX+1] == colorPalette[15]) {
 					[stack addObject: [NSValue valueWithPoint:CGPointMake(pointX+1, pointY)]];
 				}
 		
-				if (pointX > 0) {
+				if (pointX > 0 && imgDataArray[pointY * 160 + pointX-1] == colorPalette[15]) {
 					[stack addObject: [NSValue valueWithPoint:CGPointMake(pointX-1, pointY)]];
 				}
 		
-				if (pointY < 167) {
+				if (pointY < 167 && imgDataArray[(pointY+1) * 160 + pointX] == colorPalette[15]) {
 					[stack addObject: [NSValue valueWithPoint:CGPointMake(pointX, pointY+1)]];
 				}
 		
-				if (pointY > 0) {
+				if (pointY > 0 && imgDataArray[(pointY-1) * 160 + pointX] == colorPalette[15]) {
 					[stack addObject: [NSValue valueWithPoint:CGPointMake(pointX, pointY-1)]];
 				}
 			}

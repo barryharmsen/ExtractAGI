@@ -259,14 +259,16 @@ void agiFill(word x, word y)
       x1 = qretrieve();
       y1 = qretrieve();
 
+		// If either x1 or y1 are 255, break out
       if ((x1 == EMPTY) || (y1 == EMPTY))
 	 break;
       else {
 
+	// if it is OK to draw at x1, y1, proceed 
 	 if (okToFill(x1,y1)) {
 
 	    pset(x1, y1);
-
+		// Check each surrounding coordinate to see if it is OK to draw
 	    if (okToFill(x1, y1-1) && (y1!=0)) {
 	       qstore(x1);
 	       qstore(y1-1);
